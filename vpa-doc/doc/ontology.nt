@@ -1,0 +1,370 @@
+<http://data.europa.eu/949/vpa/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://data.europa.eu/949/vpa/> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/contributor> _:genid1 .
+_:genid1 <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing" .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0000-0003-1562-6922> .
+_:genid1 <http://schema.org/affiliation> _:genid2 .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Maarten Duhoux" .
+_:genid3 <http://schema.org/affiliation> _:genid4 .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/issued> "2024-XX-XX"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/modified> "2024-03-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" .
+<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/title> "ERA ontology for verified permission and vehicle authorisation approvals"@en .
+<http://data.europa.eu/949/vpa/> <http://www.w3.org/2000/01/rdf-schema#comment> "ERA Ontology for permissions and vehicle authorisation"@en .
+<http://data.europa.eu/949/vpa/> <http://www.w3.org/2000/01/rdf-schema#label> "The Vechicle Permission (VP) and Vehicle Authorization (VA) ontology"@en .
+<http://data.europa.eu/949/vpa/> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/affiliation
+<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/workInfoHomepage
+<http://xmlns.com/foaf/0.1/workInfoHomepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/949/areaOfUse
+<http://data.europa.eu/949/areaOfUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/areaOfUse> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase> .
+<http://data.europa.eu/949/areaOfUse> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.europa.eu/949/areaOfUse> <http://www.w3.org/2000/01/rdf-schema#label> "area of use"@en .
+# 
+# http://data.europa.eu/949/executeRole
+<http://data.europa.eu/949/executeRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/executeRole> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/Role> .
+<http://data.europa.eu/949/executeRole> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.europa.eu/949/executeRole> <http://www.w3.org/2000/01/rdf-schema#label> "executes role"@en .
+# 
+# http://data.europa.eu/949/role
+<http://data.europa.eu/949/role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Organization> .
+<http://data.europa.eu/949/role> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/Role> .
+<http://data.europa.eu/949/role> <http://www.w3.org/2000/01/rdf-schema#label> "role"@en .
+# 
+# http://data.europa.eu/949/vpa/certifies
+<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/AppropriateBody> .
+<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Requirement> .
+<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/2000/01/rdf-schema#label> "certifies"@en .
+# 
+# http://data.europa.eu/949/vpa/closes
+<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Requirement> .
+<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/2000/01/rdf-schema#label> "closes"@en .
+# 
+# http://data.europa.eu/949/vpa/concerns
+<http://data.europa.eu/949/vpa/concerns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/concerns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Case> .
+<http://data.europa.eu/949/vpa/concerns> <http://www.w3.org/2000/01/rdf-schema#label> "concerns"@en .
+# 
+# http://data.europa.eu/949/vpa/definesCase
+<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Scope> .
+<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Case> .
+<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/2000/01/rdf-schema#label> "defines case"@en .
+# 
+# http://data.europa.eu/949/vpa/delivers
+<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/AppropriateBody> .
+<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/2000/01/rdf-schema#label> "delivers"@en .
+# 
+# http://data.europa.eu/949/vpa/grants
+<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/PermittingBody> .
+<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Permission> .
+<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/2000/01/rdf-schema#label> "grants"@en .
+# 
+# http://data.europa.eu/949/vpa/issues
+<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/RequestingBody> .
+<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Request> .
+<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/2000/01/rdf-schema#label> "issues"@en .
+# 
+# http://data.europa.eu/949/vpa/permissionType
+<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Case> .
+<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/2000/01/rdf-schema#label> "permission type"@en .
+# 
+# http://data.europa.eu/949/vpa/regarding
+<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Restriction> .
+<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Requirement> .
+<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/2000/01/rdf-schema#label> "regarding"@en .
+# 
+# http://data.europa.eu/949/vpa/requestFor
+<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Request> .
+<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Permission> .
+<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/2000/01/rdf-schema#label> "request for"@en .
+# 
+# http://data.europa.eu/949/vpa/requests
+<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/RequestingBody> .
+<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Permission> .
+<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/2000/01/rdf-schema#label> "requests"@en .
+# 
+# http://data.europa.eu/949/vpa/status
+<http://data.europa.eu/949/vpa/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://data.europa.eu/949/vpa/status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Request> .
+<http://data.europa.eu/949/vpa/status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://data.europa.eu/949/vpa/status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# 
+# http://data.europa.eu/949/vpa/submittedFor
+<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Request> .
+<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/2000/01/rdf-schema#label> "submitted for"@en .
+# 
+# http://data.europa.eu/949/vpa/submittedIn
+<http://data.europa.eu/949/vpa/submittedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/submittedIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Permission> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/submittedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Case> .
+<http://data.europa.eu/949/vpa/submittedIn> <http://www.w3.org/2000/01/rdf-schema#label> "submitted in"@en .
+# 
+# http://data.europa.eu/949/vpa/supports
+<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Case> .
+<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Request> .
+<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
+# 
+# http://data.europa.eu/949/vpa/withRestriction
+<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Restriction> .
+<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "with restriction"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://data.europa.eu/949/Role
+<http://data.europa.eu/949/Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role"@en .
+# 
+# http://data.europa.eu/949/vpa/AppropriateBody
+<http://data.europa.eu/949/vpa/AppropriateBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/AppropriateBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Body> .
+<http://data.europa.eu/949/vpa/AppropriateBody> <http://www.w3.org/2000/01/rdf-schema#label> "Appropriate Body"@en .
+# 
+# http://data.europa.eu/949/vpa/AuthorisationTypeVariant
+<http://data.europa.eu/949/vpa/AuthorisationTypeVariant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/AuthorisationTypeVariant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Scope> .
+<http://data.europa.eu/949/vpa/AuthorisationTypeVariant> <http://www.w3.org/2000/01/rdf-schema#label> "Authorisation type(s) and variant(s)"@en .
+# 
+# http://data.europa.eu/949/vpa/Body
+<http://data.europa.eu/949/vpa/Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Organization> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/Body> <http://www.w3.org/2000/01/rdf-schema#label> "Body"@en .
+# 
+# http://data.europa.eu/949/vpa/Case
+<http://data.europa.eu/949/vpa/Case> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/Case> <http://www.w3.org/2000/01/rdf-schema#label> "Case"@en .
+# 
+# http://data.europa.eu/949/vpa/DocumentedEvidence
+<http://data.europa.eu/949/vpa/DocumentedEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/DocumentedEvidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Document> .
+<http://data.europa.eu/949/vpa/DocumentedEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "Documented Evidence"@en .
+# 
+# http://data.europa.eu/949/vpa/Permission
+<http://data.europa.eu/949/vpa/Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/Permission> <http://www.w3.org/2000/01/rdf-schema#label> "Permission"@en .
+# 
+# http://data.europa.eu/949/vpa/PermittingBody
+<http://data.europa.eu/949/vpa/PermittingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/PermittingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Body> .
+<http://data.europa.eu/949/vpa/PermittingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Permitting Body"@en .
+# 
+# http://data.europa.eu/949/vpa/Request
+<http://data.europa.eu/949/vpa/Request> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/Request> <http://www.w3.org/2000/01/rdf-schema#label> "Request"@en .
+# 
+# http://data.europa.eu/949/vpa/RequestingBody
+<http://data.europa.eu/949/vpa/RequestingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/RequestingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Body> .
+<http://data.europa.eu/949/vpa/RequestingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Requesting Body"@en .
+# 
+# http://data.europa.eu/949/vpa/Requirement
+<http://data.europa.eu/949/vpa/Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement"@en .
+# 
+# http://data.europa.eu/949/vpa/Restriction
+<http://data.europa.eu/949/vpa/Restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/Restriction> <http://www.w3.org/2000/01/rdf-schema#label> "Restriction"@en .
+# 
+# http://data.europa.eu/949/vpa/Scope
+<http://data.europa.eu/949/vpa/Scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/Scope> <http://www.w3.org/2000/01/rdf-schema#label> "Scope"@en .
+# 
+# http://data.europa.eu/949/vpa/VAApplication
+<http://data.europa.eu/949/vpa/VAApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/VAApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Request> .
+<http://data.europa.eu/949/vpa/VAApplication> <http://www.w3.org/2000/01/rdf-schema#label> "VA Application"@en .
+# 
+# http://data.europa.eu/949/vpa/VRApplication
+<http://data.europa.eu/949/vpa/VRApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/VRApplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Request> .
+<http://data.europa.eu/949/vpa/VRApplication> <http://www.w3.org/2000/01/rdf-schema#label> "VR Application"@en .
+# 
+# http://data.europa.eu/949/vpa/VehicleAuthorisation
+<http://data.europa.eu/949/vpa/VehicleAuthorisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/VehicleAuthorisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Permission> .
+<http://data.europa.eu/949/vpa/VehicleAuthorisation> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle(type) Authorisation"@en .
+# 
+# http://data.europa.eu/949/vpa/VehicleRegistration
+<http://data.europa.eu/949/vpa/VehicleRegistration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/VehicleRegistration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Permission> .
+<http://data.europa.eu/949/vpa/VehicleRegistration> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle registration"@en .
+# 
+# http://data.europa.eu/949/vpa/VehicleRegistrationCase
+<http://data.europa.eu/949/vpa/VehicleRegistrationCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/VehicleRegistrationCase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Case> .
+<http://data.europa.eu/949/vpa/VehicleRegistrationCase> <http://www.w3.org/2002/07/owl#disjointWith> <http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase> .
+<http://data.europa.eu/949/vpa/VehicleRegistrationCase> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle Registration Case"@en .
+# 
+# http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase
+<http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Case> .
+<http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle Type Authorisation Case"@en .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid11 <http://www.w3.org/2002/07/owl#members> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Requirement> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Request> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Permission> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/Role> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Request> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Permission> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Case> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

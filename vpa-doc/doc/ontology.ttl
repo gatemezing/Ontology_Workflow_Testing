@@ -1,0 +1,390 @@
+@prefix : <http://data.europa.eu/949/vpa/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://data.europa.eu/949/vpa/> .
+
+<http://data.europa.eu/949/vpa/> rdf:type owl:Ontology ;
+                                  <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                  <http://purl.org/dc/terms/contributor> _:genid1 ;
+                                  <http://purl.org/dc/terms/creator> _:genid3 ;
+                                  <http://purl.org/dc/terms/issued> "2024-XX-XX"^^xsd:date ;
+                                  <http://purl.org/dc/terms/modified> "2024-03-11"^^xsd:date ;
+                                  <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" ;
+                                  <http://purl.org/dc/terms/title> "ERA ontology for verified permission and vehicle authorisation approvals"@en ;
+                                  rdfs:comment "ERA Ontology for permissions and vehicle authorisation"@en ;
+                                  rdfs:label "The Vechicle Permission (VP) and Vehicle Authorization (VA) ontology"@en ;
+                                  owl:versionInfo "v0.1"@en .
+
+_:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://schema.org/affiliation> _:genid2 ;
+          rdfs:seeAlso <https://orcid.org/0000-0003-1562-6922> ;
+          <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing" ;
+          <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
+
+_:genid3 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://schema.org/affiliation> _:genid4 ;
+          <http://xmlns.com/foaf/0.1/name> "Maarten Duhoux" ;
+          <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
+
+_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
+          <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
+
+_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
+          <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/affiliation
+<http://schema.org/affiliation> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/workInfoHomepage
+<http://xmlns.com/foaf/0.1/workInfoHomepage> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://data.europa.eu/949/areaOfUse
+<http://data.europa.eu/949/areaOfUse> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain :VehicleTypeAuthorisationCase ;
+                                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                      rdfs:label "area of use"@en .
+
+
+###  http://data.europa.eu/949/executeRole
+<http://data.europa.eu/949/executeRole> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://data.europa.eu/949/Role> ;
+                                        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                        rdfs:label "executes role"@en .
+
+
+###  http://data.europa.eu/949/role
+<http://data.europa.eu/949/role> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://www.w3.org/ns/org#Organization> ;
+                                 rdfs:range <http://data.europa.eu/949/Role> ;
+                                 rdfs:label "role"@en .
+
+
+###  http://data.europa.eu/949/vpa/certifies
+:certifies rdf:type owl:ObjectProperty ;
+           rdfs:domain :AppropriateBody ;
+           rdfs:range :Requirement ;
+           rdfs:label "certifies"@en .
+
+
+###  http://data.europa.eu/949/vpa/closes
+:closes rdf:type owl:ObjectProperty ;
+        rdfs:domain :DocumentedEvidence ;
+        rdfs:range :Requirement ;
+        rdfs:label "closes"@en .
+
+
+###  http://data.europa.eu/949/vpa/concerns
+:concerns rdf:type owl:ObjectProperty ;
+          rdfs:domain :Case ;
+          rdfs:label "concerns"@en .
+
+
+###  http://data.europa.eu/949/vpa/definesCase
+:definesCase rdf:type owl:ObjectProperty ;
+             rdfs:domain :Scope ;
+             rdfs:range :Case ;
+             rdfs:label "defines case"@en .
+
+
+###  http://data.europa.eu/949/vpa/delivers
+:delivers rdf:type owl:ObjectProperty ;
+          rdfs:domain :AppropriateBody ;
+          rdfs:range :DocumentedEvidence ;
+          rdfs:label "delivers"@en .
+
+
+###  http://data.europa.eu/949/vpa/grants
+:grants rdf:type owl:ObjectProperty ;
+        rdfs:domain :PermittingBody ;
+        rdfs:range :Permission ;
+        rdfs:label "grants"@en .
+
+
+###  http://data.europa.eu/949/vpa/issues
+:issues rdf:type owl:ObjectProperty ;
+        rdfs:domain :RequestingBody ;
+        rdfs:range :Request ;
+        rdfs:label "issues"@en .
+
+
+###  http://data.europa.eu/949/vpa/permissionType
+:permissionType rdf:type owl:ObjectProperty ;
+                rdfs:domain :Case ;
+                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                rdfs:label "permission type"@en .
+
+
+###  http://data.europa.eu/949/vpa/regarding
+:regarding rdf:type owl:ObjectProperty ;
+           rdfs:domain :Restriction ;
+           rdfs:range :Requirement ;
+           rdfs:label "regarding"@en .
+
+
+###  http://data.europa.eu/949/vpa/requestFor
+:requestFor rdf:type owl:ObjectProperty ;
+            rdfs:domain :Request ;
+            rdfs:range :Permission ;
+            rdfs:label "request for"@en .
+
+
+###  http://data.europa.eu/949/vpa/requests
+:requests rdf:type owl:ObjectProperty ;
+          rdfs:domain :RequestingBody ;
+          rdfs:range :Permission ;
+          rdfs:label "requests"@en .
+
+
+###  http://data.europa.eu/949/vpa/status
+:status rdf:type owl:ObjectProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Request ;
+        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+        rdfs:label "status"@en .
+
+
+###  http://data.europa.eu/949/vpa/submittedFor
+:submittedFor rdf:type owl:ObjectProperty ;
+              rdfs:domain :DocumentedEvidence ;
+              rdfs:range :Request ;
+              rdfs:label "submitted for"@en .
+
+
+###  http://data.europa.eu/949/vpa/submittedIn
+:submittedIn rdf:type owl:ObjectProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :DocumentedEvidence
+                                         :Permission
+                                       )
+                         ] ;
+             rdfs:range :Case ;
+             rdfs:label "submitted in"@en .
+
+
+###  http://data.europa.eu/949/vpa/supports
+:supports rdf:type owl:ObjectProperty ;
+          rdfs:domain :Case ;
+          rdfs:range :Request ;
+          rdfs:label "supports"@en .
+
+
+###  http://data.europa.eu/949/vpa/withRestriction
+:withRestriction rdf:type owl:ObjectProperty ;
+                 rdfs:domain :DocumentedEvidence ;
+                 rdfs:range :Restriction ;
+                 rdfs:label "with restriction"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://data.europa.eu/949/Role
+<http://data.europa.eu/949/Role> rdf:type owl:Class ;
+                                 rdfs:label "Role"@en .
+
+
+###  http://data.europa.eu/949/vpa/AppropriateBody
+:AppropriateBody rdf:type owl:Class ;
+                 rdfs:subClassOf :Body ;
+                 rdfs:label "Appropriate Body"@en .
+
+
+###  http://data.europa.eu/949/vpa/AuthorisationTypeVariant
+:AuthorisationTypeVariant rdf:type owl:Class ;
+                          rdfs:subClassOf :Scope ;
+                          rdfs:label "Authorisation type(s) and variant(s)"@en .
+
+
+###  http://data.europa.eu/949/vpa/Body
+:Body rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Class ;
+                        owl:unionOf ( <http://www.w3.org/ns/org#Organization>
+                                      <http://xmlns.com/foaf/0.1/Person>
+                                    )
+                      ] ;
+      rdfs:label "Body"@en .
+
+
+###  http://data.europa.eu/949/vpa/Case
+:Case rdf:type owl:Class ;
+      rdfs:label "Case"@en .
+
+
+###  http://data.europa.eu/949/vpa/DocumentedEvidence
+:DocumentedEvidence rdf:type owl:Class ;
+                    rdfs:subClassOf <http://xmlns.com/foaf/0.1/Document> ;
+                    rdfs:label "Documented Evidence"@en .
+
+
+###  http://data.europa.eu/949/vpa/Permission
+:Permission rdf:type owl:Class ;
+            rdfs:label "Permission"@en .
+
+
+###  http://data.europa.eu/949/vpa/PermittingBody
+:PermittingBody rdf:type owl:Class ;
+                rdfs:subClassOf :Body ;
+                rdfs:label "Permitting Body"@en .
+
+
+###  http://data.europa.eu/949/vpa/Request
+:Request rdf:type owl:Class ;
+         rdfs:label "Request"@en .
+
+
+###  http://data.europa.eu/949/vpa/RequestingBody
+:RequestingBody rdf:type owl:Class ;
+                rdfs:subClassOf :Body ;
+                rdfs:label "Requesting Body"@en .
+
+
+###  http://data.europa.eu/949/vpa/Requirement
+:Requirement rdf:type owl:Class ;
+             rdfs:label "Requirement"@en .
+
+
+###  http://data.europa.eu/949/vpa/Restriction
+:Restriction rdf:type owl:Class ;
+             rdfs:label "Restriction"@en .
+
+
+###  http://data.europa.eu/949/vpa/Scope
+:Scope rdf:type owl:Class ;
+       rdfs:label "Scope"@en .
+
+
+###  http://data.europa.eu/949/vpa/VAApplication
+:VAApplication rdf:type owl:Class ;
+               rdfs:subClassOf :Request ;
+               rdfs:label "VA Application"@en .
+
+
+###  http://data.europa.eu/949/vpa/VRApplication
+:VRApplication rdf:type owl:Class ;
+               rdfs:subClassOf :Request ;
+               rdfs:label "VR Application"@en .
+
+
+###  http://data.europa.eu/949/vpa/VehicleAuthorisation
+:VehicleAuthorisation rdf:type owl:Class ;
+                      rdfs:subClassOf :Permission ;
+                      rdfs:label "Vehicle(type) Authorisation"@en .
+
+
+###  http://data.europa.eu/949/vpa/VehicleRegistration
+:VehicleRegistration rdf:type owl:Class ;
+                     rdfs:subClassOf :Permission ;
+                     rdfs:label "Vehicle registration"@en .
+
+
+###  http://data.europa.eu/949/vpa/VehicleRegistrationCase
+:VehicleRegistrationCase rdf:type owl:Class ;
+                         rdfs:subClassOf :Case ;
+                         owl:disjointWith :VehicleTypeAuthorisationCase ;
+                         rdfs:label "Vehicle Registration Case"@en .
+
+
+###  http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase
+:VehicleTypeAuthorisationCase rdf:type owl:Class ;
+                              rdfs:subClassOf :Case ;
+                              rdfs:label "Vehicle Type Authorisation Case"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://data.europa.eu/949/Role>
+                :DocumentedEvidence
+                :Permission
+                :Request
+                :Requirement
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Case
+                :DocumentedEvidence
+                :Permission
+                :Request
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
