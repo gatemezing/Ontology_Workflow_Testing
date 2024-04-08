@@ -1,3 +1,43 @@
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+## Origin
+  
+The European Agency for Railways manages - through its obligations regarding Registers - large sets of data which document certain requests as present in the Safety and Interoperability Directives:
+  - in OSS, vehicle authorisation evidence sets are submitted as mainly verified by NoBo's, DeBo's and other appropriate bodies. The end-result is the permission to place vehicle(type)s on the market.
+  - in ERADIS, this evidence of verification and conformity, expressed as certificates and declarations, is registered.
+  - in ERATV, the vehicle(type) data and the delivered authorisation is then published for (re)use by relevant stakeholders.
+  - in EVR, the vehicles are registered for operation, again reusing much of the same data as above.
+  
+However, a common and practical ontology for these permission-based processes was not yet available. Also, other stakeholders in the railway sector, like National Safety Authorities or Registering Entities, could be helped by the restructuring of their data as per new ontology. This would allow interoperable exchange of data across the sector.
+  To that end, the verified permissions ontology must be seen as allowing data to be registered as it appears in the following two consecutive, generalised processes:
+
+  1. a *verification process* in which evidence is verified by an appropriate body, in order to allow it to be submitted to a permitting entity.
+  2. the process by which this permitting entity converts the request and the submitted evidence into a *permission*, enabling the requesting body to execute a certain step/process.
+
+The name `verified permissions` tries to collect this pair of activities.
+
+## Roles
+
+  Generically, three bodies (legal entities or in some cases individual persons) execute core roles in the VP supported processes:
+
+  1. Requesting body who needs a permission from a permitting body, based on a submitted request, of which part at least is made of verified evidence.
+  2. Permitting body granting the permission after consultation of the submitted request, and especially the completeness and details regarding the evidence submitted
+  3. Appropriate body consolidating the evidence needed by the requesting body to be accepted by the permitting body.
+
+## Exclusions
+
+  The ontology captures the following details, each with certain exclusions nevertheless:
+
+  - A request can be filed using at least one case, each with its precise and specific scope. 
+  - A scope must be seen as the concrete and specific topic of the permission, for which separate evidence is needed. All scopes must be covered or the permission cannot be granted.
+  - Certain evidence can be linked to the whole request as it cannot be linked specifically to a case (and its scope). This evidence must close all required Requirements or the permission cannot be granted.
+  - The VP ontology does NOT further define what exactly a Requirement, as closed by Evidence, must look like. But data regarding evidence can only be accepted if the link with the requirement (and eventual restriction) is present.
+  - It also does NOT refine what a Restriction must look like, apart from the fact that (1) it MUST be considered together with the Evidence, in order to close a requirement and (2) it is ONLY formulated by the appropriate body.
+  - From the above, it follows that the VP ontology does NOT define what requirements are even applicable for documented evidence. A requesting body submits the evidence as it sees fit, and the permitting body must always decide on its completeness.
+
+  It is well possible to link the VP ontology to a business case, in which the set of Requirements to close:
+  - can minimally be proposed by the requesting body
+  - can maximally be defined by the permitting body
+  but this is out of scope of the VP ontology.
+
+</span>
