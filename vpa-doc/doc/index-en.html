@@ -2,19 +2,32 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="resources/primer.css" media="screen" />   
- <link rel="stylesheet" href="resources/rec.css" media="screen" />   
- <link rel="stylesheet" href="resources/extra.css" media="screen" />   
- <link rel="stylesheet" href="resources/owl.css" media="screen" />   
-<link rel="icon" type="image/png" href="resources/rdf.icon"/> <title>ERA ontology for verified permission and vehicle authorisation approvals</title>
-
-
+<link rel="stylesheet" href="resources/primer.css" media="screen" />   
+<link rel="stylesheet" href="resources/rec.css" media="screen" />   
+<link rel="stylesheet" href="resources/extra.css" media="screen" />   
+<link rel="stylesheet" href="resources/owl.css" media="screen" />   
+<link rel="icon" type="image/png" href="resources/rdf.icon"/> 
+<title>ERA ontology for verified permissions (authorisations, approvals and registration)</title>
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://data.europa.eu/949/vpa/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://data.europa.eu/949/vpa/","name":"ERA ontology for verified permission and vehicle authorisation approvals", "headline":"Document describing the ontology http://data.europa.eu/949/vpa/", "dateReleased":"Mon Apr 01 20:43:03 CEST 2024", "dateModified":"2024-03-11", "version":"v0.1", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Maarten Duhoux"}], "contributor":[{"@type":"Person","name":"Ghislain Atemezing"}]}</script>
-
+<script type="application/ld+json">
+	{
+	"@context":"https://schema.org",
+	"@type":"TechArticle",
+	"url":"http://data.europa.eu/949/vpa/",
+	"image":"http://vowl.visualdataweb.org/webvowl/#iri=http://data.europa.eu/949/vpa/",
+	"name":"ERA ontology for verified permissions", 
+	"headline":"Document describing the ontology http://data.europa.eu/949/vpa/", 
+	"dateReleased":"Mon Apr 01 20:43:03 CEST 2024", 
+	"dateModified":"2024-03-11", 
+	"version":"v0.1", 
+	"license":"https://creativecommons.org/licenses/by/4.0/", 
+	"author":[{"@type":"Person","name":"Maarten Duhoux"}], 
+	"contributor":[{"@type":"Person","name":"Ghislain Atemezing"}]
+	}
+</script>
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
-    <script> 
+<script> 
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -46,27 +59,28 @@ function loadTOC(){
 	  t+='</ul>';
 	  $("#toc").html(t); 
 }
- $.fn.ignore = function(sel){
+$.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#nstable").load("sections/ns-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
-    });
-    </script> 
-  </head> 
+};    
+$(function(){
+	$("#abstract").load("sections/abstract-en.html"); 
+	$("#introduction").load("sections/introduction-en.html"); 
+	$("#nstable").load("sections/ns-en.html"); 
+	$("#overview").load("sections/overview-en.html"); 
+	$("#description").load("sections/description-en.html"); 
+	$("#usecases").load("sections/usecases-en.html"); 
+	$("#references").load("sections/references-en.html"); 
+	$("#crossref").load("sections/crossref-en.html", null, loadHash); 
+});
+</script> 
+</head> 
 
 <body>
 <div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
-<h1>ERA ontology for verified permission and vehicle authorisation approvals</h1>
-
-
+<h1>ERA ontology for verified permissions</h1>
+<h3>(with use cases vehicle (type) authorisations & vehicle registrations)</h3>
 <dl>
 <dt>Modified on: 2024-03-11</dt>
 <dt>Revision:</dt>
@@ -86,27 +100,27 @@ function loadTOC(){
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd>Maarten Duhoux. ERA ontology for verified permission and vehicle authorisation approvals. Revision: v0.1.</dd>
 </dl>
-
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
 </div>
 <div class="status">
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"></div>
-<div id="toc"></div>     <div id="introduction"></div>
-	  <div id="nstable"></div>
-     <div id="overview"></div>
-     <div id="description"></div>
-     <div id="crossref"></div>
-     <div id="references"></div>
+</div>     
+<div id="abstract"></div>
+<div id="toc"></div>     
+<div id="introduction"></div>
+<div id="nstable"></div>
+<div id="overview"></div>
+<div id="description"></div>
+<div id="usecases"></div>
+<div id="crossref"></div>
+<div id="references"></div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
 The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
 </div>
-
-
 </div>
 </body>
 </html>
