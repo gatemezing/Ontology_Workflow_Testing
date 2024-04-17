@@ -3,7 +3,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
 <..\index-en.html> a prov:Entity;
-	 dc:title "ERA ontology for verified permission and vehicle authorisation approvals";
+	 dc:title "ERA ontology for verified permissions (authorisations, approvals and registrations)";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
