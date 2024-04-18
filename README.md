@@ -1,3 +1,3 @@
 # Verified Permissions Ontology
 
-This repository manages the (Widoco-based) publication of the ontology. 
+This repository manages the development and publication of the Verified Permission and Authorization ontology. 
