@@ -1,12 +1,84 @@
 <h2 id="usecases" class="list">Use cases: vehicle (type) authorisation and registration <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-  ## Use case: Vehicle Authorisation
-  
-  (TODO) See yED examples.
+## Use case: Vehicle Authorisation
 
-  ## Use case: Vehicle Registration
-  
-  Idem
+  ### Setup
 
+  Using the Verified Permissions, we can create for VA:
+
+  ```
+  era:VehicleTypeAuthorisation rdfs:subClassOf vp:Permission .
+  era:VAApplication rdfs:subClassOf vp:Request .
+  era:VAApplicationCase rdfs:subClassOf vp:Case .
+  ```
+
+  ### Example
+  
+  A specific example is application V-20230310-NNN (number anonymised) as issued (through the OSS) by erava:mf-MMMM (anonymous manufacturer). It concerned one Authorisation Case for a certain vehicle type and some vehicles for placing on the market in a certain Area of Use. 
+  
+  This would then be stored in the KG as:
+
+  ```
+  erava:V-20230310-NNN a era:VehicleTypeAuthorisation .
+  erava:va-V-20230310-NNN a era:VAApplication .
+  erava:vac-V-20230310-NNN-0 a era:VAApplicationCase .
+  
+  erava:mf-MMMM vp:requests erava:V-20230310-NNN ;
+                vp:issues erava:va-V-20230310-NNN .
+
+  erava:vac-V-20230310-NNN-0 vp:supports erava:va-V-20230310-NNN ;
+                era:areaOfUse era:Network1 , era:Network2 , era:SubNetwork3 ;
+                vp:permissionType era-skos-va:C2T .
+
+  eratv:51-019-001-6-002-001 a era:VehicleType ;
+                vp:definesCase erava:vac-V-20230310-NNN-0 .
+
+  erava:vs-V-20230310-NNN-0 a erava:VehiclesCollection ;
+                era:contains eravr:31717813003-2 , eravr:32717813002-4 , ... # and others
+
+  eravr:31717813003-2 a era:Vehicle ;
+                era:inCollection erava:vs-V-20230310-NNN-0 .
+  ... # other vehicles in this authorisation case.
+  ```
+
+  The properties from a `era:VehicleTypeAuthorisation` are mainly inherited from a vp:Permission:
+  - The issue, starting and expiration dates
+  - The status (excluding those which can be deduced from the dates) and the date the Permission was given that status. Example: 'REVOKED'.
+
+  A detailed analysis of the Permissions' properties is ongoing, based on general properties of Authorisations and Registrations.
+  
+## Use case: Vehicle Registration
+
+  After these vehicles have been authorised in conformity to the given type and area of use, they can be registered by the Keeper for operation there.   
+
+  ### Setup
+  
+  Using the Verified Permissions, we can create for VR:
+
+  ```
+  era:VehicleRegistration rdfs:subClassOf vp:Permission .
+  era:VRApplication rdfs:subClassOf vp:Request .
+  era:VRApplicationCase rdfs:subClassOf vp:Case .
+  ```
+
+  ### Example
+  
+  The instances created from that process could be based on the above example:
+
+  ```
+  eravr:NNNN-n a era:VehicleRegistration .  # The identifier of the registering keeper could be taken, whereby n is a sequence number.
+  eravr:vr-NNNN-n a era:VRApplication .
+  # eravr:vrc-NNNN-n-0 a era:VRApplicationCase . 
+
+  eravr:KE-NNNN vp:requests eravr:NNNN-n ; # the keeper, with its org Id.
+                vp:issues eravr:vr-NNNN-n .
+  
+# Authorisation serves Registration!
+  erava:vac-V-20230310-NNN-0 vp:supports eravr:vr-NNN-n ; # allows to reuse the linked data of tha auth case regarding vehicles, aou, and underlying evidence.
+            vp:requestFor eravr:NNN-n .
+  
+  ```
+  Tools managing data regarding registrations could allow users to find all authorisations linked to those vehicle (collections). The registration would be complemented by the data linked to the supporting authorisation case and would not have to be defined separately.
+  
 
 </span>

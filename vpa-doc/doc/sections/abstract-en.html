@@ -1,20 +1,27 @@
 <h2>Abstract</h2><span class="markdown">
-The Verified Permissions ontology serves data collection in permission-based processes:
+The Verified Permissions ontology serves data collection for processes leading to a permission :
 
-- The delivery - by a permitting body to a requesting body - of a `Permission`, required by some legislative framework to execute a certain (e.g. safety-related) operational process;
-- The submission of evidence - verified by an appropriate body - in order to support the claim that the requesting body is able to execute said process.
+- The delivery - by a permitting body to a requesting body - of a `Permission`, required by some legislative framework to execute a certain (e.g. safety-related) operational process or to commence the next step in a larger process;
+- The submission of `Evidence` - verified by an appropriate body - in order to support the claim that the requesting body is able to execute said process or commence said step.
 
 Three bodies appear as such, each with its dedicated role:
   1. The requesting body asking for a permission to execute the mentioned process;
   2. The permitting body authorised to grant such a permission;
   3. the appropriate (mostly accredited) body allowed to verify all claims regarding the evidence submitted in the scope of the mentioned process.
 
-The ontology serves as a basis for subClasses as used in the following processes, but could be used elsewhere as well:
+The ontology serves as a basis for subClasses as used in the following processes at the EU Agency for Railways:
   1. Vehicle (type) Authorization: in which an Applicant requests the Authorization for Placing on the Market of a vehicle (type), based on evidence provided by NoBo's and other assessment bodies;
-  2. Vehicle Registration: in which a Vehicle Keeper requests the Registration for operation on networks to the Registering Entity, based on evidence related to maintenance and authorization;
+  2. Vehicle Registration: in which a Vehicle Keeper requests the Registration for operation on networks to the Registering Entity, based on evidence related to maintenance and said authorization;
   3. Trackside Approval: in which an Infrastructure Manager asks for the Approval of a trackside project;
+
+However, the following processes were also analysed and should be supported by this ontology:
   4. Safety Certificate: in which a (new/existing) Railway Undertaking asks for the (re)certification of its SMS in order to be allowed the roles and functions of a RU;
   5. Safety Authorisation: in which a (new/existing) Infrastructure Manager asks for the (re)authorisation of its SMS in order to allowed the roles and functions of an IM.
+
+More generally, the ontology should allow for non-railway related processes as well:
+  6. Accreditation of a Body by an accreditation body
+  7. Delivery of a topical permissions, for instance by administrations (example: building permits, environmental permits, etc).
+  8. Delivery of licenses, whereby a strong link exists with [Verifiable Credentials](https://www.w3.org/TR/vc-data-model-2.0/).
 
 The two first examples will be illustrated in the chapter Use Cases.
 </span>
