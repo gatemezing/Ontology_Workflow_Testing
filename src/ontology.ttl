@@ -8,8 +8,8 @@
 
 <http://data.europa.eu/949/vpa/> rdf:type owl:Ontology ;
                                   <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                  <http://purl.org/dc/terms/contributor> _:genid1 ;
-                                  <http://purl.org/dc/terms/creator> _:genid3 ;
+                                  <http://purl.org/dc/terms/contributor> _:genid5 ;
+                                  <http://purl.org/dc/terms/creator> _:genid3 , _:genid1 ;
                                   <http://purl.org/dc/terms/issued> "2024-XX-XX"^^xsd:date ;
                                   <http://purl.org/dc/terms/modified> "2024-03-11"^^xsd:date ;
                                   <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" ;
@@ -34,6 +34,10 @@ _:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
 
 _:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
           <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
+
+_:genid5 a <http://xmlns.com/foaf/0.1/Agent> ;
+           <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
+          <http://xmlns.com/foaf/0.1/name> "OPD Unit" .
 
 #################################################################
 #    Annotation properties
