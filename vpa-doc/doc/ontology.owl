@@ -13,7 +13,8 @@
     <owl:Ontology rdf:about="http://data.europa.eu/949/vpa/">
         <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:contributor rdf:nodeID="genid1"/>
-        <terms:creator rdf:nodeID="genid3"/>
+        <terms:creator rdf:nodeID="genid2"/>
+        <terms:creator rdf:nodeID="genid4"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-XX-XX</terms:issued>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-11</terms:modified>
         <terms:publisher>European Union Agency for Railways</terms:publisher>
@@ -23,23 +24,28 @@
         <owl:versionInfo xml:lang="en">v0.1</owl:versionInfo>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <foaf:homepage rdf:resource="https://www.era.europa.eu/"/>
+        <foaf:name>OPD Unit</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid2">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <schema:affiliation rdf:nodeID="genid2"/>
+        <schema:affiliation rdf:nodeID="genid3"/>
         <rdfs:seeAlso rdf:resource="https://orcid.org/0000-0003-1562-6922"/>
         <foaf:name>Ghislain Atemezing</foaf:name>
         <foaf:workInfoHomepage rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/ERA"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid3">
+    <rdf:Description rdf:nodeID="genid4">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <schema:affiliation rdf:nodeID="genid4"/>
+        <schema:affiliation rdf:nodeID="genid5"/>
         <foaf:name>Maarten Duhoux</foaf:name>
         <foaf:workInfoHomepage rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/ERA"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid2">
+    <rdf:Description rdf:nodeID="genid3">
         <foaf:homepage rdf:resource="https://www.era.europa.eu/"/>
         <foaf:name>European Union Agency for Railways</foaf:name>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid4">
+    <rdf:Description rdf:nodeID="genid5">
         <foaf:homepage rdf:resource="https://www.era.europa.eu/"/>
         <foaf:name>European Union Agency for Railways</foaf:name>
     </rdf:Description>
@@ -177,13 +183,14 @@
     
 
 
-    <!-- http://data.europa.eu/949/executeRole -->
+    <!-- http://data.europa.eu/949/hasOrganisationRole -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/executeRole">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/Role"/>
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/hasOrganisationRole">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/OrganisationRole"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:label xml:lang="en">executes role</rdfs:label>
+        <rdfs:label xml:lang="en">has organisation role</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -193,7 +200,7 @@
 
     <owl:ObjectProperty rdf:about="http://data.europa.eu/949/role">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/Role"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/949/OrganisationRole"/>
         <rdfs:label xml:lang="en">role</rdfs:label>
     </owl:ObjectProperty>
     
@@ -257,7 +264,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/grants">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/PermittingBody"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/OrganisationRole"/>
         <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Permission"/>
         <rdfs:label xml:lang="en">grants</rdfs:label>
     </owl:ObjectProperty>
@@ -312,7 +319,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/requests">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/RequestingBody"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/949/OrganisationRole"/>
         <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Permission"/>
         <rdfs:label xml:lang="en">requests</rdfs:label>
     </owl:ObjectProperty>
@@ -394,11 +401,12 @@
     
 
 
-    <!-- http://data.europa.eu/949/Role -->
+    <!-- http://data.europa.eu/949/OrganisationRole -->
 
 
-    <owl:Class rdf:about="http://data.europa.eu/949/Role">
-        <rdfs:label xml:lang="en">Role</rdfs:label>
+    <owl:Class rdf:about="http://data.europa.eu/949/OrganisationRole">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label xml:lang="en">Organisation Role</rdfs:label>
     </owl:Class>
     
 
@@ -427,14 +435,14 @@
 
 
     <owl:Class rdf:about="http://data.europa.eu/949/vpa/Body">
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/ns/org#Organization"/>
                     <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
                 </owl:unionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
         <rdfs:label xml:lang="en">Body</rdfs:label>
     </owl:Class>
     
@@ -599,6 +607,13 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
     <!-- http://xmlns.com/foaf/0.1/Document -->
 
 
@@ -622,16 +637,6 @@
      -->
 
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://data.europa.eu/949/Role"/>
-            <rdf:Description rdf:about="http://data.europa.eu/949/vpa/DocumentedEvidence"/>
-            <rdf:Description rdf:about="http://data.europa.eu/949/vpa/Permission"/>
-            <rdf:Description rdf:about="http://data.europa.eu/949/vpa/Request"/>
-            <rdf:Description rdf:about="http://data.europa.eu/949/vpa/Requirement"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">

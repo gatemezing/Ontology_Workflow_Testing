@@ -8,7 +8,7 @@
     },
     "iri" : "http://data.europa.eu/949/vpa/",
     "version" : "v0.1",
-    "author" : [ "_:genid2147483649" ],
+    "author" : [ "_:genid2147483649", "_:genid2147483648" ],
     "labels" : {
       "en" : "The Vechicle Permission (VP) and Vehicle Authorization (VA) ontology"
     },
@@ -25,13 +25,18 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "_:genid2147483648",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "_:genid2147483649",
         "type" : "label"
       } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483648",
+        "value" : "_:genid2147483650",
         "type" : "label"
       } ],
       "publisher" : [ {
@@ -68,10 +73,10 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "3",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "9",
@@ -83,77 +88,70 @@
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
-    "type" : "owl:Class"
-  }, {
     "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "25",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "38",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "5",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "32",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
     "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "30",
+    "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "46",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
     "type" : "owl:Class"
   }, {
     "id" : "13",
     "type" : "owl:unionOf"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://data.europa.eu/949/Role",
-    "baseIri" : "http://data.europa.eu/949",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Role",
-      "en" : "Role"
-    },
-    "attributes" : [ "external" ],
-    "id" : "3"
-  }, {
     "iri" : "http://data.europa.eu/949/vpa/Case",
     "baseIri" : "http://data.europa.eu/949/vpa",
     "instances" : 0,
@@ -161,14 +159,23 @@
       "IRI-based" : "Case",
       "en" : "Case"
     },
-    "subClasses" : [ "7", "8" ],
-    "id" : "6"
+    "subClasses" : [ "6", "7" ],
+    "id" : "5"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
     },
     "attributes" : [ "external" ],
     "id" : "9"
@@ -200,7 +207,7 @@
       "IRI-based" : "Requirement",
       "en" : "Requirement"
     },
-    "id" : "20"
+    "id" : "17"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/PermittingBody",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -209,7 +216,7 @@
       "IRI-based" : "PermittingBody",
       "en" : "Permitting Body"
     },
-    "id" : "17",
+    "id" : "24",
     "superClasses" : [ "13" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/VehicleAuthorisation",
@@ -219,7 +226,7 @@
       "IRI-based" : "VehicleAuthorisation",
       "en" : "Vehicle(type) Authorisation"
     },
-    "id" : "25",
+    "id" : "29",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Restriction",
@@ -229,7 +236,7 @@
       "IRI-based" : "Restriction",
       "en" : "Restriction"
     },
-    "id" : "34"
+    "id" : "23"
   }, {
     "iri" : "http://www.w3.org/ns/org#Organization",
     "baseIri" : "http://www.w3.org/ns/org",
@@ -238,7 +245,7 @@
       "IRI-based" : "Organization"
     },
     "attributes" : [ "external" ],
-    "id" : "38"
+    "id" : "31"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -247,8 +254,8 @@
       "IRI-based" : "VehicleTypeAuthorisationCase",
       "en" : "Vehicle Type Authorisation Case"
     },
-    "id" : "7",
-    "superClasses" : [ "6" ]
+    "id" : "6",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/DocumentedEvidence",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -257,20 +264,8 @@
       "IRI-based" : "DocumentedEvidence",
       "en" : "Documented Evidence"
     },
-    "id" : "27",
-    "superClasses" : [ "28" ]
-  }, {
-    "instances" : 0,
-    "union" : [ "27", "2" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "5"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "32",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "26",
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -279,7 +274,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "51"
+    "id" : "48"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Scope",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -298,17 +293,7 @@
       "IRI-based" : "VAApplication",
       "en" : "VA Application"
     },
-    "id" : "23",
-    "superClasses" : [ "15" ]
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/VRApplication",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VRApplication",
-      "en" : "VR Application"
-    },
-    "id" : "30",
+    "id" : "46",
     "superClasses" : [ "15" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/RequestingBody",
@@ -318,8 +303,18 @@
       "IRI-based" : "RequestingBody",
       "en" : "Requesting Body"
     },
-    "id" : "1",
+    "id" : "19",
     "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://data.europa.eu/949/vpa/VRApplication",
+    "baseIri" : "http://data.europa.eu/949/vpa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VRApplication",
+      "en" : "VR Application"
+    },
+    "id" : "44",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Permission",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -328,8 +323,20 @@
       "IRI-based" : "Permission",
       "en" : "Permission"
     },
-    "subClasses" : [ "46", "25" ],
+    "subClasses" : [ "42", "29" ],
     "id" : "2"
+  }, {
+    "instances" : 0,
+    "union" : [ "26", "2" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "21",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "iri" : "http://data.europa.eu/949/vpa/VehicleRegistrationCase",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -338,8 +345,8 @@
       "IRI-based" : "VehicleRegistrationCase",
       "en" : "Vehicle Registration Case"
     },
-    "id" : "8",
-    "superClasses" : [ "6" ]
+    "id" : "7",
+    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Request",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -348,7 +355,7 @@
       "IRI-based" : "Request",
       "en" : "Request"
     },
-    "subClasses" : [ "23", "30" ],
+    "subClasses" : [ "46", "44" ],
     "id" : "15"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/VehicleRegistration",
@@ -358,8 +365,18 @@
       "IRI-based" : "VehicleRegistration",
       "en" : "Vehicle registration"
     },
-    "id" : "46",
+    "id" : "42",
     "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://data.europa.eu/949/OrganisationRole",
+    "baseIri" : "http://data.europa.eu/949",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrganisationRole",
+      "en" : "Organisation Role"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Document",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -367,9 +384,9 @@
     "label" : {
       "IRI-based" : "Document"
     },
-    "subClasses" : [ "27" ],
+    "subClasses" : [ "26" ],
     "attributes" : [ "external" ],
-    "id" : "28"
+    "id" : "34"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Body",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -378,8 +395,8 @@
       "IRI-based" : "Body",
       "en" : "Body"
     },
-    "union" : [ "38", "51" ],
-    "subClasses" : [ "12", "17", "1" ],
+    "union" : [ "31", "48" ],
+    "subClasses" : [ "12", "24", "19" ],
     "attributes" : [ "union" ],
     "id" : "13"
   } ],
@@ -387,41 +404,41 @@
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "4",
+    "id" : "3",
     "type" : "owl:objectProperty"
   }, {
     "id" : "14",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "18",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "21",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "22",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "24",
-    "type" : "rdfs:SubClassOf"
+    "id" : "25",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "26",
-    "type" : "rdfs:SubClassOf"
+    "id" : "27",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "29",
-    "type" : "rdfs:SubClassOf"
+    "id" : "28",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "31",
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
     "type" : "owl:objectProperty"
   }, {
     "id" : "33",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "35",
     "type" : "owl:objectProperty"
@@ -430,40 +447,37 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
     "type" : "owl:objectProperty"
   }, {
     "id" : "39",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "40",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "41",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "43",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "44",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "45",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "47",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "48",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "49",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "50",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "52",
     "type" : "owl:disjointWith"
@@ -481,39 +495,24 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "57",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "58",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "59",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "60",
     "type" : "owl:disjointWith"
   }, {
     "id" : "61",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "62",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "63",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "64",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "65",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "66",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "67",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "68",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -530,18 +529,18 @@
   }, {
     "iri" : "http://data.europa.eu/949/vpa/submittedIn",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "6",
+    "range" : "5",
     "label" : {
       "IRI-based" : "submittedIn",
       "en" : "submitted in"
     },
-    "domain" : "5",
+    "domain" : "4",
     "attributes" : [ "object" ],
-    "id" : "4"
+    "id" : "3"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/status",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "9",
+    "range" : "8",
     "label" : {
       "IRI-based" : "status",
       "en" : "status"
@@ -550,122 +549,114 @@
     "attributes" : [ "functional", "object" ],
     "id" : "14"
   }, {
-    "range" : "13",
-    "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "16"
-  }, {
-    "range" : "13",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "18"
-  }, {
     "iri" : "http://data.europa.eu/949/vpa/certifies",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "20",
+    "range" : "17",
     "label" : {
       "IRI-based" : "certifies",
       "en" : "certifies"
     },
     "domain" : "12",
     "attributes" : [ "object" ],
-    "id" : "19"
+    "id" : "16"
   }, {
     "range" : "13",
-    "domain" : "1",
+    "domain" : "19",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "21"
-  }, {
-    "range" : "15",
-    "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "22"
-  }, {
-    "range" : "2",
-    "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "24"
-  }, {
-    "range" : "28",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "26"
-  }, {
-    "range" : "15",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
+    "id" : "18"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/concerns",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "32",
+    "range" : "21",
     "label" : {
       "IRI-based" : "concerns",
       "en" : "concerns"
     },
-    "domain" : "6",
+    "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "31"
+    "id" : "20"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/regarding",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "20",
+    "range" : "17",
     "label" : {
       "IRI-based" : "regarding",
       "en" : "regarding"
     },
-    "domain" : "34",
+    "domain" : "23",
     "attributes" : [ "object" ],
-    "id" : "33"
+    "id" : "22"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/delivers",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "27",
+    "range" : "26",
     "label" : {
       "IRI-based" : "delivers",
       "en" : "delivers"
     },
     "domain" : "12",
     "attributes" : [ "object" ],
-    "id" : "35"
-  }, {
-    "iri" : "http://data.europa.eu/949/areaOfUse",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "areaOfUse",
-      "en" : "area of use"
-    },
-    "domain" : "7",
-    "attributes" : [ "object", "external" ],
-    "id" : "36"
+    "id" : "25"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/withRestriction",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "34",
+    "range" : "23",
     "label" : {
       "IRI-based" : "withRestriction",
       "en" : "with restriction"
     },
-    "domain" : "27",
+    "domain" : "26",
     "attributes" : [ "object" ],
-    "id" : "37"
+    "id" : "27"
+  }, {
+    "iri" : "http://data.europa.eu/949/areaOfUse",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "areaOfUse",
+      "en" : "area of use"
+    },
+    "domain" : "6",
+    "attributes" : [ "external", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://data.europa.eu/949/hasOrganisationRole",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasOrganisationRole",
+      "en" : "has organisation role"
+    },
+    "domain" : "1",
+    "attributes" : [ "functional", "external", "object" ],
+    "id" : "30"
   }, {
     "iri" : "http://data.europa.eu/949/role",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "3",
+    "range" : "1",
     "label" : {
       "IRI-based" : "role",
       "en" : "role"
     },
-    "domain" : "38",
-    "attributes" : [ "object", "external" ],
-    "id" : "39"
+    "domain" : "31",
+    "attributes" : [ "external", "object" ],
+    "id" : "32"
   }, {
-    "range" : "11",
-    "domain" : "10",
+    "range" : "13",
+    "domain" : "12",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
+    "id" : "33"
+  }, {
+    "iri" : "http://data.europa.eu/949/vpa/definesCase",
+    "baseIri" : "http://data.europa.eu/949/vpa",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "definesCase",
+      "en" : "defines case"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "35"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/grants",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -674,117 +665,95 @@
       "IRI-based" : "grants",
       "en" : "grants"
     },
-    "domain" : "17",
+    "domain" : "1",
     "attributes" : [ "object" ],
-    "id" : "41"
+    "id" : "36"
   }, {
-    "iri" : "http://data.europa.eu/949/vpa/definesCase",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "6",
-    "label" : {
-      "IRI-based" : "definesCase",
-      "en" : "defines case"
-    },
-    "domain" : "11",
-    "attributes" : [ "object" ],
-    "id" : "42"
-  }, {
-    "range" : "6",
-    "domain" : "8",
+    "range" : "34",
+    "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "43"
+    "id" : "37"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/closes",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "20",
+    "range" : "17",
     "label" : {
       "IRI-based" : "closes",
       "en" : "closes"
     },
-    "domain" : "27",
+    "domain" : "26",
     "attributes" : [ "object" ],
-    "id" : "44"
+    "id" : "38"
+  }, {
+    "range" : "13",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
   }, {
     "range" : "2",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "2",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "15",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "15",
     "domain" : "46",
     "attributes" : [ "anonymous", "object" ],
     "id" : "45"
   }, {
-    "range" : "7",
-    "domain" : "8",
+    "range" : "5",
+    "domain" : "6",
     "attributes" : [ "anonymous", "object" ],
     "id" : "47"
   }, {
-    "range" : "6",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "48"
-  }, {
-    "range" : "27",
-    "domain" : "6",
+    "range" : "11",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
     "id" : "49"
   }, {
-    "iri" : "http://data.europa.eu/949/executeRole",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "9",
-    "label" : {
-      "IRI-based" : "executeRole",
-      "en" : "executes role"
-    },
-    "domain" : "3",
-    "attributes" : [ "object", "external" ],
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "51"
+  }, {
     "range" : "15",
-    "domain" : "6",
+    "domain" : "5",
     "attributes" : [ "anonymous", "object" ],
     "id" : "52"
   }, {
     "range" : "2",
-    "domain" : "6",
+    "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
     "id" : "53"
   }, {
     "range" : "15",
-    "domain" : "3",
+    "domain" : "26",
     "attributes" : [ "anonymous", "object" ],
     "id" : "54"
   }, {
-    "range" : "20",
-    "domain" : "3",
+    "range" : "15",
+    "domain" : "2",
     "attributes" : [ "anonymous", "object" ],
     "id" : "55"
   }, {
-    "range" : "2",
-    "domain" : "27",
+    "range" : "6",
+    "domain" : "7",
     "attributes" : [ "anonymous", "object" ],
     "id" : "56"
-  }, {
-    "range" : "15",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "57"
-  }, {
-    "range" : "20",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "58"
-  }, {
-    "range" : "15",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "59"
-  }, {
-    "range" : "20",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
-  }, {
-    "range" : "20",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "61"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/issues",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -793,9 +762,9 @@
       "IRI-based" : "issues",
       "en" : "issues"
     },
-    "domain" : "1",
+    "domain" : "19",
     "attributes" : [ "object" ],
-    "id" : "62"
+    "id" : "57"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/submittedFor",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -804,25 +773,25 @@
       "IRI-based" : "submittedFor",
       "en" : "submitted for"
     },
-    "domain" : "27",
+    "domain" : "26",
     "attributes" : [ "object" ],
-    "id" : "63"
+    "id" : "58"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/permissionType",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "9",
+    "range" : "8",
     "label" : {
       "IRI-based" : "permissionType",
       "en" : "permission type"
     },
-    "domain" : "6",
+    "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "64"
+    "id" : "59"
   }, {
-    "range" : "27",
-    "domain" : "3",
+    "range" : "31",
+    "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "65"
+    "id" : "60"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/requestFor",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -833,12 +802,12 @@
     },
     "domain" : "15",
     "attributes" : [ "object" ],
-    "id" : "66"
+    "id" : "61"
   }, {
-    "range" : "2",
-    "domain" : "3",
+    "range" : "26",
+    "domain" : "5",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "67"
+    "id" : "62"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/supports",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -847,8 +816,8 @@
       "IRI-based" : "supports",
       "en" : "supports"
     },
-    "domain" : "6",
+    "domain" : "5",
     "attributes" : [ "object" ],
-    "id" : "68"
+    "id" : "63"
   } ]
 }

@@ -6,6 +6,8 @@
 	 dc:title "ERA ontology for verified permissions (authorisations, approvals and registrations)";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo <https://www.era.europa.eu/>;
+	 dc:contributor <https://www.era.europa.eu/>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
 :agent0 a prov:Agent; foaf:name "Maarten Duhoux".

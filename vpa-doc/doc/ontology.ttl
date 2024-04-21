@@ -9,7 +9,8 @@
 <http://data.europa.eu/949/vpa/> rdf:type owl:Ontology ;
                                   <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                                   <http://purl.org/dc/terms/contributor> _:genid1 ;
-                                  <http://purl.org/dc/terms/creator> _:genid3 ;
+                                  <http://purl.org/dc/terms/creator> _:genid2 ,
+                                                                     _:genid4 ;
                                   <http://purl.org/dc/terms/issued> "2024-XX-XX"^^xsd:date ;
                                   <http://purl.org/dc/terms/modified> "2024-03-11"^^xsd:date ;
                                   <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" ;
@@ -18,21 +19,25 @@
                                   rdfs:label "The Vechicle Permission (VP) and Vehicle Authorization (VA) ontology"@en ;
                                   owl:versionInfo "v0.1"@en .
 
-_:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-          <http://schema.org/affiliation> _:genid2 ;
+_:genid1 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
+          <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
+          <http://xmlns.com/foaf/0.1/name> "OPD Unit" .
+
+_:genid2 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://schema.org/affiliation> _:genid3 ;
           rdfs:seeAlso <https://orcid.org/0000-0003-1562-6922> ;
           <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing" ;
           <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
 
-_:genid3 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-          <http://schema.org/affiliation> _:genid4 ;
+_:genid4 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://schema.org/affiliation> _:genid5 ;
           <http://xmlns.com/foaf/0.1/name> "Maarten Duhoux" ;
           <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
 
-_:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
+_:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
           <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
 
-_:genid4 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
+_:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
           <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
 
 #################################################################
@@ -102,17 +107,18 @@ xsd:date rdf:type rdfs:Datatype .
                                       rdfs:label "area of use"@en .
 
 
-###  http://data.europa.eu/949/executeRole
-<http://data.europa.eu/949/executeRole> rdf:type owl:ObjectProperty ;
-                                        rdfs:domain <http://data.europa.eu/949/Role> ;
-                                        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                        rdfs:label "executes role"@en .
+###  http://data.europa.eu/949/hasOrganisationRole
+<http://data.europa.eu/949/hasOrganisationRole> rdf:type owl:ObjectProperty ,
+                                                         owl:FunctionalProperty ;
+                                                rdfs:domain <http://data.europa.eu/949/OrganisationRole> ;
+                                                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                                rdfs:label "has organisation role"@en .
 
 
 ###  http://data.europa.eu/949/role
 <http://data.europa.eu/949/role> rdf:type owl:ObjectProperty ;
                                  rdfs:domain <http://www.w3.org/ns/org#Organization> ;
-                                 rdfs:range <http://data.europa.eu/949/Role> ;
+                                 rdfs:range <http://data.europa.eu/949/OrganisationRole> ;
                                  rdfs:label "role"@en .
 
 
@@ -152,7 +158,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://data.europa.eu/949/vpa/grants
 :grants rdf:type owl:ObjectProperty ;
-        rdfs:domain :PermittingBody ;
+        rdfs:domain <http://data.europa.eu/949/OrganisationRole> ;
         rdfs:range :Permission ;
         rdfs:label "grants"@en .
 
@@ -187,7 +193,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://data.europa.eu/949/vpa/requests
 :requests rdf:type owl:ObjectProperty ;
-          rdfs:domain :RequestingBody ;
+          rdfs:domain <http://data.europa.eu/949/OrganisationRole> ;
           rdfs:range :Permission ;
           rdfs:label "requests"@en .
 
@@ -236,9 +242,10 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://data.europa.eu/949/Role
-<http://data.europa.eu/949/Role> rdf:type owl:Class ;
-                                 rdfs:label "Role"@en .
+###  http://data.europa.eu/949/OrganisationRole
+<http://data.europa.eu/949/OrganisationRole> rdf:type owl:Class ;
+                                             owl:disjointWith <http://www.w3.org/ns/org#Organization> ;
+                                             rdfs:label "Organisation Role"@en .
 
 
 ###  http://data.europa.eu/949/vpa/AppropriateBody
@@ -255,11 +262,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://data.europa.eu/949/vpa/Body
 :Body rdf:type owl:Class ;
-      rdfs:subClassOf [ rdf:type owl:Class ;
-                        owl:unionOf ( <http://www.w3.org/ns/org#Organization>
-                                      <http://xmlns.com/foaf/0.1/Person>
-                                    )
-                      ] ;
+      owl:equivalentClass [ rdf:type owl:Class ;
+                            owl:unionOf ( <http://www.w3.org/ns/org#Organization>
+                                          <http://xmlns.com/foaf/0.1/Person>
+                                        )
+                          ] ;
       rdfs:label "Body"@en .
 
 
@@ -356,6 +363,10 @@ xsd:date rdf:type rdfs:Datatype .
 <http://www.w3.org/ns/org#Organization> rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
 ###  http://xmlns.com/foaf/0.1/Document
 <http://xmlns.com/foaf/0.1/Document> rdf:type owl:Class .
 
@@ -367,16 +378,6 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    General axioms
 #################################################################
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://data.europa.eu/949/Role>
-                :DocumentedEvidence
-                :Permission
-                :Request
-                :Requirement
-              )
-] .
-
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Case

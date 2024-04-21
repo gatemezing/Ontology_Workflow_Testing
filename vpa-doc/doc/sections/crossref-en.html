@@ -10,7 +10,7 @@ This section provides details for each class and property defined by The Vehicle
       </li>
       <li>
          <a href="#AuthorisationTypeVariant"
-            title="http://data.europa.eu/949/vpa/AuthorisationTypeVariant">(VA) Authorisation type(s) and variant(s)</a>
+            title="http://data.europa.eu/949/vpa/AuthorisationTypeVariant">Authorisation type(s) and variant(s)</a>
       </li>
       <li>
          <a href="#Body" title="http://data.europa.eu/949/vpa/Body">Body</a>
@@ -20,6 +20,9 @@ This section provides details for each class and property defined by The Vehicle
       </li>
       <li>
          <a href="#DocumentedEvidence" title="http://data.europa.eu/949/vpa/DocumentedEvidence">Documented Evidence</a>
+      </li>
+      <li>
+         <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
       </li>
       <li>
          <a href="#Permission" title="http://data.europa.eu/949/vpa/Permission">Permission</a>
@@ -40,32 +43,29 @@ This section provides details for each class and property defined by The Vehicle
          <a href="#Restriction" title="http://data.europa.eu/949/vpa/Restriction">Restriction</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/Role" title="http://data.europa.eu/949/Role">Role</a>
-      </li>
-      <li>
          <a href="#Scope" title="http://data.europa.eu/949/vpa/Scope">Scope</a>
       </li>
       <li>
-         <a href="#VAApplication" title="http://data.europa.eu/949/vpa/VAApplication">(VA) Application</a>
+         <a href="#VAApplication" title="http://data.europa.eu/949/vpa/VAApplication">VA Application</a>
       </li>
       <li>
          <a href="#VehicleRegistration"
-            title="http://data.europa.eu/949/vpa/VehicleRegistration">(VR) Vehicle registration</a>
+            title="http://data.europa.eu/949/vpa/VehicleRegistration">Vehicle registration</a>
       </li>
       <li>
          <a href="#VehicleRegistrationCase"
-            title="http://data.europa.eu/949/vpa/VehicleRegistrationCase">(VR) Vehicle Registration Case</a>
+            title="http://data.europa.eu/949/vpa/VehicleRegistrationCase">Vehicle Registration Case</a>
       </li>
       <li>
          <a href="#VehicleTypeAuthorisationCase"
-            title="http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase">(VA) Vehicle Type Authorisation Case</a>
+            title="http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase">Vehicle Type Authorisation Case</a>
       </li>
       <li>
          <a href="#VehicleAuthorisation"
-            title="http://data.europa.eu/949/vpa/VehicleAuthorisation">(VA) Vehicle(type) Authorisation</a>
+            title="http://data.europa.eu/949/vpa/VehicleAuthorisation">Vehicle(type) Authorisation</a>
       </li>
       <li>
-         <a href="#VRApplication" title="http://data.europa.eu/949/vpa/VRApplication">(VR) Application</a>
+         <a href="#VRApplication" title="http://data.europa.eu/949/vpa/VRApplication">VR Application</a>
       </li>
    </ul>
    <div class="entity" id="AppropriateBody">
@@ -112,8 +112,18 @@ This section provides details for each class and property defined by The Vehicle
       <p>
          <strong>IRI:</strong> http://data.europa.eu/949/vpa/Body</p>
       <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/org#Organization"
+               target="_blank"
+               title="http://www.w3.org/ns/org#Organization">organization</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="http://xmlns.com/foaf/0.1/Person"
+               target="_blank"
+               title="http://xmlns.com/foaf/0.1/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#AppropriateBody" title="http://data.europa.eu/949/vpa/AppropriateBody">Appropriate Body</a>
@@ -190,13 +200,38 @@ This section provides details for each class and property defined by The Vehicle
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/Role" title="http://data.europa.eu/949/Role">Role</a>
+            <a href="#Case" title="http://data.europa.eu/949/vpa/Case">Case</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Permission" title="http://data.europa.eu/949/vpa/Permission">Permission</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Request" title="http://data.europa.eu/949/vpa/Request">Request</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Requirement" title="http://data.europa.eu/949/vpa/Requirement">Requirement</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Case" title="http://data.europa.eu/949/vpa/Case">Case</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Permission" title="http://data.europa.eu/949/vpa/Permission">Permission</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Request" title="http://data.europa.eu/949/vpa/Request">Request</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/OrganisationRole">
+      <h3>Organisation Role<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/OrganisationRole</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#grants" title="http://data.europa.eu/949/vpa/grants">grants</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://data.europa.eu/949/hasOrganisationRole" title="http://data.europa.eu/949/hasOrganisationRole">has organisation role</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#requests" title="http://data.europa.eu/949/vpa/requests">requests</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://data.europa.eu/949/role" title="http://data.europa.eu/949/role">role</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/org#Organization"
+               target="_blank"
+               title="http://www.w3.org/ns/org#Organization">organization</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -226,11 +261,7 @@ This section provides details for each class and property defined by The Vehicle
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/Role" title="http://data.europa.eu/949/Role">Role</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DocumentedEvidence" title="http://data.europa.eu/949/vpa/DocumentedEvidence">Documented Evidence</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Request" title="http://data.europa.eu/949/vpa/Request">Request</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Requirement" title="http://data.europa.eu/949/vpa/Requirement">Requirement</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Case" title="http://data.europa.eu/949/vpa/Case">Case</a>
+            <a href="#Case" title="http://data.europa.eu/949/vpa/Case">Case</a>
             <sup class="type-c" title="class">c</sup>, <a href="#DocumentedEvidence" title="http://data.europa.eu/949/vpa/DocumentedEvidence">Documented Evidence</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Request" title="http://data.europa.eu/949/vpa/Request">Request</a>
             <sup class="type-c" title="class">c</sup>
@@ -249,11 +280,6 @@ This section provides details for each class and property defined by The Vehicle
          <dd>
             <a href="#Body" title="http://data.europa.eu/949/vpa/Body">Body</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#grants" title="http://data.europa.eu/949/vpa/grants">grants</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -286,11 +312,7 @@ This section provides details for each class and property defined by The Vehicle
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#http://data.europa.eu/949/Role" title="http://data.europa.eu/949/Role">Role</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DocumentedEvidence" title="http://data.europa.eu/949/vpa/DocumentedEvidence">Documented Evidence</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Permission" title="http://data.europa.eu/949/vpa/Permission">Permission</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Requirement" title="http://data.europa.eu/949/vpa/Requirement">Requirement</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Case" title="http://data.europa.eu/949/vpa/Case">Case</a>
+            <a href="#Case" title="http://data.europa.eu/949/vpa/Case">Case</a>
             <sup class="type-c" title="class">c</sup>, <a href="#DocumentedEvidence" title="http://data.europa.eu/949/vpa/DocumentedEvidence">Documented Evidence</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Permission" title="http://data.europa.eu/949/vpa/Permission">Permission</a>
             <sup class="type-c" title="class">c</sup>
@@ -313,7 +335,6 @@ This section provides details for each class and property defined by The Vehicle
          <dt>is in domain of</dt>
          <dd>
             <a href="#issues" title="http://data.europa.eu/949/vpa/issues">issues</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#requests" title="http://data.europa.eu/949/vpa/requests">requests</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -332,14 +353,6 @@ This section provides details for each class and property defined by The Vehicle
             <sup class="type-op" title="object property">op</sup>, <a href="#closes" title="http://data.europa.eu/949/vpa/closes">closes</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#regarding" title="http://data.europa.eu/949/vpa/regarding">regarding</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#http://data.europa.eu/949/Role" title="http://data.europa.eu/949/Role">Role</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#DocumentedEvidence" title="http://data.europa.eu/949/vpa/DocumentedEvidence">Documented Evidence</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Permission" title="http://data.europa.eu/949/vpa/Permission">Permission</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Request" title="http://data.europa.eu/949/vpa/Request">Request</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -360,34 +373,6 @@ This section provides details for each class and property defined by The Vehicle
          <dd>
             <a href="#withRestriction" title="http://data.europa.eu/949/vpa/withRestriction">with restriction</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://data.europa.eu/949/Role">
-      <h3>Role<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/Role</p>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#http://data.europa.eu/949/executeRole" title="http://data.europa.eu/949/executeRole">executes role</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#http://data.europa.eu/949/role" title="http://data.europa.eu/949/role">role</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#DocumentedEvidence" title="http://data.europa.eu/949/vpa/DocumentedEvidence">Documented Evidence</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Permission" title="http://data.europa.eu/949/vpa/Permission">Permission</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Request" title="http://data.europa.eu/949/vpa/Request">Request</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Requirement" title="http://data.europa.eu/949/vpa/Requirement">Requirement</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -543,10 +528,10 @@ This section provides details for each class and property defined by The Vehicle
          <a href="#delivers" title="http://data.europa.eu/949/vpa/delivers">delivers</a>
       </li>
       <li>
-         <a href="#http://data.europa.eu/949/executeRole" title="http://data.europa.eu/949/executeRole">executes role</a>
+         <a href="#grants" title="http://data.europa.eu/949/vpa/grants">grants</a>
       </li>
       <li>
-         <a href="#grants" title="http://data.europa.eu/949/vpa/grants">grants</a>
+         <a href="#http://data.europa.eu/949/hasOrganisationRole" title="http://data.europa.eu/949/hasOrganisationRole">has organisation role</a>
       </li>
       <li>
          <a href="#issues" title="http://data.europa.eu/949/vpa/issues">issues</a>
@@ -712,30 +697,6 @@ This section provides details for each class and property defined by The Vehicle
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://data.europa.eu/949/executeRole">
-      <h3>executes role<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://data.europa.eu/949/executeRole</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://data.europa.eu/949/Role" title="http://data.europa.eu/949/Role">Role</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2004/02/skos/core#Concept"
-                  target="_blank"
-                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="grants">
       <h3>grants<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -747,12 +708,39 @@ This section provides details for each class and property defined by The Vehicle
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#PermittingBody" title="http://data.europa.eu/949/vpa/PermittingBody">Permitting Body</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Permission" title="http://data.europa.eu/949/vpa/Permission">Permission</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://data.europa.eu/949/hasOrganisationRole">
+      <h3>has organisation role<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://data.europa.eu/949/hasOrganisationRole</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2004/02/skos/core#Concept"
+                  target="_blank"
+                  title="http://www.w3.org/2004/02/skos/core#Concept">concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -859,7 +847,7 @@ This section provides details for each class and property defined by The Vehicle
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#RequestingBody" title="http://data.europa.eu/949/vpa/RequestingBody">Requesting Body</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -888,7 +876,7 @@ This section provides details for each class and property defined by The Vehicle
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://data.europa.eu/949/Role" title="http://data.europa.eu/949/Role">Role</a>
+               <a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
