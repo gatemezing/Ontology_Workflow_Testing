@@ -1,8 +1,8 @@
 <h2 id="usecases" class="list">Use cases: vehicle (type) authorisation and registration <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-## Use case: Vehicle Authorisation
+### Use case: Vehicle Authorisation
 
-  ### Setup
+  #### Setup
 
   Using the Verified Permissions, we can create for VA:
 
@@ -12,7 +12,7 @@
   era:VAApplicationCase rdfs:subClassOf vp:Case .
   ```
 
-  ### Example
+  #### Example
   
   A specific example is application V-20230310-NNN (number anonymised) as issued (through the OSS) by erava:mf-MMMM (anonymous manufacturer). It concerned one Authorisation Case for a certain vehicle type and some vehicles for placing on the market in a certain Area of Use. 
   
@@ -47,11 +47,11 @@
 
   A detailed analysis of the Permissions' properties is ongoing, based on general properties of Authorisations and Registrations.
   
-## Use case: Vehicle Registration
+### Use case: Vehicle Registration
 
   After these vehicles have been authorised in conformity to the given type and area of use, they can be registered by the Keeper for operation there.   
 
-  ### Setup
+  #### Setup
   
   Using the Verified Permissions, we can create for VR:
 
@@ -61,7 +61,7 @@
   era:VRApplicationCase rdfs:subClassOf vp:Case .
   ```
 
-  ### Example
+  #### Example
   
   The instances created from that process could be based on the above example:
 
@@ -73,7 +73,7 @@
   eravr:KE-NNNN vp:requests eravr:NNNN-n ; # the keeper, with its org Id.
                 vp:issues eravr:vr-NNNN-n .
   
-# Authorisation serves Registration!
+  # Authorisation serves Registration!
   erava:vac-V-20230310-NNN-0 vp:supports eravr:vr-NNN-n ; # allows to reuse the linked data of tha auth case regarding vehicles, aou, and underlying evidence.
             vp:requestFor eravr:NNN-n .
   
