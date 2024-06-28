@@ -7,26 +7,26 @@
 @base <http://data.europa.eu/949/vpa/> .
 
 <http://data.europa.eu/949/vpa/> rdf:type owl:Ontology ;
-                                  <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                  <http://purl.org/dc/terms/contributor> _:genid5 ;
-                                  <http://purl.org/dc/terms/creator> _:genid3 , _:genid1 ;
-                                  <http://purl.org/dc/terms/issued> "2024-XX-XX"^^xsd:date ;
-                                  <http://purl.org/dc/terms/modified> "2024-03-11"^^xsd:date ;
-                                  <http://purl.org/dc/terms/publisher> "European Union Agency for Railways" ;
-                                  <http://purl.org/dc/terms/title> "ERA ontology for verified permission and vehicle authorisation approvals"@en ;
-                                  rdfs:comment "ERA Ontology for permissions and vehicle authorisation"@en ;
-                                  rdfs:label "The Vechicle Permission (VP) and Vehicle Authorization (VA) ontology"@en ;
-                                  owl:versionInfo "v0.1"@en .
+        <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/contributor> _:genid5 ;
+        <http://purl.org/dc/terms/creator> _:genid3 , _:genid1 ;
+        <http://purl.org/dc/terms/issued> "2024-XX-XX"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2024-03-11"^^xsd:date ;
+        <http://purl.org/dc/terms/publisher> "European Union Agency for Railways"@en ;
+        <http://purl.org/dc/terms/title> "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en ;
+        rdfs:comment "ERA Ontology for verified permissions"@en ;
+        rdfs:label "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"@en ;
+        owl:versionInfo "v0.2"@en .
 
 _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
           <http://schema.org/affiliation> _:genid2 ;
           rdfs:seeAlso <https://orcid.org/0000-0003-1562-6922> ;
-          <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing" ;
+          <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing"@en ;
           <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
 
 _:genid3 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
           <http://schema.org/affiliation> _:genid4 ;
-          <http://xmlns.com/foaf/0.1/name> "Maarten Duhoux" ;
+          <http://xmlns.com/foaf/0.1/name> "Maarten Duhoux"@en ;
           <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
 
 _:genid2 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
@@ -103,6 +103,7 @@ xsd:date rdf:type rdfs:Datatype .
 <http://data.europa.eu/949/areaOfUse> rdf:type owl:ObjectProperty ;
                                       rdfs:domain :VehicleTypeAuthorisationCase ;
                                       rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                                      rdfs:comment "Member State networks, or parts thereof, which were analysed during the (vehicle(type)) authorisation process."@en ;
                                       rdfs:label "area of use"@en .
 
 
@@ -125,6 +126,7 @@ xsd:date rdf:type rdfs:Datatype .
 :certifies rdf:type owl:ObjectProperty ;
            rdfs:domain :AppropriateBody ;
            rdfs:range :Requirement ;
+           rdfs:comment "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."@en ;
            rdfs:label "certifies"@en .
 
 
@@ -132,12 +134,15 @@ xsd:date rdf:type rdfs:Datatype .
 :closes rdf:type owl:ObjectProperty ;
         rdfs:domain :DocumentedEvidence ;
         rdfs:range :Requirement ;
+        rdfs:comment "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."@en ;
         rdfs:label "closes"@en .
 
 
 ###  http://data.europa.eu/949/vpa/concerns
 :concerns rdf:type owl:ObjectProperty ;
           rdfs:domain :Case ;
+          rdfs:Range :Scope ;
+          rdfs:comment "holds as material content, constitutes, embodies the material components of the Scope."@en ;
           rdfs:label "concerns"@en .
 
 
@@ -145,6 +150,7 @@ xsd:date rdf:type rdfs:Datatype .
 :definesCase rdf:type owl:ObjectProperty ;
              rdfs:domain :Scope ;
              rdfs:range :Case ;
+             rdfs:comment "is covered by, included in"@en ;
              rdfs:label "defines case"@en .
 
 
@@ -152,6 +158,7 @@ xsd:date rdf:type rdfs:Datatype .
 :delivers rdf:type owl:ObjectProperty ;
           rdfs:domain :AppropriateBody ;
           rdfs:range :DocumentedEvidence ;
+          rdfs:comment "within its accredited mandate, issues in a traceable and qualitative manner for reuse in a Permission process"@en ;
           rdfs:label "delivers"@en .
 
 
@@ -159,6 +166,7 @@ xsd:date rdf:type rdfs:Datatype .
 :grants rdf:type owl:ObjectProperty ;
         rdfs:domain <http://data.europa.eu/949/OrganisationRole> ;
         rdfs:range :Permission ;
+        rdfs:comment "within its legally recognized mandate, issues, delivers in a traceable and qualitative manner, such that the receiver is able to act within the authorisation cases and its verified documentation"@en ;
         rdfs:label "grants"@en .
 
 
@@ -166,6 +174,7 @@ xsd:date rdf:type rdfs:Datatype .
 :issues rdf:type owl:ObjectProperty ;
         rdfs:domain :RequestingBody ;
         rdfs:range :Request ;
+        rdfs:comment "transmits with the intention to be allowed to act according to a legally verified process"@en ;
         rdfs:label "issues"@en .
 
 
@@ -173,6 +182,7 @@ xsd:date rdf:type rdfs:Datatype .
 :permissionType rdf:type owl:ObjectProperty ;
                 rdfs:domain :Case ;
                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                rdfs:comment "the detailed process which constitutes this Case's permission conditions"@en ;
                 rdfs:label "permission type"@en .
 
 
@@ -180,6 +190,7 @@ xsd:date rdf:type rdfs:Datatype .
 :regarding rdf:type owl:ObjectProperty ;
            rdfs:domain :Restriction ;
            rdfs:range :Requirement ;
+           rdfs:comments "belonging to, and when being respected, then also fulfilling"@en ;
            rdfs:label "regarding"@en .
 
 
@@ -187,6 +198,7 @@ xsd:date rdf:type rdfs:Datatype .
 :requestFor rdf:type owl:ObjectProperty ;
             rdfs:domain :Request ;
             rdfs:range :Permission ;
+            rdfs:comment "aiming to be enabled to act as covered by the Permission and its conditions, by receiving"@en ;
             rdfs:label "request for"@en .
 
 
@@ -194,6 +206,7 @@ xsd:date rdf:type rdfs:Datatype .
 :requests rdf:type owl:ObjectProperty ;
           rdfs:domain <http://data.europa.eu/949/OrganisationRole> ;
           rdfs:range :Permission ;
+          rdfs:comment "aims to be allowed to act according to a legally verified process, by receiving"@en ; 
           rdfs:label "requests"@en .
 
 
@@ -202,6 +215,7 @@ xsd:date rdf:type rdfs:Datatype .
                  owl:FunctionalProperty ;
         rdfs:domain :Request ;
         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+        rdfs:comment "the status of the Request as it is being treated by the PermittingBody"@en ;
         rdfs:label "status"@en .
 
 
@@ -209,6 +223,7 @@ xsd:date rdf:type rdfs:Datatype .
 :submittedFor rdf:type owl:ObjectProperty ;
               rdfs:domain :DocumentedEvidence ;
               rdfs:range :Request ;
+              rdfs:comment "supporting, holding evidence of compliance in order to enable the Permitting Body to verify and permit"@en ;
               rdfs:label "submitted for"@en .
 
 
@@ -227,6 +242,7 @@ xsd:date rdf:type rdfs:Datatype .
 :supports rdf:type owl:ObjectProperty ;
           rdfs:domain :Case ;
           rdfs:range :Request ;
+          rdfs:comment "is part of, inherently constitutes"@en ;
           rdfs:label "supports"@en .
 
 
@@ -234,6 +250,7 @@ xsd:date rdf:type rdfs:Datatype .
 :withRestriction rdf:type owl:ObjectProperty ;
                  rdfs:domain :DocumentedEvidence ;
                  rdfs:range :Restriction ;
+                 rdfs:comment "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"@en ;
                  rdfs:label "with restriction"@en .
 
 
@@ -250,13 +267,15 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://data.europa.eu/949/vpa/AppropriateBody
 :AppropriateBody rdf:type owl:Class ;
                  rdfs:subClassOf :Body ;
+                 rdfs:comment "Accredited organization which is able to express a formal opinion on Requirements, expressing them in DocumentedEvidence (mostly called Certificates), and if necessary making them dependent on Restrictions, which shall be fulfilled."@en ;
                  rdfs:label "Appropriate Body"@en .
 
 
-###  http://data.europa.eu/949/vpa/AuthorisationTypeVariant
-:AuthorisationTypeVariant rdf:type owl:Class ;
+###  http://data.europa.eu/949/vpa/AuthorisationTypeVersionVariant
+:AuthorisationTypeVersionVariant rdf:type owl:Class ;
                           rdfs:subClassOf :Scope ;
-                          rdfs:label "Authorisation type(s) and variant(s)"@en .
+                          rdfs:comment "The Vehicle Type (or Version/Variant of the Type) which is the scope of a V(T) authorisation case. Only ONE such vehicle type is allowed per VACase."@en ;
+                          rdfs:label "Authorisation vehicle type(s), version(s) and variant(s)"@en .
 
 
 ###  http://data.europa.eu/949/vpa/Body
@@ -271,55 +290,66 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://data.europa.eu/949/vpa/Case
 :Case rdf:type owl:Class ;
+      rdfs:comment "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."@en ;
       rdfs:label "Case"@en .
 
 
 ###  http://data.europa.eu/949/vpa/DocumentedEvidence
 :DocumentedEvidence rdf:type owl:Class ;
                     rdfs:subClassOf <http://xmlns.com/foaf/0.1/Document> ;
+                    rdfs:comment "Issued by an AppropriateBody, it is the summary of its formal and accredited verification process, enabling the receiver (RequestingBody) to issue a Request for a Permission to the PermittingBody."@en ;
                     rdfs:label "Documented Evidence"@en .
 
 
 ###  http://data.europa.eu/949/vpa/Permission
 :Permission rdf:type owl:Class ;
+            rdfs:comment "Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks."@en ;
             rdfs:label "Permission"@en .
 
 
 ###  http://data.europa.eu/949/vpa/PermittingBody
 :PermittingBody rdf:type owl:Class ;
                 rdfs:subClassOf :Body ;
+                rdfs:comment "Within its legally recognized mandate, this Body is able to receive DocumentedEvidence as submitted in a Request and based upon it, issue a Permit to the RequestingBody for the activities covered by the mentioned legislation."@en ;
                 rdfs:label "Permitting Body"@en .
 
 
 ###  http://data.europa.eu/949/vpa/Request
 :Request rdf:type owl:Class ;
+         rdfs:comment "Issued by a Requesting Body to a PermittingBody, and supported by at least one Case, while being supported by the necessary DocumentedEvidence, it intends to enable the reception of a Permission."@en ;
          rdfs:label "Request"@en .
 
 
 ###  http://data.europa.eu/949/vpa/RequestingBody
 :RequestingBody rdf:type owl:Class ;
                 rdfs:subClassOf :Body ;
+                rdfs:comment "Within its legally recognized role, this Body is able to express the intention to act under the condition of reception of a Permission. The intended action being covered by legal or standardized Requirements to fullfil, this Body will present all required information, as verified by the Appropriate and examined by the Permitting Bodies, to the latter in order to receive the mentioned Permission."@en ;
                 rdfs:label "Requesting Body"@en .
 
 
 ###  http://data.europa.eu/949/vpa/Requirement
 :Requirement rdf:type owl:Class ;
+             rdfs:comment "A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions."@en ;
              rdfs:label "Requirement"@en .
 
 
 ###  http://data.europa.eu/949/vpa/Restriction
 :Restriction rdf:type owl:Class ;
+             rdfs:comment "Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way."@en ;
              rdfs:label "Restriction"@en .
 
 
 ###  http://data.europa.eu/949/vpa/Scope
 :Scope rdf:type owl:Class ;
+        rdfs:comment "A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together."@en ;
        rdfs:label "Scope"@en .
 
 
 ###  http://data.europa.eu/949/vpa/VAApplication
 :VAApplication rdf:type owl:Class ;
                rdfs:subClassOf :Request ;
+               rdfs:comment "A Request for vehicle type authorisation and/or vehicle authorisation for placing on the market as defined in Article 1 of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj."@en ;
+               rdfs:seeAlso <https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj> ;
                rdfs:label "VA Application"@en .
 
 
@@ -332,18 +362,23 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://data.europa.eu/949/vpa/VehicleAuthorisation
 :VehicleAuthorisation rdf:type owl:Class ;
                       rdfs:subClassOf :Permission ;
+                      rdfs:comment "The Vehicle type authorisation and/or vehicle authorisation for placing on the market as defined in Article 2 (15) and (16) of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj. The granting authority for this Authorisation (PermittingBody) is the Authorising Entity as defined in the Art. 2(1) of this legislation."@en ;
+                      rdfs:seeAlso <https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj> ;
                       rdfs:label "Vehicle(type) Authorisation"@en .
 
 
 ###  http://data.europa.eu/949/vpa/VehicleRegistration
 :VehicleRegistration rdf:type owl:Class ;
                      rdfs:subClassOf :Permission ;
+                     rdfs:comment "The vehicle registration permitting further operation and maintenance of a railway vehicle. The granting authority for this Registration (PermittingBody) is the Registration Entity, as foreseen in the article 5 of https://eur-lex.europa.eu/eli/dec_impl/2018/1614/oj."@en ; 
+                     rdfs:seeAlso <https://eur-lex.europa.eu/eli/dec_impl/2018/1614/oj> ;
                      rdfs:label "Vehicle registration"@en .
 
 
 ###  http://data.europa.eu/949/vpa/VehicleRegistrationCase
 :VehicleRegistrationCase rdf:type owl:Class ;
                          rdfs:subClassOf :Case ;
+                         rdfs:comment "Typically a collection of the following Scopes, this Registration Case regroups: (1) one or a set of vehicles, preferably grouped as such also during authorisation, (2) the ECM maintaining them, (3) the authorisation covering them (if not in 1) and (4) the Keeper & Owner information."@en ;
                          owl:disjointWith :VehicleTypeAuthorisationCase ;
                          rdfs:label "Vehicle Registration Case"@en .
 
@@ -351,6 +386,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase
 :VehicleTypeAuthorisationCase rdf:type owl:Class ;
                               rdfs:subClassOf :Case ;
+                              rdfs:comment "The authorisation case as defined in Article 14 of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj. The scope of the case is therefore always (1) one of the 5 PermissionTypes as in the Article 14, (2) the unique vehicle type identifier and (3) the set of vehicles belonging to the Authorisation Case."@en ;
+                              rdfs:seeAlso <https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj> ;
                               rdfs:label "Vehicle Type Authorisation Case"@en .
 
 
