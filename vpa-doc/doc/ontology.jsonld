@@ -1,604 +1,830 @@
-[ {
-  "@id" : "_:genid1",
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
-  } ],
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://www.era.europa.eu/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "OPD Unit"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
-  "http://www.w3.org/2002/07/owl#members" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/vpa/Case"
-    }, {
-      "@id" : "http://data.europa.eu/949/vpa/DocumentedEvidence"
-    }, {
-      "@id" : "http://data.europa.eu/949/vpa/Permission"
-    }, {
-      "@id" : "http://data.europa.eu/949/vpa/Request"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid2",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "_:genid3"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Person"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://orcid.org/0000-0003-1562-6922"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Ghislain Atemezing"
-  } ],
-  "http://xmlns.com/foaf/0.1/workInfoHomepage" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/corporate-body/ERA"
-  } ]
-}, {
-  "@id" : "_:genid3",
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://www.era.europa.eu/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "European Union Agency for Railways"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "http://schema.org/affiliation" : [ {
-    "@id" : "_:genid5"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Person"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Maarten Duhoux"
-  } ],
-  "http://xmlns.com/foaf/0.1/workInfoHomepage" : [ {
-    "@id" : "http://publications.europa.eu/resource/authority/corporate-body/ERA"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "http://xmlns.com/foaf/0.1/homepage" : [ {
-    "@id" : "https://www.era.europa.eu/"
-  } ],
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "European Union Agency for Railways"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://data.europa.eu/949/vpa/DocumentedEvidence"
-    }, {
-      "@id" : "http://data.europa.eu/949/vpa/Permission"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/ns/org#Organization"
-    }, {
-      "@id" : "http://xmlns.com/foaf/0.1/Person"
-    } ]
-  } ]
-}, {
-  "@id" : "http://creativecommons.org/ns#license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://data.europa.eu/949/OrganisationRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Organisation Role"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/areaOfUse",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "area of use"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/hasOrganisationRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/OrganisationRole"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has organisation role"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/role",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "role"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/OrganisationRole"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://creativecommons.org/ns#license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/contributor" : [ {
-    "@id" : "_:genid1"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid2"
-  }, {
-    "@id" : "_:genid4"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-XX-XX"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-03-11"
-  } ],
-  "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "European Union Agency for Railways"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "ERA ontology for verified permission and vehicle authorisation approvals"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "ERA Ontology for permissions and vehicle authorisation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "The Vechicle Permission (VP) and Vehicle Authorization (VA) ontology"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@language" : "en",
-    "@value" : "v0.1"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/AppropriateBody",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Appropriate Body"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Body"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/AuthorisationTypeVariant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Authorisation type(s) and variant(s)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Scope"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/Body",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Body"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid9"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/Case",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Case"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/DocumentedEvidence",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Documented Evidence"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Document"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/Permission",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Permission"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/PermittingBody",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Permitting Body"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Body"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/Request",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Request"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/RequestingBody",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Requesting Body"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Body"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/Requirement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Requirement"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/Restriction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Restriction"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/Scope",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Scope"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/VAApplication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "VA Application"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Request"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/VRApplication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "VR Application"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Request"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/VehicleAuthorisation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Vehicle(type) Authorisation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Permission"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/VehicleRegistration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Vehicle registration"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Permission"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/VehicleRegistrationCase",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Vehicle Registration Case"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Case"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Vehicle Type Authorisation Case"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Case"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/certifies",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/AppropriateBody"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "certifies"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Requirement"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/closes",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/DocumentedEvidence"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "closes"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Requirement"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/concerns",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Case"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "concerns"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/definesCase",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Scope"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "defines case"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Case"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/delivers",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/AppropriateBody"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "delivers"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/DocumentedEvidence"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/grants",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/OrganisationRole"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "grants"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Permission"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/issues",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/RequestingBody"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "issues"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Request"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/permissionType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Case"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "permission type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/regarding",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Restriction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "regarding"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Requirement"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/requestFor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Request"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "request for"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Permission"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/requests",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/OrganisationRole"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "requests"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Permission"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Request"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "status"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/submittedFor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/DocumentedEvidence"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "submitted for"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Request"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/submittedIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid6"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "submitted in"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Case"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/supports",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Case"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "supports"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Request"
-  } ]
-}, {
-  "@id" : "http://data.europa.eu/949/vpa/withRestriction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/DocumentedEvidence"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "with restriction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://data.europa.eu/949/vpa/Restriction"
-  } ]
-}, {
-  "@id" : "http://purl.org/dc/terms/contributor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/issued",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/modified",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/affiliation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#date",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.w3.org/ns/org#Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/Document",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/homepage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/workInfoHomepage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-} ]
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xml": "http://www.w3.org/XML/1998/namespace",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "cc": "http://creativecommons.org/ns#",
+    "dc": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "org": "http://www.w3.org/ns/org#"
+  },
+  "@graph": [
+    {
+      "@id": "http://data.europa.eu/949/vpa/",
+      "@type": "owl:Ontology",
+      "cc:license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "dc:contributor": {
+        "@id": "_:genid5"
+      },
+      "dc:creator": [
+        {
+          "@id": "_:genid3"
+        },
+        {
+          "@id": "_:genid1"
+        }
+      ],
+      "dc:issued": {
+        "@type": "xsd:date",
+        "@value": "2024-06-28"
+      },
+      "dc:publisher": {
+        "@language": "en",
+        "@value": "European Union Agency for Railways"
+      },
+      "dc:title": {
+        "@language": "en",
+        "@value": "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "ERA Ontology for verified permissions"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"
+      },
+      "owl:versionInfo": {
+        "@language": "en",
+        "@value": "v0.2"
+      }
+    },
+    {
+      "@id": "_:genid5",
+      "@type": "foaf:Agent",
+      "foaf:homepage": {
+        "@id": "https://www.era.europa.eu/"
+      },
+      "foaf:name": "OPD Unit"
+    },
+    {
+      "@id": "_:genid3",
+      "@type": "foaf:Person",
+      "schema:affiliation": {
+        "@id": "_:genid4"
+      },
+      "foaf:name": {
+        "@language": "en",
+        "@value": "Maarten Duhoux"
+      },
+      "foaf:workInfoHomepage": {
+        "@id": "http://publications.europa.eu/resource/authority/corporate-body/ERA"
+      }
+    },
+    {
+      "@id": "_:genid1",
+      "@type": "foaf:Person",
+      "schema:affiliation": {
+        "@id": "_:genid2"
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://orcid.org/0000-0003-1562-6922"
+      },
+      "foaf:name": {
+        "@language": "en",
+        "@value": "Ghislain Atemezing"
+      },
+      "foaf:workInfoHomepage": {
+        "@id": "http://publications.europa.eu/resource/authority/corporate-body/ERA"
+      }
+    },
+    {
+      "@id": "foaf:Person",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "_:genid2",
+      "foaf:homepage": {
+        "@id": "https://www.era.europa.eu/"
+      },
+      "foaf:name": "European Union Agency for Railways"
+    },
+    {
+      "@id": "_:genid4",
+      "foaf:homepage": {
+        "@id": "https://www.era.europa.eu/"
+      },
+      "foaf:name": "European Union Agency for Railways"
+    },
+    {
+      "@id": "cc:license",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc:contributor",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc:creator",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc:issued",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc:modified",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc:publisher",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "schema:affiliation",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:homepage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:name",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "foaf:workInfoHomepage",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "xsd:date",
+      "@type": "rdfs:Datatype"
+    },
+    {
+      "@id": "http://data.europa.eu/949/areaOfUse",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase"
+      },
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Member State networks, or parts thereof, which were analysed during the (vehicle(type)) authorisation process."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "area of use"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Case"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The authorisation case as defined in Article 14 of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj. The scope of the case is therefore always (1) one of the 5 PermissionTypes as in the Article 14, (2) the unique vehicle type identifier and (3) the set of vehicles belonging to the Authorisation Case."
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Vehicle Type Authorisation Case"
+      }
+    },
+    {
+      "@id": "skos:Concept",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "http://data.europa.eu/949/hasOrganisationRole",
+      "@type": [
+        "owl:ObjectProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/OrganisationRole"
+      },
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has organisation role"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/OrganisationRole",
+      "@type": "owl:Class",
+      "owl:disjointWith": {
+        "@id": "org:Organization"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Organisation Role"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/role",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "org:Organization"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/OrganisationRole"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "role"
+      }
+    },
+    {
+      "@id": "org:Organization",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/certifies",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/AppropriateBody"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Requirement"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "certifies"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/AppropriateBody",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Body"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Accredited organization which is able to express a formal opinion on Requirements, expressing them in DocumentedEvidence (mostly called Certificates), and if necessary making them dependent on Restrictions, which shall be fulfilled."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Appropriate Body"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/Requirement",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Requirement"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/closes",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/DocumentedEvidence"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Requirement"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "closes"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/DocumentedEvidence",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Issued by an AppropriateBody, it is the summary of its formal and accredited verification process, enabling the receiver (RequestingBody) to issue a Request for a Permission to the PermittingBody."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Documented Evidence"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/concerns",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/Case"
+      },
+      "rdfs:Range": {
+        "@id": "http://data.europa.eu/949/vpa/Scope"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "holds as material content, constitutes, embodies the material components of the Scope."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "concerns"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/Case",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Case"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/Scope",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Scope"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/definesCase",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/Scope"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Case"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "is covered by, included in"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "defines case"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/delivers",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/AppropriateBody"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/DocumentedEvidence"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "within its accredited mandate, issues in a traceable and qualitative manner for reuse in a Permission process"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "delivers"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/grants",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/OrganisationRole"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Permission"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "within its legally recognized mandate, issues, delivers in a traceable and qualitative manner, such that the receiver is able to act within the authorisation cases and its verified documentation"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "grants"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/Permission",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Permission"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/issues",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/RequestingBody"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Request"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "transmits with the intention to be allowed to act according to a legally verified process"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "issues"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/RequestingBody",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Body"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Within its legally recognized role, this Body is able to express the intention to act under the condition of reception of a Permission. The intended action being covered by legal or standardized Requirements to fullfil, this Body will present all required information, as verified by the Appropriate and examined by the Permitting Bodies, to the latter in order to receive the mentioned Permission."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Requesting Body"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/Request",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Issued by a Requesting Body to a PermittingBody, and supported by at least one Case, while being supported by the necessary DocumentedEvidence, it intends to enable the reception of a Permission."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Request"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/permissionType",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/Case"
+      },
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "the detailed process which constitutes this Case's permission conditions"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "permission type"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/regarding",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/Restriction"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Requirement"
+      },
+      "rdfs:comments": {
+        "@language": "en",
+        "@value": "belonging to, and when being respected, then also fulfilling"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "regarding"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/Restriction",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Restriction"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/requestFor",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/Request"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Permission"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "aiming to be enabled to act as covered by the Permission and its conditions, by receiving"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "request for"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/requests",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/OrganisationRole"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Permission"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "aims to be allowed to act according to a legally verified process, by receiving"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "requests"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/status",
+      "@type": [
+        "owl:ObjectProperty",
+        "owl:FunctionalProperty"
+      ],
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/Request"
+      },
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "the status of the Request as it is being treated by the PermittingBody"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "status"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/submittedFor",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/DocumentedEvidence"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Request"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "supporting, holding evidence of compliance in order to enable the Permitting Body to verify and permit"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "submitted for"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/submittedIn",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "_:g479080"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Case"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "submitted in"
+      }
+    },
+    {
+      "@id": "_:g479080",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "http://data.europa.eu/949/vpa/DocumentedEvidence"
+          },
+          {
+            "@id": "http://data.europa.eu/949/vpa/Permission"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/supports",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/Case"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Request"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "is part of, inherently constitutes"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "supports"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/withRestriction",
+      "@type": "owl:ObjectProperty",
+      "rdfs:domain": {
+        "@id": "http://data.europa.eu/949/vpa/DocumentedEvidence"
+      },
+      "rdfs:range": {
+        "@id": "http://data.europa.eu/949/vpa/Restriction"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "with restriction"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/Body",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:g479140"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Body"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/AuthorisationTypeVersionVariant",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Scope"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The Vehicle Type (or Version/Variant of the Type) which is the scope of a V(T) authorisation case. Only ONE such vehicle type is allowed per VACase."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Authorisation vehicle type(s), version(s) and variant(s)"
+      }
+    },
+    {
+      "@id": "_:g479140",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "org:Organization"
+          },
+          {
+            "@id": "foaf:Person"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "foaf:Document",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/PermittingBody",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Body"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Within its legally recognized mandate, this Body is able to receive DocumentedEvidence as submitted in a Request and based upon it, issue a Permit to the RequestingBody for the activities covered by the mentioned legislation."
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Permitting Body"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/VAApplication",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Request"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A Request for vehicle type authorisation and/or vehicle authorisation for placing on the market as defined in Article 1 of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj."
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "VA Application"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/VRApplication",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Request"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "VR Application"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/VehicleAuthorisation",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Permission"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The Vehicle type authorisation and/or vehicle authorisation for placing on the market as defined in Article 2 (15) and (16) of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj. The granting authority for this Authorisation (PermittingBody) is the Authorising Entity as defined in the Art. 2(1) of this legislation."
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Vehicle(type) Authorisation"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/VehicleRegistration",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Permission"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The vehicle registration permitting further operation and maintenance of a railway vehicle. The granting authority for this Registration (PermittingBody) is the Registration Entity, as foreseen in the article 5 of https://eur-lex.europa.eu/eli/dec_impl/2018/1614/oj."
+      },
+      "rdfs:seeAlso": {
+        "@id": "https://eur-lex.europa.eu/eli/dec_impl/2018/1614/oj"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Vehicle registration"
+      }
+    },
+    {
+      "@id": "http://data.europa.eu/949/vpa/VehicleRegistrationCase",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "http://data.europa.eu/949/vpa/Case"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Typically a collection of the following Scopes, this Registration Case regroups: (1) one or a set of vehicles, preferably grouped as such also during authorisation, (2) the ECM maintaining them, (3) the authorisation covering them (if not in 1) and (4) the Keeper & Owner information."
+      },
+      "owl:disjointWith": {
+        "@id": "http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Vehicle Registration Case"
+      }
+    },
+    {
+      "@id": "_:g479200",
+      "@type": "owl:AllDisjointClasses",
+      "owl:members": {
+        "@list": [
+          {
+            "@id": "http://data.europa.eu/949/vpa/Case"
+          },
+          {
+            "@id": "http://data.europa.eu/949/vpa/DocumentedEvidence"
+          },
+          {
+            "@id": "http://data.europa.eu/949/vpa/Permission"
+          },
+          {
+            "@id": "http://data.europa.eu/949/vpa/Request"
+          }
+        ]
+      }
+    }
+  ]
+}
