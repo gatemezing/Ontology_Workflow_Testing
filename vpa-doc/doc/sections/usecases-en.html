@@ -10,7 +10,7 @@
   era:VehicleTypeAuthorisation rdfs:subClassOf vp:Permission . # Serves all authorization cases, but not C2T.
   era:VehicleAuthorisation rdfs:subClassOf vp:Permission . # Serves the authorization case C2T.
   era:VAApplication rdfs:subClassOf vp:Request .
-  era:VAApplicationCase rdfs:subClassOf vp:Case .
+  era:AuthorisationCase rdfs:subClassOf vp:Case .
   ```
 
   #### Example
@@ -22,7 +22,7 @@
   ```
   erava:V-20230310-NNN a era:VehicleAuthorisation .
   erava:va-V-20230310-NNN a era:VAApplication .
-  erava:vac-V-20230310-NNN-0 a era:VAApplicationCase .
+  erava:vac-V-20230310-NNN-0 a era:AuthorisationCase .
   
   erava:mf-MMMM vp:requests erava:V-20230310-NNN ;
                 vp:issues erava:va-V-20230310-NNN .
@@ -59,7 +59,7 @@
   ```
   era:VehicleRegistration rdfs:subClassOf vp:Permission .
   era:VRApplication rdfs:subClassOf vp:Request .
-  era:VRApplicationCase rdfs:subClassOf vp:Case .
+  era:RegistrationCase rdfs:subClassOf vp:Case .
   ```
 
   #### Example
@@ -69,7 +69,7 @@
   ```
   eravr:NNNN-n a era:VehicleRegistration .  # The identifier of the registering keeper could be taken, whereby n is a sequence number.
   eravr:vr-NNNN-n a era:VRApplication .
-  # eravr:vrc-NNNN-n-0 a era:VRApplicationCase . 
+  # eravr:vrc-NNNN-n-0 a era:RegistrationCase . 
 
   eravr:KE-NNNN vp:requests eravr:NNNN-n ; # the keeper, with its org Id.
                 vp:issues eravr:vr-NNNN-n .
