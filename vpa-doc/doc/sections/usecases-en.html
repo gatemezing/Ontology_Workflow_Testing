@@ -21,7 +21,7 @@
 
   ```
   erava:V-20230310-NNN a era:VehicleAuthorisation .
-  erava:va-V-20230310-NNN a era:VAApplication .
+  erava:va-V-20230310-NNN a era:PAVAApplication .
   erava:vac-V-20230310-NNN-0 a era:AuthorisationCase .
   
   erava:mf-MMMM vp:requests erava:V-20230310-NNN ;
@@ -58,7 +58,7 @@
 
   ```
   era:VehicleRegistration rdfs:subClassOf vp:Permission .
-  era:VRApplication rdfs:subClassOf vp:Request .
+  era:EVRApplication rdfs:subClassOf vp:Request .
   era:RegistrationCase rdfs:subClassOf vp:Case .
   ```
 
@@ -68,7 +68,7 @@
 
   ```
   eravr:NNNN-n a era:VehicleRegistration .  # The identifier of the registering keeper could be taken, whereby n is a sequence number.
-  eravr:vr-NNNN-n a era:VRApplication .
+  eravr:vr-NNNN-n a era:EVRApplication .
   # eravr:vrc-NNNN-n-0 a era:RegistrationCase . 
 
   eravr:KE-NNNN vp:requests eravr:NNNN-n ; # the keeper, with its org Id.
