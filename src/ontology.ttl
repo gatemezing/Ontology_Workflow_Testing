@@ -99,13 +99,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://data.europa.eu/949/areaOfUse
-<http://data.europa.eu/949/areaOfUse> rdf:type owl:ObjectProperty ;
-                                      rdfs:domain :VehicleTypeAuthorisationCase ;
-                                      rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                      rdfs:comment "Member State networks, or parts thereof, which were analysed during the (vehicle(type)) authorisation process."@en ;
-                                      rdfs:label "area of use"@en .
-
 
 ###  http://data.europa.eu/949/hasOrganisationRole
 <http://data.europa.eu/949/hasOrganisationRole> rdf:type owl:ObjectProperty ,
@@ -271,13 +264,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "Appropriate Body"@en .
 
 
-###  http://data.europa.eu/949/vpa/AuthorisationTypeVersionVariant
-:AuthorisationTypeVersionVariant rdf:type owl:Class ;
-                          rdfs:subClassOf :Scope ;
-                          rdfs:comment "The Vehicle Type (or Version/Variant of the Type) which is the scope of a V(T) authorisation case. Only ONE such vehicle type is allowed per VACase."@en ;
-                          rdfs:label "Authorisation vehicle type(s), version(s) and variant(s)"@en .
-
-
 ###  http://data.europa.eu/949/vpa/Body
 :Body rdf:type owl:Class ;
       owl:equivalentClass [ rdf:type owl:Class ;
@@ -343,52 +329,6 @@ xsd:date rdf:type rdfs:Datatype .
 :Scope rdf:type owl:Class ;
         rdfs:comment "A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together."@en ;
        rdfs:label "Scope"@en .
-
-
-###  http://data.europa.eu/949/vpa/VAApplication
-:VAApplication rdf:type owl:Class ;
-               rdfs:subClassOf :Request ;
-               rdfs:comment "A Request for vehicle type authorisation and/or vehicle authorisation for placing on the market as defined in Article 1 of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj."@en ;
-               rdfs:seeAlso <https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj> ;
-               rdfs:label "VA Application"@en .
-
-
-###  http://data.europa.eu/949/vpa/VRApplication
-:VRApplication rdf:type owl:Class ;
-               rdfs:subClassOf :Request ;
-               rdfs:label "VR Application"@en .
-
-
-###  http://data.europa.eu/949/vpa/VehicleAuthorisation
-:VehicleAuthorisation rdf:type owl:Class ;
-                      rdfs:subClassOf :Permission ;
-                      rdfs:comment "The Vehicle type authorisation and/or vehicle authorisation for placing on the market as defined in Article 2 (15) and (16) of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj. The granting authority for this Authorisation (PermittingBody) is the Authorising Entity as defined in the Art. 2(1) of this legislation."@en ;
-                      rdfs:seeAlso <https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj> ;
-                      rdfs:label "Vehicle(type) Authorisation"@en .
-
-
-###  http://data.europa.eu/949/vpa/VehicleRegistration
-:VehicleRegistration rdf:type owl:Class ;
-                     rdfs:subClassOf :Permission ;
-                     rdfs:comment "The vehicle registration permitting further operation and maintenance of a railway vehicle. The granting authority for this Registration (PermittingBody) is the Registration Entity, as foreseen in the article 5 of https://eur-lex.europa.eu/eli/dec_impl/2018/1614/oj."@en ; 
-                     rdfs:seeAlso <https://eur-lex.europa.eu/eli/dec_impl/2018/1614/oj> ;
-                     rdfs:label "Vehicle registration"@en .
-
-
-###  http://data.europa.eu/949/vpa/VehicleRegistrationCase
-:VehicleRegistrationCase rdf:type owl:Class ;
-                         rdfs:subClassOf :Case ;
-                         rdfs:comment "Typically a collection of the following Scopes, this Registration Case regroups: (1) one or a set of vehicles, preferably grouped as such also during authorisation, (2) the ECM maintaining them, (3) the authorisation covering them (if not in 1) and (4) the Keeper & Owner information."@en ;
-                         owl:disjointWith :VehicleTypeAuthorisationCase ;
-                         rdfs:label "Vehicle Registration Case"@en .
-
-
-###  http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase
-:VehicleTypeAuthorisationCase rdf:type owl:Class ;
-                              rdfs:subClassOf :Case ;
-                              rdfs:comment "The authorisation case as defined in Article 14 of https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj. The scope of the case is therefore always (1) one of the 5 PermissionTypes as in the Article 14, (2) the unique vehicle type identifier and (3) the set of vehicles belonging to the Authorisation Case."@en ;
-                              rdfs:seeAlso <https://eur-lex.europa.eu/eli/reg_impl/2018/545/oj> ;
-                              rdfs:label "Vehicle Type Authorisation Case"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
