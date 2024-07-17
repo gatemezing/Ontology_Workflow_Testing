@@ -4,16 +4,16 @@
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/ns/org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://data.europa.eu/949", "http://xmlns.com/foaf/0.1", "http://data.europa.eu/949/vpa", "http://www.w3.org/2004/02/skos/core" ],
     "title" : {
-      "en" : "ERA ontology for verified permission and vehicle authorisation approvals"
+      "en" : "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"
     },
     "iri" : "http://data.europa.eu/949/vpa/",
-    "version" : "v0.1",
+    "version" : "v0.3",
     "author" : [ "_:genid2147483649", "_:genid2147483648" ],
     "labels" : {
-      "en" : "The Vechicle Permission (VP) and Vehicle Authorization (VA) ontology"
+      "en" : "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"
     },
     "comments" : {
-      "en" : "ERA Ontology for permissions and vehicle authorisation"
+      "en" : "ERA Ontology for verified permissions"
     },
     "other" : {
       "license" : [ {
@@ -39,34 +39,34 @@
         "value" : "_:genid2147483650",
         "type" : "label"
       } ],
-      "publisher" : [ {
-        "identifier" : "publisher",
-        "language" : "undefined",
-        "value" : "European Union Agency for Railways",
-        "type" : "label"
-      } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2024-03-11",
+        "value" : "2024-07-02",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "European Union Agency for Railways",
         "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "en",
-        "value" : "v0.1",
+        "value" : "v0.3",
         "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
-        "value" : "ERA ontology for verified permission and vehicle authorisation approvals",
+        "value" : "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals",
         "type" : "label"
       } ],
       "issued" : [ {
         "identifier" : "issued",
         "language" : "undefined",
-        "value" : "2024-XX-XX",
+        "value" : "2024-06-28",
         "type" : "label"
       } ]
     }
@@ -76,52 +76,37 @@
     "id" : "5",
     "type" : "owl:Class"
   }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "12",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
     "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "29",
-    "type" : "owl:Class"
-  }, {
     "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "44",
+    "id" : "33",
     "type" : "owl:Class"
   }, {
     "id" : "2",
@@ -130,25 +115,19 @@
     "id" : "4",
     "type" : "owl:unionOf"
   }, {
-    "id" : "21",
+    "id" : "15",
     "type" : "owl:Thing"
   }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "9",
     "type" : "owl:unionOf"
   } ],
   "classAttribute" : [ {
@@ -159,7 +138,9 @@
       "IRI-based" : "Case",
       "en" : "Case"
     },
-    "subClasses" : [ "6", "7" ],
+    "comment" : {
+      "en" : "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."
+    },
     "id" : "5"
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
@@ -169,7 +150,7 @@
       "IRI-based" : "Concept"
     },
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "6"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Agent",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -178,17 +159,7 @@
       "IRI-based" : "Agent"
     },
     "attributes" : [ "external" ],
-    "id" : "9"
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/AuthorisationTypeVariant",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AuthorisationTypeVariant",
-      "en" : "Authorisation type(s) and variant(s)"
-    },
-    "id" : "10",
-    "superClasses" : [ "11" ]
+    "id" : "7"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/AppropriateBody",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -197,8 +168,11 @@
       "IRI-based" : "AppropriateBody",
       "en" : "Appropriate Body"
     },
-    "id" : "12",
-    "superClasses" : [ "13" ]
+    "comment" : {
+      "en" : "Accredited organization which is able to express a formal opinion on Requirements, expressing them in DocumentedEvidence (mostly called Certificates), and if necessary making them dependent on Restrictions, which shall be fulfilled."
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Requirement",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -207,7 +181,10 @@
       "IRI-based" : "Requirement",
       "en" : "Requirement"
     },
-    "id" : "17"
+    "comment" : {
+      "en" : "A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions."
+    },
+    "id" : "13"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/PermittingBody",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -216,18 +193,11 @@
       "IRI-based" : "PermittingBody",
       "en" : "Permitting Body"
     },
-    "id" : "24",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/VehicleAuthorisation",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VehicleAuthorisation",
-      "en" : "Vehicle(type) Authorisation"
+    "comment" : {
+      "en" : "Within its legally recognized mandate, this Body is able to receive DocumentedEvidence as submitted in a Request and based upon it, issue a Permit to the RequestingBody for the activities covered by the mentioned legislation."
     },
-    "id" : "29",
-    "superClasses" : [ "2" ]
+    "id" : "18",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Restriction",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -236,7 +206,10 @@
       "IRI-based" : "Restriction",
       "en" : "Restriction"
     },
-    "id" : "23"
+    "comment" : {
+      "en" : "Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way."
+    },
+    "id" : "17"
   }, {
     "iri" : "http://www.w3.org/ns/org#Organization",
     "baseIri" : "http://www.w3.org/ns/org",
@@ -245,17 +218,7 @@
       "IRI-based" : "Organization"
     },
     "attributes" : [ "external" ],
-    "id" : "31"
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/VehicleTypeAuthorisationCase",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VehicleTypeAuthorisationCase",
-      "en" : "Vehicle Type Authorisation Case"
-    },
-    "id" : "6",
-    "superClasses" : [ "5" ]
+    "id" : "23"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/DocumentedEvidence",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -264,8 +227,11 @@
       "IRI-based" : "DocumentedEvidence",
       "en" : "Documented Evidence"
     },
-    "id" : "26",
-    "superClasses" : [ "34" ]
+    "comment" : {
+      "en" : "Issued by an AppropriateBody, it is the summary of its formal and accredited verification process, enabling the receiver (RequestingBody) to issue a Request for a Permission to the PermittingBody."
+    },
+    "id" : "20",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -274,7 +240,7 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "48"
+    "id" : "31"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Scope",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -283,18 +249,10 @@
       "IRI-based" : "Scope",
       "en" : "Scope"
     },
-    "subClasses" : [ "10" ],
-    "id" : "11"
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/VAApplication",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VAApplication",
-      "en" : "VA Application"
+    "comment" : {
+      "en" : "A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together."
     },
-    "id" : "46",
-    "superClasses" : [ "15" ]
+    "id" : "27"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/RequestingBody",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -303,18 +261,11 @@
       "IRI-based" : "RequestingBody",
       "en" : "Requesting Body"
     },
-    "id" : "19",
-    "superClasses" : [ "13" ]
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/VRApplication",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VRApplication",
-      "en" : "VR Application"
+    "comment" : {
+      "en" : "Within its legally recognized role, this Body is able to express the intention to act under the condition of reception of a Permission. The intended action being covered by legal or standardized Requirements to fullfil, this Body will present all required information, as verified by the Appropriate and examined by the Permitting Bodies, to the latter in order to receive the mentioned Permission."
     },
-    "id" : "44",
-    "superClasses" : [ "15" ]
+    "id" : "33",
+    "superClasses" : [ "9" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Permission",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -323,30 +274,22 @@
       "IRI-based" : "Permission",
       "en" : "Permission"
     },
-    "subClasses" : [ "42", "29" ],
+    "comment" : {
+      "en" : "Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks."
+    },
     "id" : "2"
   }, {
     "instances" : 0,
-    "union" : [ "26", "2" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "20", "2" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "4"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "21",
+    "id" : "15",
     "label" : {
       "undefined" : "Thing"
     }
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/VehicleRegistrationCase",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VehicleRegistrationCase",
-      "en" : "Vehicle Registration Case"
-    },
-    "id" : "7",
-    "superClasses" : [ "5" ]
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Request",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -355,18 +298,10 @@
       "IRI-based" : "Request",
       "en" : "Request"
     },
-    "subClasses" : [ "46", "44" ],
-    "id" : "15"
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/VehicleRegistration",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VehicleRegistration",
-      "en" : "Vehicle registration"
+    "comment" : {
+      "en" : "Issued by a Requesting Body to a PermittingBody, and supported by at least one Case, while being supported by the necessary DocumentedEvidence, it intends to enable the reception of a Permission."
     },
-    "id" : "42",
-    "superClasses" : [ "2" ]
+    "id" : "11"
   }, {
     "iri" : "http://data.europa.eu/949/OrganisationRole",
     "baseIri" : "http://data.europa.eu/949",
@@ -384,9 +319,9 @@
     "label" : {
       "IRI-based" : "Document"
     },
-    "subClasses" : [ "26" ],
+    "subClasses" : [ "20" ],
     "attributes" : [ "external" ],
-    "id" : "34"
+    "id" : "25"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/Body",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -395,10 +330,10 @@
       "IRI-based" : "Body",
       "en" : "Body"
     },
-    "union" : [ "31", "48" ],
-    "subClasses" : [ "12", "24", "19" ],
+    "union" : [ "23", "31" ],
+    "subClasses" : [ "8", "18", "33" ],
     "attributes" : [ "union" ],
-    "id" : "13"
+    "id" : "9"
   } ],
   "property" : [ {
     "id" : "0",
@@ -407,112 +342,85 @@
     "id" : "3",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "14",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "18",
-    "type" : "rdfs:SubClassOf"
+    "id" : "19",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "20",
+    "id" : "21",
     "type" : "owl:objectProperty"
   }, {
     "id" : "22",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "25",
+    "id" : "24",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "27",
+    "id" : "26",
     "type" : "owl:objectProperty"
   }, {
     "id" : "28",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "30",
+    "id" : "29",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "32",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "33",
+    "id" : "34",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "35",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "36",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "37",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "38",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "39",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "40",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "41",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "43",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "45",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "47",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "49",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "51",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "52",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "53",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "54",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "55",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "56",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "57",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "58",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "59",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "60",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "61",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "62",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "63",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -524,6 +432,9 @@
       "en" : "requests"
     },
     "domain" : "1",
+    "comment" : {
+      "en" : "aims to be allowed to act according to a legally verified process, by receiving"
+    },
     "attributes" : [ "object" ],
     "id" : "0"
   }, {
@@ -540,96 +451,103 @@
   }, {
     "iri" : "http://data.europa.eu/949/vpa/status",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "8",
+    "range" : "6",
     "label" : {
       "IRI-based" : "status",
       "en" : "status"
     },
-    "domain" : "15",
-    "attributes" : [ "functional", "object" ],
-    "id" : "14"
+    "domain" : "11",
+    "comment" : {
+      "en" : "the status of the Request as it is being treated by the PermittingBody"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "10"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/certifies",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "17",
+    "range" : "13",
     "label" : {
       "IRI-based" : "certifies",
       "en" : "certifies"
     },
-    "domain" : "12",
+    "domain" : "8",
+    "comment" : {
+      "en" : "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."
+    },
     "attributes" : [ "object" ],
-    "id" : "16"
-  }, {
-    "range" : "13",
-    "domain" : "19",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "18"
+    "id" : "12"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/concerns",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "21",
+    "range" : "15",
     "label" : {
       "IRI-based" : "concerns",
       "en" : "concerns"
     },
     "domain" : "5",
+    "comment" : {
+      "en" : "holds as material content, constitutes, embodies the material components of the Scope."
+    },
     "attributes" : [ "object" ],
-    "id" : "20"
+    "id" : "14"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/regarding",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "17",
+    "range" : "13",
+    "annotations" : {
+      "comments" : [ {
+        "identifier" : "comments",
+        "language" : "en",
+        "value" : "belonging to, and when being respected, then also fulfilling",
+        "type" : "label"
+      } ]
+    },
     "label" : {
       "IRI-based" : "regarding",
       "en" : "regarding"
     },
-    "domain" : "23",
+    "domain" : "17",
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "16"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/delivers",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "26",
+    "range" : "20",
     "label" : {
       "IRI-based" : "delivers",
       "en" : "delivers"
     },
-    "domain" : "12",
+    "domain" : "8",
+    "comment" : {
+      "en" : "within its accredited mandate, issues in a traceable and qualitative manner for reuse in a Permission process"
+    },
     "attributes" : [ "object" ],
-    "id" : "25"
+    "id" : "19"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/withRestriction",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "23",
+    "range" : "17",
     "label" : {
       "IRI-based" : "withRestriction",
       "en" : "with restriction"
     },
-    "domain" : "26",
-    "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
-    "iri" : "http://data.europa.eu/949/areaOfUse",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "areaOfUse",
-      "en" : "area of use"
+    "domain" : "20",
+    "comment" : {
+      "en" : "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"
     },
-    "domain" : "6",
-    "attributes" : [ "external", "object" ],
-    "id" : "28"
+    "attributes" : [ "object" ],
+    "id" : "21"
   }, {
     "iri" : "http://data.europa.eu/949/hasOrganisationRole",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "8",
+    "range" : "6",
     "label" : {
       "IRI-based" : "hasOrganisationRole",
       "en" : "has organisation role"
     },
     "domain" : "1",
-    "attributes" : [ "functional", "external", "object" ],
-    "id" : "30"
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "22"
   }, {
     "iri" : "http://data.europa.eu/949/role",
     "baseIri" : "http://data.europa.eu/949",
@@ -638,14 +556,9 @@
       "IRI-based" : "role",
       "en" : "role"
     },
-    "domain" : "31",
-    "attributes" : [ "external", "object" ],
-    "id" : "32"
-  }, {
-    "range" : "13",
-    "domain" : "12",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
+    "domain" : "23",
+    "attributes" : [ "object", "external" ],
+    "id" : "24"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/definesCase",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -654,9 +567,12 @@
       "IRI-based" : "definesCase",
       "en" : "defines case"
     },
-    "domain" : "11",
+    "domain" : "27",
+    "comment" : {
+      "en" : "is covered by, included in"
+    },
     "attributes" : [ "object" ],
-    "id" : "35"
+    "id" : "26"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/grants",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -666,132 +582,117 @@
       "en" : "grants"
     },
     "domain" : "1",
+    "comment" : {
+      "en" : "within its legally recognized mandate, issues, delivers in a traceable and qualitative manner, such that the receiver is able to act within the authorisation cases and its verified documentation"
+    },
     "attributes" : [ "object" ],
-    "id" : "36"
-  }, {
-    "range" : "34",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
+    "id" : "28"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/closes",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "17",
+    "range" : "13",
     "label" : {
       "IRI-based" : "closes",
       "en" : "closes"
     },
-    "domain" : "26",
+    "domain" : "20",
+    "comment" : {
+      "en" : "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."
+    },
     "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "9",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "9",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "11",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "11",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
-    "range" : "13",
-    "domain" : "24",
+    "range" : "11",
+    "domain" : "2",
     "attributes" : [ "anonymous", "object" ],
     "id" : "39"
   }, {
-    "range" : "2",
-    "domain" : "29",
+    "range" : "25",
+    "domain" : "20",
     "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
-    "range" : "2",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "41"
-  }, {
-    "range" : "15",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "43"
-  }, {
-    "range" : "15",
-    "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "45"
-  }, {
-    "range" : "5",
-    "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "47"
-  }, {
-    "range" : "11",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "49"
-  }, {
-    "range" : "5",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "50"
-  }, {
-    "range" : "2",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "51"
-  }, {
-    "range" : "15",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "52"
-  }, {
-    "range" : "2",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "53"
-  }, {
-    "range" : "15",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "54"
-  }, {
-    "range" : "15",
-    "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "55"
-  }, {
-    "range" : "6",
-    "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "56"
-  }, {
     "iri" : "http://data.europa.eu/949/vpa/issues",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "15",
+    "range" : "11",
     "label" : {
       "IRI-based" : "issues",
       "en" : "issues"
     },
-    "domain" : "19",
-    "attributes" : [ "object" ],
-    "id" : "57"
-  }, {
-    "iri" : "http://data.europa.eu/949/vpa/submittedFor",
-    "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "15",
-    "label" : {
-      "IRI-based" : "submittedFor",
-      "en" : "submitted for"
+    "domain" : "33",
+    "comment" : {
+      "en" : "transmits with the intention to be allowed to act according to a legally verified process"
     },
-    "domain" : "26",
     "attributes" : [ "object" ],
-    "id" : "58"
+    "id" : "41"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/permissionType",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "8",
+    "range" : "6",
     "label" : {
       "IRI-based" : "permissionType",
       "en" : "permission type"
     },
     "domain" : "5",
+    "comment" : {
+      "en" : "the detailed process which constitutes this Case's permission conditions"
+    },
     "attributes" : [ "object" ],
-    "id" : "59"
+    "id" : "42"
   }, {
-    "range" : "31",
+    "iri" : "http://data.europa.eu/949/vpa/submittedFor",
+    "baseIri" : "http://data.europa.eu/949/vpa",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "submittedFor",
+      "en" : "submitted for"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "supporting, holding evidence of compliance in order to enable the Permitting Body to verify and permit"
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "23",
     "domain" : "1",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "60"
+    "id" : "44"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/requestFor",
     "baseIri" : "http://data.europa.eu/949/vpa",
@@ -800,24 +701,30 @@
       "IRI-based" : "requestFor",
       "en" : "request for"
     },
-    "domain" : "15",
+    "domain" : "11",
+    "comment" : {
+      "en" : "aiming to be enabled to act as covered by the Permission and its conditions, by receiving"
+    },
     "attributes" : [ "object" ],
-    "id" : "61"
+    "id" : "45"
   }, {
-    "range" : "26",
+    "range" : "20",
     "domain" : "5",
     "attributes" : [ "anonymous", "object" ],
-    "id" : "62"
+    "id" : "46"
   }, {
     "iri" : "http://data.europa.eu/949/vpa/supports",
     "baseIri" : "http://data.europa.eu/949/vpa",
-    "range" : "15",
+    "range" : "11",
     "label" : {
       "IRI-based" : "supports",
       "en" : "supports"
     },
     "domain" : "5",
+    "comment" : {
+      "en" : "is part of, inherently constitutes"
+    },
     "attributes" : [ "object" ],
-    "id" : "63"
+    "id" : "47"
   } ]
 }
