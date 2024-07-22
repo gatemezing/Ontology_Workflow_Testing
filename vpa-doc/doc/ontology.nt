@@ -1,11 +1,11 @@
-<http://data.europa.eu/949/vpa/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://data.europa.eu/949/vpa/> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/contributor> _:genid1 .
+<https://w3id.org/vpa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/vpa> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/contributor> _:genid1 .
 _:genid1 <http://xmlns.com/foaf/0.1/name> "OPD Unit" .
 _:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
 <http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/creator> _:genid2 .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/creator> _:genid2 .
 _:genid2 <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
 _:genid2 <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing"@en .
 _:genid2 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://orcid.org/0000-0003-1562-6922> .
@@ -13,20 +13,20 @@ _:genid2 <http://schema.org/affiliation> _:genid3 .
 _:genid3 <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
 _:genid3 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/creator> _:genid4 .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/creator> _:genid4 .
 _:genid4 <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
 _:genid4 <http://xmlns.com/foaf/0.1/name> "Maarten Duhoux"@en .
 _:genid4 <http://schema.org/affiliation> _:genid5 .
 _:genid5 <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways" .
 _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/issued> "2024-06-28"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/modified> "2024-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways"@en .
-<http://data.europa.eu/949/vpa/> <http://purl.org/dc/terms/title> "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en .
-<http://data.europa.eu/949/vpa/> <http://www.w3.org/2000/01/rdf-schema#comment> "ERA Ontology for verified permissions"@en .
-<http://data.europa.eu/949/vpa/> <http://www.w3.org/2000/01/rdf-schema#label> "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"@en .
-<http://data.europa.eu/949/vpa/> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3"@en .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/issued> "2024-06-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/modified> "2024-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways"@en .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/title> "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en .
+<https://w3id.org/vpa> <http://www.w3.org/2000/01/rdf-schema#comment> "ERA Ontology for verified permissions"@en .
+<https://w3id.org/vpa> <http://www.w3.org/2000/01/rdf-schema#label> "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"@en .
+<https://w3id.org/vpa> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3"@en .
 # 
 # 
 # #################################################################
@@ -106,124 +106,124 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <http://data.europa.eu/949/role> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/OrganisationRole> .
 <http://data.europa.eu/949/role> <http://www.w3.org/2000/01/rdf-schema#label> "role"@en .
 # 
-# http://data.europa.eu/949/vpa/certifies
-<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/AppropriateBody> .
-<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Requirement> .
-<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/2000/01/rdf-schema#comment> "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."@en .
-<http://data.europa.eu/949/vpa/certifies> <http://www.w3.org/2000/01/rdf-schema#label> "certifies"@en .
+# https://w3id.org/vpa#certifies
+<https://w3id.org/vpa#certifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#certifies> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#AppropriateBody> .
+<https://w3id.org/vpa#certifies> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Requirement> .
+<https://w3id.org/vpa#certifies> <http://www.w3.org/2000/01/rdf-schema#comment> "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."@en .
+<https://w3id.org/vpa#certifies> <http://www.w3.org/2000/01/rdf-schema#label> "certifies"@en .
 # 
-# http://data.europa.eu/949/vpa/closes
-<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
-<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Requirement> .
-<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/2000/01/rdf-schema#comment> "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."@en .
-<http://data.europa.eu/949/vpa/closes> <http://www.w3.org/2000/01/rdf-schema#label> "closes"@en .
+# https://w3id.org/vpa#closes
+<https://w3id.org/vpa#closes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#closes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#DocumentedEvidence> .
+<https://w3id.org/vpa#closes> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Requirement> .
+<https://w3id.org/vpa#closes> <http://www.w3.org/2000/01/rdf-schema#comment> "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."@en .
+<https://w3id.org/vpa#closes> <http://www.w3.org/2000/01/rdf-schema#label> "closes"@en .
 # 
-# http://data.europa.eu/949/vpa/concerns
-<http://data.europa.eu/949/vpa/concerns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/concerns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Case> .
-<http://data.europa.eu/949/vpa/concerns> <http://www.w3.org/2000/01/rdf-schema#comment> "holds as material content, constitutes, embodies the material components of the Scope."@en .
-<http://data.europa.eu/949/vpa/concerns> <http://www.w3.org/2000/01/rdf-schema#label> "concerns"@en .
+# https://w3id.org/vpa#concerns
+<https://w3id.org/vpa#concerns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#concerns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Case> .
+<https://w3id.org/vpa#concerns> <http://www.w3.org/2000/01/rdf-schema#comment> "holds as material content, constitutes, embodies the material components of the Scope."@en .
+<https://w3id.org/vpa#concerns> <http://www.w3.org/2000/01/rdf-schema#label> "concerns"@en .
 # 
-# http://data.europa.eu/949/vpa/definesCase
-<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Scope> .
-<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Case> .
-<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/2000/01/rdf-schema#comment> "is covered by, included in"@en .
-<http://data.europa.eu/949/vpa/definesCase> <http://www.w3.org/2000/01/rdf-schema#label> "defines case"@en .
+# https://w3id.org/vpa#definesCase
+<https://w3id.org/vpa#definesCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#definesCase> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Scope> .
+<https://w3id.org/vpa#definesCase> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Case> .
+<https://w3id.org/vpa#definesCase> <http://www.w3.org/2000/01/rdf-schema#comment> "is covered by, included in"@en .
+<https://w3id.org/vpa#definesCase> <http://www.w3.org/2000/01/rdf-schema#label> "defines case"@en .
 # 
-# http://data.europa.eu/949/vpa/delivers
-<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/AppropriateBody> .
-<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
-<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/2000/01/rdf-schema#comment> "within its accredited mandate, issues in a traceable and qualitative manner for reuse in a Permission process"@en .
-<http://data.europa.eu/949/vpa/delivers> <http://www.w3.org/2000/01/rdf-schema#label> "delivers"@en .
+# https://w3id.org/vpa#delivers
+<https://w3id.org/vpa#delivers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#delivers> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#AppropriateBody> .
+<https://w3id.org/vpa#delivers> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#DocumentedEvidence> .
+<https://w3id.org/vpa#delivers> <http://www.w3.org/2000/01/rdf-schema#comment> "within its accredited mandate, issues in a traceable and qualitative manner for reuse in a Permission process"@en .
+<https://w3id.org/vpa#delivers> <http://www.w3.org/2000/01/rdf-schema#label> "delivers"@en .
 # 
-# http://data.europa.eu/949/vpa/grants
-<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/OrganisationRole> .
-<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Permission> .
-<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/2000/01/rdf-schema#comment> "within its legally recognized mandate, issues, delivers in a traceable and qualitative manner, such that the receiver is able to act within the authorisation cases and its verified documentation"@en .
-<http://data.europa.eu/949/vpa/grants> <http://www.w3.org/2000/01/rdf-schema#label> "grants"@en .
+# https://w3id.org/vpa#grants
+<https://w3id.org/vpa#grants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#grants> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/OrganisationRole> .
+<https://w3id.org/vpa#grants> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Permission> .
+<https://w3id.org/vpa#grants> <http://www.w3.org/2000/01/rdf-schema#comment> "within its legally recognized mandate, issues, delivers in a traceable and qualitative manner, such that the receiver is able to act within the authorisation cases and its verified documentation"@en .
+<https://w3id.org/vpa#grants> <http://www.w3.org/2000/01/rdf-schema#label> "grants"@en .
 # 
-# http://data.europa.eu/949/vpa/issues
-<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/RequestingBody> .
-<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Request> .
-<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/2000/01/rdf-schema#comment> "transmits with the intention to be allowed to act according to a legally verified process"@en .
-<http://data.europa.eu/949/vpa/issues> <http://www.w3.org/2000/01/rdf-schema#label> "issues"@en .
+# https://w3id.org/vpa#issues
+<https://w3id.org/vpa#issues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#issues> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#RequestingBody> .
+<https://w3id.org/vpa#issues> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Request> .
+<https://w3id.org/vpa#issues> <http://www.w3.org/2000/01/rdf-schema#comment> "transmits with the intention to be allowed to act according to a legally verified process"@en .
+<https://w3id.org/vpa#issues> <http://www.w3.org/2000/01/rdf-schema#label> "issues"@en .
 # 
-# http://data.europa.eu/949/vpa/permissionType
-<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Case> .
-<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/2000/01/rdf-schema#comment> "the detailed process which constitutes this Case's permission conditions"@en .
-<http://data.europa.eu/949/vpa/permissionType> <http://www.w3.org/2000/01/rdf-schema#label> "permission type"@en .
+# https://w3id.org/vpa#permissionType
+<https://w3id.org/vpa#permissionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#permissionType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Case> .
+<https://w3id.org/vpa#permissionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/vpa#permissionType> <http://www.w3.org/2000/01/rdf-schema#comment> "the detailed process which constitutes this Case's permission conditions"@en .
+<https://w3id.org/vpa#permissionType> <http://www.w3.org/2000/01/rdf-schema#label> "permission type"@en .
 # 
-# http://data.europa.eu/949/vpa/regarding
-<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Restriction> .
-<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Requirement> .
-<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/2000/01/rdf-schema#comments> "belonging to, and when being respected, then also fulfilling"@en .
-<http://data.europa.eu/949/vpa/regarding> <http://www.w3.org/2000/01/rdf-schema#label> "regarding"@en .
+# https://w3id.org/vpa#regarding
+<https://w3id.org/vpa#regarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Restriction> .
+<https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Requirement> .
+<https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#comments> "belonging to, and when being respected, then also fulfilling"@en .
+<https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#label> "regarding"@en .
 # 
-# http://data.europa.eu/949/vpa/requestFor
-<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Request> .
-<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Permission> .
-<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/2000/01/rdf-schema#comment> "aiming to be enabled to act as covered by the Permission and its conditions, by receiving"@en .
-<http://data.europa.eu/949/vpa/requestFor> <http://www.w3.org/2000/01/rdf-schema#label> "request for"@en .
+# https://w3id.org/vpa#requestFor
+<https://w3id.org/vpa#requestFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#requestFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Request> .
+<https://w3id.org/vpa#requestFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Permission> .
+<https://w3id.org/vpa#requestFor> <http://www.w3.org/2000/01/rdf-schema#comment> "aiming to be enabled to act as covered by the Permission and its conditions, by receiving"@en .
+<https://w3id.org/vpa#requestFor> <http://www.w3.org/2000/01/rdf-schema#label> "request for"@en .
 # 
-# http://data.europa.eu/949/vpa/requests
-<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/OrganisationRole> .
-<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Permission> .
-<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/2000/01/rdf-schema#comment> "aims to be allowed to act according to a legally verified process, by receiving"@en .
-<http://data.europa.eu/949/vpa/requests> <http://www.w3.org/2000/01/rdf-schema#label> "requests"@en .
+# https://w3id.org/vpa#requests
+<https://w3id.org/vpa#requests> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#requests> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/OrganisationRole> .
+<https://w3id.org/vpa#requests> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Permission> .
+<https://w3id.org/vpa#requests> <http://www.w3.org/2000/01/rdf-schema#comment> "aims to be allowed to act according to a legally verified process, by receiving"@en .
+<https://w3id.org/vpa#requests> <http://www.w3.org/2000/01/rdf-schema#label> "requests"@en .
 # 
-# http://data.europa.eu/949/vpa/status
-<http://data.europa.eu/949/vpa/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://data.europa.eu/949/vpa/status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Request> .
-<http://data.europa.eu/949/vpa/status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
-<http://data.europa.eu/949/vpa/status> <http://www.w3.org/2000/01/rdf-schema#comment> "the status of the Request as it is being treated by the PermittingBody"@en .
-<http://data.europa.eu/949/vpa/status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+# https://w3id.org/vpa#status
+<https://w3id.org/vpa#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/vpa#status> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Request> .
+<https://w3id.org/vpa#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/vpa#status> <http://www.w3.org/2000/01/rdf-schema#comment> "the status of the Request as it is being treated by the PermittingBody"@en .
+<https://w3id.org/vpa#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
 # 
-# http://data.europa.eu/949/vpa/submittedFor
-<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
-<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Request> .
-<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "supporting, holding evidence of compliance in order to enable the Permitting Body to verify and permit"@en .
-<http://data.europa.eu/949/vpa/submittedFor> <http://www.w3.org/2000/01/rdf-schema#label> "submitted for"@en .
+# https://w3id.org/vpa#submittedFor
+<https://w3id.org/vpa#submittedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#submittedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#DocumentedEvidence> .
+<https://w3id.org/vpa#submittedFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Request> .
+<https://w3id.org/vpa#submittedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "supporting, holding evidence of compliance in order to enable the Permitting Body to verify and permit"@en .
+<https://w3id.org/vpa#submittedFor> <http://www.w3.org/2000/01/rdf-schema#label> "submitted for"@en .
 # 
-# http://data.europa.eu/949/vpa/submittedIn
-<http://data.europa.eu/949/vpa/submittedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/submittedIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+# https://w3id.org/vpa#submittedIn
+<https://w3id.org/vpa#submittedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#submittedIn> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
 _:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Permission> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Permission> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#DocumentedEvidence> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/submittedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Case> .
-<http://data.europa.eu/949/vpa/submittedIn> <http://www.w3.org/2000/01/rdf-schema#label> "submitted in"@en .
+<https://w3id.org/vpa#submittedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Case> .
+<https://w3id.org/vpa#submittedIn> <http://www.w3.org/2000/01/rdf-schema#label> "submitted in"@en .
 # 
-# http://data.europa.eu/949/vpa/supports
-<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/Case> .
-<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Request> .
-<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/2000/01/rdf-schema#comment> "is part of, inherently constitutes"@en .
-<http://data.europa.eu/949/vpa/supports> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
+# https://w3id.org/vpa#supports
+<https://w3id.org/vpa#supports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#supports> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Case> .
+<https://w3id.org/vpa#supports> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Request> .
+<https://w3id.org/vpa#supports> <http://www.w3.org/2000/01/rdf-schema#comment> "is part of, inherently constitutes"@en .
+<https://w3id.org/vpa#supports> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
 # 
-# http://data.europa.eu/949/vpa/withRestriction
-<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
-<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/949/vpa/Restriction> .
-<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"@en .
-<http://data.europa.eu/949/vpa/withRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "with restriction"@en .
+# https://w3id.org/vpa#withRestriction
+<https://w3id.org/vpa#withRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#DocumentedEvidence> .
+<https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Restriction> .
+<https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"@en .
+<https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "with restriction"@en .
 # 
 # 
 # 
@@ -234,20 +234,9 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://data.europa.eu/949/OrganisationRole
-<http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/org#Organization> .
-<http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation Role"@en .
-# 
-# http://data.europa.eu/949/vpa/AppropriateBody
-<http://data.europa.eu/949/vpa/AppropriateBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/AppropriateBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Body> .
-<http://data.europa.eu/949/vpa/AppropriateBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Accredited organization which is able to express a formal opinion on Requirements, expressing them in DocumentedEvidence (mostly called Certificates), and if necessary making them dependent on Restrictions, which shall be fulfilled."@en .
-<http://data.europa.eu/949/vpa/AppropriateBody> <http://www.w3.org/2000/01/rdf-schema#label> "Appropriate Body"@en .
-# 
-# http://data.europa.eu/949/vpa/Body
-<http://data.europa.eu/949/vpa/Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/Body> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+# http://data.europa.eu/949/Body
+<http://data.europa.eu/949/Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/Body> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
 _:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
@@ -256,55 +245,12 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Organization> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/Body> <http://www.w3.org/2000/01/rdf-schema#label> "Body"@en .
+<http://data.europa.eu/949/Body> <http://www.w3.org/2000/01/rdf-schema#label> "Body"@en .
 # 
-# http://data.europa.eu/949/vpa/Case
-<http://data.europa.eu/949/vpa/Case> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/Case> <http://www.w3.org/2000/01/rdf-schema#comment> "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."@en .
-<http://data.europa.eu/949/vpa/Case> <http://www.w3.org/2000/01/rdf-schema#label> "Case"@en .
-# 
-# http://data.europa.eu/949/vpa/DocumentedEvidence
-<http://data.europa.eu/949/vpa/DocumentedEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/DocumentedEvidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Document> .
-<http://data.europa.eu/949/vpa/DocumentedEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Issued by an AppropriateBody, it is the summary of its formal and accredited verification process, enabling the receiver (RequestingBody) to issue a Request for a Permission to the PermittingBody."@en .
-<http://data.europa.eu/949/vpa/DocumentedEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "Documented Evidence"@en .
-# 
-# http://data.europa.eu/949/vpa/Permission
-<http://data.europa.eu/949/vpa/Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/Permission> <http://www.w3.org/2000/01/rdf-schema#comment> "Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks."@en .
-<http://data.europa.eu/949/vpa/Permission> <http://www.w3.org/2000/01/rdf-schema#label> "Permission"@en .
-# 
-# http://data.europa.eu/949/vpa/PermittingBody
-<http://data.europa.eu/949/vpa/PermittingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/PermittingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Body> .
-<http://data.europa.eu/949/vpa/PermittingBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Within its legally recognized mandate, this Body is able to receive DocumentedEvidence as submitted in a Request and based upon it, issue a Permit to the RequestingBody for the activities covered by the mentioned legislation."@en .
-<http://data.europa.eu/949/vpa/PermittingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Permitting Body"@en .
-# 
-# http://data.europa.eu/949/vpa/Request
-<http://data.europa.eu/949/vpa/Request> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/Request> <http://www.w3.org/2000/01/rdf-schema#comment> "Issued by a Requesting Body to a PermittingBody, and supported by at least one Case, while being supported by the necessary DocumentedEvidence, it intends to enable the reception of a Permission."@en .
-<http://data.europa.eu/949/vpa/Request> <http://www.w3.org/2000/01/rdf-schema#label> "Request"@en .
-# 
-# http://data.europa.eu/949/vpa/RequestingBody
-<http://data.europa.eu/949/vpa/RequestingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/RequestingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/vpa/Body> .
-<http://data.europa.eu/949/vpa/RequestingBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Within its legally recognized role, this Body is able to express the intention to act under the condition of reception of a Permission. The intended action being covered by legal or standardized Requirements to fullfil, this Body will present all required information, as verified by the Appropriate and examined by the Permitting Bodies, to the latter in order to receive the mentioned Permission."@en .
-<http://data.europa.eu/949/vpa/RequestingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Requesting Body"@en .
-# 
-# http://data.europa.eu/949/vpa/Requirement
-<http://data.europa.eu/949/vpa/Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/Requirement> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions."@en .
-<http://data.europa.eu/949/vpa/Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement"@en .
-# 
-# http://data.europa.eu/949/vpa/Restriction
-<http://data.europa.eu/949/vpa/Restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/Restriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way."@en .
-<http://data.europa.eu/949/vpa/Restriction> <http://www.w3.org/2000/01/rdf-schema#label> "Restriction"@en .
-# 
-# http://data.europa.eu/949/vpa/Scope
-<http://data.europa.eu/949/vpa/Scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/vpa/Scope> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together."@en .
-<http://data.europa.eu/949/vpa/Scope> <http://www.w3.org/2000/01/rdf-schema#label> "Scope"@en .
+# http://data.europa.eu/949/OrganisationRole
+<http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/org#Organization> .
+<http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation Role"@en .
 # 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -319,6 +265,60 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/vpa#AppropriateBody
+<https://w3id.org/vpa#AppropriateBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#AppropriateBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/Body> .
+<https://w3id.org/vpa#AppropriateBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Accredited organization which is able to express a formal opinion on Requirements, expressing them in DocumentedEvidence (mostly called Certificates), and if necessary making them dependent on Restrictions, which shall be fulfilled."@en .
+<https://w3id.org/vpa#AppropriateBody> <http://www.w3.org/2000/01/rdf-schema#label> "Appropriate Body"@en .
+# 
+# https://w3id.org/vpa#Case
+<https://w3id.org/vpa#Case> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#Case> <http://www.w3.org/2000/01/rdf-schema#comment> "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."@en .
+<https://w3id.org/vpa#Case> <http://www.w3.org/2000/01/rdf-schema#label> "Case"@en .
+# 
+# https://w3id.org/vpa#DocumentedEvidence
+<https://w3id.org/vpa#DocumentedEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#DocumentedEvidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Document> .
+<https://w3id.org/vpa#DocumentedEvidence> <http://www.w3.org/2000/01/rdf-schema#comment> "Issued by an AppropriateBody, it is the summary of its formal and accredited verification process, enabling the receiver (RequestingBody) to issue a Request for a Permission to the PermittingBody."@en .
+<https://w3id.org/vpa#DocumentedEvidence> <http://www.w3.org/2000/01/rdf-schema#label> "Documented Evidence"@en .
+# 
+# https://w3id.org/vpa#Permission
+<https://w3id.org/vpa#Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#Permission> <http://www.w3.org/2000/01/rdf-schema#comment> "Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks."@en .
+<https://w3id.org/vpa#Permission> <http://www.w3.org/2000/01/rdf-schema#label> "Permission"@en .
+# 
+# https://w3id.org/vpa#PermittingBody
+<https://w3id.org/vpa#PermittingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#PermittingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/Body> .
+<https://w3id.org/vpa#PermittingBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Within its legally recognized mandate, this Body is able to receive DocumentedEvidence as submitted in a Request and based upon it, issue a Permit to the RequestingBody for the activities covered by the mentioned legislation."@en .
+<https://w3id.org/vpa#PermittingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Permitting Body"@en .
+# 
+# https://w3id.org/vpa#Request
+<https://w3id.org/vpa#Request> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#Request> <http://www.w3.org/2000/01/rdf-schema#comment> "Issued by a Requesting Body to a PermittingBody, and supported by at least one Case, while being supported by the necessary DocumentedEvidence, it intends to enable the reception of a Permission."@en .
+<https://w3id.org/vpa#Request> <http://www.w3.org/2000/01/rdf-schema#label> "Request"@en .
+# 
+# https://w3id.org/vpa#RequestingBody
+<https://w3id.org/vpa#RequestingBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#RequestingBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/949/Body> .
+<https://w3id.org/vpa#RequestingBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Within its legally recognized role, this Body is able to express the intention to act under the condition of reception of a Permission. The intended action being covered by legal or standardized Requirements to fullfil, this Body will present all required information, as verified by the Appropriate and examined by the Permitting Bodies, to the latter in order to receive the mentioned Permission."@en .
+<https://w3id.org/vpa#RequestingBody> <http://www.w3.org/2000/01/rdf-schema#label> "Requesting Body"@en .
+# 
+# https://w3id.org/vpa#Requirement
+<https://w3id.org/vpa#Requirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#Requirement> <http://www.w3.org/2000/01/rdf-schema#comment> "A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions."@en .
+<https://w3id.org/vpa#Requirement> <http://www.w3.org/2000/01/rdf-schema#label> "Requirement"@en .
+# 
+# https://w3id.org/vpa#Restriction
+<https://w3id.org/vpa#Restriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#Restriction> <http://www.w3.org/2000/01/rdf-schema#comment> "Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way."@en .
+<https://w3id.org/vpa#Restriction> <http://www.w3.org/2000/01/rdf-schema#label> "Restriction"@en .
+# 
+# https://w3id.org/vpa#Scope
+<https://w3id.org/vpa#Scope> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#Scope> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together."@en .
+<https://w3id.org/vpa#Scope> <http://www.w3.org/2000/01/rdf-schema#label> "Scope"@en .
 # 
 # 
 # 
@@ -335,13 +335,13 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Request> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Request> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Permission> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Permission> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/DocumentedEvidence> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#DocumentedEvidence> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://data.europa.eu/949/vpa/Case> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Case> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

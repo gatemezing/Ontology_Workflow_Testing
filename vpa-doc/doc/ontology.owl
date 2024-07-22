@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://data.europa.eu/949/vpa/"
-     xml:base="http://data.europa.eu/949/vpa/"
+<rdf:RDF xmlns="https://w3id.org/vpa#"
+     xml:base="https://w3id.org/vpa"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/">
-    <owl:Ontology rdf:about="http://data.europa.eu/949/vpa/">
+    <owl:Ontology rdf:about="https://w3id.org/vpa">
         <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:contributor rdf:nodeID="genid1"/>
         <terms:creator rdf:nodeID="genid2"/>
@@ -202,94 +202,94 @@
     
 
 
-    <!-- http://data.europa.eu/949/vpa/certifies -->
+    <!-- https://w3id.org/vpa#certifies -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/certifies">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/AppropriateBody"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Requirement"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#certifies">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#AppropriateBody"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Requirement"/>
         <rdfs:comment xml:lang="en">within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially.</rdfs:comment>
         <rdfs:label xml:lang="en">certifies</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/closes -->
+    <!-- https://w3id.org/vpa#closes -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/closes">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/DocumentedEvidence"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Requirement"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#closes">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#DocumentedEvidence"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Requirement"/>
         <rdfs:comment xml:lang="en">within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction.</rdfs:comment>
         <rdfs:label xml:lang="en">closes</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/concerns -->
+    <!-- https://w3id.org/vpa#concerns -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/concerns">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/Case"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#concerns">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#Case"/>
         <rdfs:comment xml:lang="en">holds as material content, constitutes, embodies the material components of the Scope.</rdfs:comment>
         <rdfs:label xml:lang="en">concerns</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/definesCase -->
+    <!-- https://w3id.org/vpa#definesCase -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/definesCase">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/Scope"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Case"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#definesCase">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#Scope"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Case"/>
         <rdfs:comment xml:lang="en">is covered by, included in</rdfs:comment>
         <rdfs:label xml:lang="en">defines case</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/delivers -->
+    <!-- https://w3id.org/vpa#delivers -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/delivers">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/AppropriateBody"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/DocumentedEvidence"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#delivers">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#AppropriateBody"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#DocumentedEvidence"/>
         <rdfs:comment xml:lang="en">within its accredited mandate, issues in a traceable and qualitative manner for reuse in a Permission process</rdfs:comment>
         <rdfs:label xml:lang="en">delivers</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/grants -->
+    <!-- https://w3id.org/vpa#grants -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/grants">
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#grants">
         <rdfs:domain rdf:resource="http://data.europa.eu/949/OrganisationRole"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Permission"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Permission"/>
         <rdfs:comment xml:lang="en">within its legally recognized mandate, issues, delivers in a traceable and qualitative manner, such that the receiver is able to act within the authorisation cases and its verified documentation</rdfs:comment>
         <rdfs:label xml:lang="en">grants</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/issues -->
+    <!-- https://w3id.org/vpa#issues -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/issues">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/RequestingBody"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Request"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#issues">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#RequestingBody"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Request"/>
         <rdfs:comment xml:lang="en">transmits with the intention to be allowed to act according to a legally verified process</rdfs:comment>
         <rdfs:label xml:lang="en">issues</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/permissionType -->
+    <!-- https://w3id.org/vpa#permissionType -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/permissionType">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/Case"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#permissionType">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#Case"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">the detailed process which constitutes this Case&apos;s permission conditions</rdfs:comment>
         <rdfs:label xml:lang="en">permission type</rdfs:label>
@@ -297,48 +297,48 @@
     
 
 
-    <!-- http://data.europa.eu/949/vpa/regarding -->
+    <!-- https://w3id.org/vpa#regarding -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/regarding">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/Restriction"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Requirement"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#regarding">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#Restriction"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Requirement"/>
         <rdfs:comments xml:lang="en">belonging to, and when being respected, then also fulfilling</rdfs:comments>
         <rdfs:label xml:lang="en">regarding</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/requestFor -->
+    <!-- https://w3id.org/vpa#requestFor -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/requestFor">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/Request"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Permission"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#requestFor">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#Request"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Permission"/>
         <rdfs:comment xml:lang="en">aiming to be enabled to act as covered by the Permission and its conditions, by receiving</rdfs:comment>
         <rdfs:label xml:lang="en">request for</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/requests -->
+    <!-- https://w3id.org/vpa#requests -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/requests">
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#requests">
         <rdfs:domain rdf:resource="http://data.europa.eu/949/OrganisationRole"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Permission"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Permission"/>
         <rdfs:comment xml:lang="en">aims to be allowed to act according to a legally verified process, by receiving</rdfs:comment>
         <rdfs:label xml:lang="en">requests</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/status -->
+    <!-- https://w3id.org/vpa#status -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/status">
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#status">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/Request"/>
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#Request"/>
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:comment xml:lang="en">the status of the Request as it is being treated by the PermittingBody</rdfs:comment>
         <rdfs:label xml:lang="en">status</rdfs:label>
@@ -346,54 +346,54 @@
     
 
 
-    <!-- http://data.europa.eu/949/vpa/submittedFor -->
+    <!-- https://w3id.org/vpa#submittedFor -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/submittedFor">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/DocumentedEvidence"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Request"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#submittedFor">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#DocumentedEvidence"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Request"/>
         <rdfs:comment xml:lang="en">supporting, holding evidence of compliance in order to enable the Permitting Body to verify and permit</rdfs:comment>
         <rdfs:label xml:lang="en">submitted for</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/submittedIn -->
+    <!-- https://w3id.org/vpa#submittedIn -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/submittedIn">
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#submittedIn">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://data.europa.eu/949/vpa/DocumentedEvidence"/>
-                    <rdf:Description rdf:about="http://data.europa.eu/949/vpa/Permission"/>
+                    <rdf:Description rdf:about="https://w3id.org/vpa#DocumentedEvidence"/>
+                    <rdf:Description rdf:about="https://w3id.org/vpa#Permission"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Case"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Case"/>
         <rdfs:label xml:lang="en">submitted in</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/supports -->
+    <!-- https://w3id.org/vpa#supports -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/supports">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/Case"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Request"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#supports">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#Case"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Request"/>
         <rdfs:comment xml:lang="en">is part of, inherently constitutes</rdfs:comment>
         <rdfs:label xml:lang="en">supports</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://data.europa.eu/949/vpa/withRestriction -->
+    <!-- https://w3id.org/vpa#withRestriction -->
 
 
-    <owl:ObjectProperty rdf:about="http://data.europa.eu/949/vpa/withRestriction">
-        <rdfs:domain rdf:resource="http://data.europa.eu/949/vpa/DocumentedEvidence"/>
-        <rdfs:range rdf:resource="http://data.europa.eu/949/vpa/Restriction"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/vpa#withRestriction">
+        <rdfs:domain rdf:resource="https://w3id.org/vpa#DocumentedEvidence"/>
+        <rdfs:range rdf:resource="https://w3id.org/vpa#Restriction"/>
         <rdfs:comment xml:lang="en">when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to</rdfs:comment>
         <rdfs:label xml:lang="en">with restriction</rdfs:label>
     </owl:ObjectProperty>
@@ -412,31 +412,10 @@
     
 
 
-    <!-- http://data.europa.eu/949/OrganisationRole -->
+    <!-- http://data.europa.eu/949/Body -->
 
 
-    <owl:Class rdf:about="http://data.europa.eu/949/OrganisationRole">
-        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Organization"/>
-        <rdfs:label xml:lang="en">Organisation Role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/AppropriateBody -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/AppropriateBody">
-        <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/vpa/Body"/>
-        <rdfs:comment xml:lang="en">Accredited organization which is able to express a formal opinion on Requirements, expressing them in DocumentedEvidence (mostly called Certificates), and if necessary making them dependent on Restrictions, which shall be fulfilled.</rdfs:comment>
-        <rdfs:label xml:lang="en">Appropriate Body</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/Body -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/Body">
+    <owl:Class rdf:about="http://data.europa.eu/949/Body">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -450,95 +429,12 @@
     
 
 
-    <!-- http://data.europa.eu/949/vpa/Case -->
+    <!-- http://data.europa.eu/949/OrganisationRole -->
 
 
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/Case">
-        <rdfs:comment xml:lang="en">A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case.</rdfs:comment>
-        <rdfs:label xml:lang="en">Case</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/DocumentedEvidence -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/DocumentedEvidence">
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
-        <rdfs:comment xml:lang="en">Issued by an AppropriateBody, it is the summary of its formal and accredited verification process, enabling the receiver (RequestingBody) to issue a Request for a Permission to the PermittingBody.</rdfs:comment>
-        <rdfs:label xml:lang="en">Documented Evidence</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/Permission -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/Permission">
-        <rdfs:comment xml:lang="en">Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks.</rdfs:comment>
-        <rdfs:label xml:lang="en">Permission</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/PermittingBody -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/PermittingBody">
-        <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/vpa/Body"/>
-        <rdfs:comment xml:lang="en">Within its legally recognized mandate, this Body is able to receive DocumentedEvidence as submitted in a Request and based upon it, issue a Permit to the RequestingBody for the activities covered by the mentioned legislation.</rdfs:comment>
-        <rdfs:label xml:lang="en">Permitting Body</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/Request -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/Request">
-        <rdfs:comment xml:lang="en">Issued by a Requesting Body to a PermittingBody, and supported by at least one Case, while being supported by the necessary DocumentedEvidence, it intends to enable the reception of a Permission.</rdfs:comment>
-        <rdfs:label xml:lang="en">Request</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/RequestingBody -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/RequestingBody">
-        <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/vpa/Body"/>
-        <rdfs:comment xml:lang="en">Within its legally recognized role, this Body is able to express the intention to act under the condition of reception of a Permission. The intended action being covered by legal or standardized Requirements to fullfil, this Body will present all required information, as verified by the Appropriate and examined by the Permitting Bodies, to the latter in order to receive the mentioned Permission.</rdfs:comment>
-        <rdfs:label xml:lang="en">Requesting Body</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/Requirement -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/Requirement">
-        <rdfs:comment xml:lang="en">A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions.</rdfs:comment>
-        <rdfs:label xml:lang="en">Requirement</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/Restriction -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/Restriction">
-        <rdfs:comment xml:lang="en">Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way.</rdfs:comment>
-        <rdfs:label xml:lang="en">Restriction</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://data.europa.eu/949/vpa/Scope -->
-
-
-    <owl:Class rdf:about="http://data.europa.eu/949/vpa/Scope">
-        <rdfs:comment xml:lang="en">A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together.</rdfs:comment>
-        <rdfs:label xml:lang="en">Scope</rdfs:label>
+    <owl:Class rdf:about="http://data.europa.eu/949/OrganisationRole">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label xml:lang="en">Organisation Role</rdfs:label>
     </owl:Class>
     
 
@@ -578,6 +474,110 @@
     
 
 
+    <!-- https://w3id.org/vpa#AppropriateBody -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#AppropriateBody">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/Body"/>
+        <rdfs:comment xml:lang="en">Accredited organization which is able to express a formal opinion on Requirements, expressing them in DocumentedEvidence (mostly called Certificates), and if necessary making them dependent on Restrictions, which shall be fulfilled.</rdfs:comment>
+        <rdfs:label xml:lang="en">Appropriate Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#Case -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#Case">
+        <rdfs:comment xml:lang="en">A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case.</rdfs:comment>
+        <rdfs:label xml:lang="en">Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#DocumentedEvidence -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#DocumentedEvidence">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+        <rdfs:comment xml:lang="en">Issued by an AppropriateBody, it is the summary of its formal and accredited verification process, enabling the receiver (RequestingBody) to issue a Request for a Permission to the PermittingBody.</rdfs:comment>
+        <rdfs:label xml:lang="en">Documented Evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#Permission -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#Permission">
+        <rdfs:comment xml:lang="en">Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks.</rdfs:comment>
+        <rdfs:label xml:lang="en">Permission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#PermittingBody -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#PermittingBody">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/Body"/>
+        <rdfs:comment xml:lang="en">Within its legally recognized mandate, this Body is able to receive DocumentedEvidence as submitted in a Request and based upon it, issue a Permit to the RequestingBody for the activities covered by the mentioned legislation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Permitting Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#Request -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#Request">
+        <rdfs:comment xml:lang="en">Issued by a Requesting Body to a PermittingBody, and supported by at least one Case, while being supported by the necessary DocumentedEvidence, it intends to enable the reception of a Permission.</rdfs:comment>
+        <rdfs:label xml:lang="en">Request</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#RequestingBody -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#RequestingBody">
+        <rdfs:subClassOf rdf:resource="http://data.europa.eu/949/Body"/>
+        <rdfs:comment xml:lang="en">Within its legally recognized role, this Body is able to express the intention to act under the condition of reception of a Permission. The intended action being covered by legal or standardized Requirements to fullfil, this Body will present all required information, as verified by the Appropriate and examined by the Permitting Bodies, to the latter in order to receive the mentioned Permission.</rdfs:comment>
+        <rdfs:label xml:lang="en">Requesting Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#Requirement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#Requirement">
+        <rdfs:comment xml:lang="en">A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Requirement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#Restriction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#Restriction">
+        <rdfs:comment xml:lang="en">Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way.</rdfs:comment>
+        <rdfs:label xml:lang="en">Restriction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/vpa#Scope -->
+
+
+    <owl:Class rdf:about="https://w3id.org/vpa#Scope">
+        <rdfs:comment xml:lang="en">A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together.</rdfs:comment>
+        <rdfs:label xml:lang="en">Scope</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -590,10 +590,10 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://data.europa.eu/949/vpa/Case"/>
-            <rdf:Description rdf:about="http://data.europa.eu/949/vpa/DocumentedEvidence"/>
-            <rdf:Description rdf:about="http://data.europa.eu/949/vpa/Permission"/>
-            <rdf:Description rdf:about="http://data.europa.eu/949/vpa/Request"/>
+            <rdf:Description rdf:about="https://w3id.org/vpa#Case"/>
+            <rdf:Description rdf:about="https://w3id.org/vpa#DocumentedEvidence"/>
+            <rdf:Description rdf:about="https://w3id.org/vpa#Permission"/>
+            <rdf:Description rdf:about="https://w3id.org/vpa#Request"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
