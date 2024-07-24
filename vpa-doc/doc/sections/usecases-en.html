@@ -22,17 +22,17 @@
   ```
   erava:V-20230310-NNN a era:VehicleAuthorisation .
   erava:va-V-20230310-NNN a era:PAVAApplication .
-  erava:vac-V-20230310-NNN-0 a era:AuthorisationCase .
+  erava:vac-51-019-001-6-002-001 a era:AuthorisationCase .
   
   erava:mf-MMMM vp:requests erava:V-20230310-NNN ;
                 vp:issues erava:va-V-20230310-NNN .
 
-  erava:vac-V-20230310-NNN-0 vp:supports erava:va-V-20230310-NNN ;
+  erava:vac-51-019-001-6-002-001 vp:supports erava:va-V-20230310-NNN ;
                 era:areaOfUse era:Network1 , era:Network2 , era:SubNetwork3 ;
                 vp:permissionType era-skos-va:C2T .  # implies a era:VehicleAuthorisation
 
   eratv:51-019-001-6-002-001 a era:VehicleType ;
-                vp:definesCase erava:vac-V-20230310-NNN-0 .
+                vp:definesCase erava:vac-51-019-001-6-002-001 .
 
   erava:vs-V-20230310-NNN-0 a erava:VehiclesCollection ;
                 era:contains eravr:31717813003-2 , eravr:32717813002-4 , ... # and others
@@ -75,7 +75,7 @@
                 vp:issues eravr:vr-NNNN-n .
   
   # Authorisation serves Registration!
-  erava:vac-V-20230310-NNN-0 vp:supports eravr:vr-NNN-n ; # allows to reuse the linked data of tha auth case regarding vehicles, aou, and underlying evidence.
+  erava:vac-51-019-001-6-002-001 vp:supports eravr:vr-NNN-n ; # allows to reuse the linked data of tha auth case regarding vehicles, aou, and underlying evidence.
             vp:requestFor eravr:NNN-n .
   
   ```
