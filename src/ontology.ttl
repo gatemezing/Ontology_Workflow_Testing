@@ -96,8 +96,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ### http://data.europa.eu/949/vpa/compliant
-vpa:compliant rdf:type owl:DatatypeProperty ;
-                rdfs:domain vp:Compliance
+vpa:isCompliant rdf:type owl:DatatypeProperty ;
+                rdfs:domain vpa:Compliance
                 rdfs:range xsd:boolean ;
                 rdfs:comment "For the verified section of a Requirement: true when fully compliant, false in other cases (in which a clarifying Restriction is possible)"@en ;
                 rdfs:label "compliant"@en .
@@ -228,11 +228,11 @@ vpa:requests rdf:type owl:ObjectProperty ;
 
 
 ###  http://data.europa.eu/949/vpa/sections
-vpa:sections rdf:type owl:ObjectProperty ,
+vpa:section rdf:type owl:ObjectProperty ,
                  owl:FunctionalProperty ;
         rdfs:domain vpa:Requirement ;
         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-        rdfs:comment "sections of the requirement to which individual compliance can be registered by the Approprite Body"@en ;
+        rdfs:comment "section(s) of the requirement to which individual compliance can be registered by the Appropriate Body"@en ;
         rdfs:label "sections"@en .
 
 
