@@ -4,4 +4,4 @@ This repository manages the development and publication of the Verified Permissi
 
 # Documentation
 
-This documentation is available here https://linkedvocabs.org/data/VPADoc/doc/index-en.html
+This documentation is available here https://w3id.org/vpa
