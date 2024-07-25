@@ -21,28 +21,45 @@ The name `verified permissions` tries to collect this pair of activities.
 
 ### Roles
 
-  Generically, three bodies (legal entities or in some cases individual persons) execute core roles in the VP supported processes:
+  In general, three bodies (legal entities or in some cases individual persons) execute core roles in the VP supported processes:
 
   1. Requesting body who needs a permission from a permitting body, based on a submitted request, of which part at least is made of verified evidence.
   2. Permitting body granting the permission after consultation of the submitted request, and especially the completeness and details regarding the evidence submitted
   3. Appropriate body consolidating the evidence needed by the requesting body to be accepted by the permitting body.
 
-### Exclusions
+### Concepts
 
   The ontology captures the following details, each with certain exclusions nevertheless:
 
-  - A request can be filed using at least one case, each with its precise and specific scope. 
-  - A scope must be seen as the concrete and specific topic of the permission, for which separate evidence is needed. All scopes must be covered or the permission cannot be granted.
-  - Certain evidence can be linked to the whole request as it cannot be linked specifically to a case (and its scope). This evidence must close all required Requirements or the permission cannot be granted.
-  - The VP ontology does NOT further define what exactly a Requirement, as closed by Evidence, must look like. But data regarding evidence can only be accepted if the link with the requirement (and eventual restriction) is present.
-  - It also does NOT refine what a Restriction must look like, apart from the fact that (1) it MUST be considered together with the Evidence, in order to close a requirement and (2) it is ONLY formulated by the appropriate body.
-  - The VP ontology does NOT define what the verifiable sections within requirements exactly contain (as it assumes a controlled vocabulary to do so), but it enables to declare these sections applicable and even (non-)compliant as registered in the documented evidence. 
-  - A requesting body submits the evidence as it sees fit, and the permitting body must always decide on its completeness. This aspect is not traced in the ontology.
+  - A `Request` can be filed using at least one `Case`, each with its precise and specific `Scope`. 
+  - A `Scope` must be seen as the concrete and specific topic of the `Permission`, for which separate evidence is needed as documented in `DocumentedEvidence`. 
+  - Certain evidence can be linked to the whole `Request` as it cannot be linked specifically to a `Case` (and its `Scope`).
+  - `DocumentedEvidence` must not be seen as the evidence documentation itself, but as the outcome of processes executed by the Appropriate Body.
+  - In order to detail which requirements' sections were effectively checked, the ontology provides the `Compliance` class.
 
-  It is well possible to link the VP ontology to a business case, in which the exact sections within a Requirement to close:
+### Assumptions and elements out of scope
 
+  > [!WARNING]
+  > The following assumptions are for information only, and all legal requirements prevail. They are given only with the intention to clarify the correct use of this ontology.
+  
+  This ontology does NOT define:
+  - what exactly a Requirement, as closed by DocumentedEvidence, must look like. The Agency uses IRI's to legal requirements to express these requirements, and uses `vp:section` to enumerate the paragraphs for which compliance is normally checked. It will regroup these sections in a SKOS Concept Scheme.
+  - what a Restriction must look like, apart from the fact that (1) it MUST be considered together with the Evidence, in order to close a requirement and (2) it is ONLY formulated by the appropriate body. The Agency has observed that in most cases text suffices to express it.
+  - what the verifiable sections within requirements exactly contain (as it assumes a controlled vocabulary to do so), but it enables to declare these sections applicable and even (non-)compliant as registered in the documented evidence. The Agency is using the sections within the TSI's (themselves Requirements) to model how Vehicle Types have been assessed according to data in ERATV.
+  
+  A requesting body submits the evidence as it sees fit, and the permitting body must always decide on its completeness. The ontology on purpose does not foresee a property expressing completeness.
+
+  Most verification processes assume the following:
+  
+  - All scopes must be covered or the permission cannot be granted, unless the scope is reduced by the Appropriate Body.
+  - The evidence, as present in `DocumentedEvidence`, must close all required `Requirements` or the `Permission` cannot be granted.
+  - Data regarding evidence can only be accepted if the link with the requirement (and eventual restriction) is present.
+  
+  It is well possible to link the VP ontology to a business case, in which the exact sections to close within a Requirement:
   - can minimally be proposed by the requesting body
   - can maximally be defined by the permitting body
-  but this is out of scope of the VP ontology. The legislation mostly provides for the sections to verify in a Requirement, and both stakeholders should find agreement in the range of the compliance check, in line with the legislation.
+  but this is out of scope of the VP ontology. 
+  
+  The legislation mostly provides for the sections to verify in a Requirement, and both stakeholders should find agreement in the range of the compliance check, in line with the legislation.
 
 </span>
