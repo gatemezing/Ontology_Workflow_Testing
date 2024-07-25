@@ -7,10 +7,10 @@
   Using the Verified Permissions, we can create for VA:
 
   ```
-  era:VehicleTypeAuthorisation rdfs:subClassOf vp:Permission . # Serves all authorization cases, but not C2T.
-  era:VehicleAuthorisation rdfs:subClassOf vp:Permission . # Serves the authorization case C2T.
-  era:VAApplication rdfs:subClassOf vp:Request .
-  era:AuthorisationCase rdfs:subClassOf vp:Case .
+  era:VehicleTypeAuthorisation rdfs:subClassOf vpa:Permission . # Serves all authorization cases, but not C2T.
+  era:VehicleAuthorisation rdfs:subClassOf vpa:Permission . # Serves the authorization case C2T.
+  era:VAApplication rdfs:subClassOf vpa:Request .
+  era:AuthorisationCase rdfs:subClassOf vpa:Case .
   ```
 
   #### Example
@@ -24,15 +24,15 @@
   erava:va-V-20230310-NNN a era:PAVAApplication .
   erava:vac-51-019-001-6-002-001 a era:AuthorisationCase .
   
-  erava:mf-MMMM vp:requests erava:V-20230310-NNN ;
-                vp:issues erava:va-V-20230310-NNN .
+  erava:mf-MMMM vpa:requests erava:V-20230310-NNN ;
+                vpa:issues erava:va-V-20230310-NNN .
 
-  erava:vac-51-019-001-6-002-001 vp:supports erava:va-V-20230310-NNN ;
+  erava:vac-51-019-001-6-002-001 vpa:supports erava:va-V-20230310-NNN ;
                 era:areaOfUse era:Network1 , era:Network2 , era:SubNetwork3 ;
-                vp:permissionType era-skos-va:C2T .  # implies a era:VehicleAuthorisation
+                vpa:permissionType era-skos-va:C2T .  # implies a era:VehicleAuthorisation
 
   eratv:51-019-001-6-002-001 a era:VehicleType ;
-                vp:definesCase erava:vac-51-019-001-6-002-001 .
+                vpa:definesCase erava:vac-51-019-001-6-002-001 .
 
   erava:vs-V-20230310-NNN-0 a erava:VehiclesCollection ;
                 era:contains eravr:31717813003-2 , eravr:32717813002-4 , ... # and others
@@ -42,7 +42,7 @@
   ... # other vehicles in this authorisation case.
   ```
 
-  The properties from `era:VehicleTypeAuthorisation` and `era:VehicleAuthorisation` are mainly inherited from a vp:Permission:
+  The properties from `era:VehicleTypeAuthorisation` and `era:VehicleAuthorisation` are mainly inherited from a vpa:Permission:
   - The issue, starting and expiration dates
   - The status (excluding those which can be deduced from the dates) and the date the Permission was given that status. Example: 'REVOKED'.
 
@@ -57,9 +57,9 @@
   Using the Verified Permissions, we can create for VR:
 
   ```
-  era:VehicleRegistration rdfs:subClassOf vp:Permission .
-  era:EVRApplication rdfs:subClassOf vp:Request .
-  era:RegistrationCase rdfs:subClassOf vp:Case .
+  era:VehicleRegistration rdfs:subClassOf vpa:Permission .
+  era:EVRApplication rdfs:subClassOf vpa:Request .
+  era:RegistrationCase rdfs:subClassOf vpa:Case .
   ```
 
   #### Example
@@ -71,12 +71,12 @@
   eravr:vr-NNNN-n a era:EVRApplication .
   # eravr:vrc-NNNN-n-0 a era:RegistrationCase . 
 
-  eravr:KE-NNNN vp:requests eravr:NNNN-n ; # the keeper, with its org Id.
-                vp:issues eravr:vr-NNNN-n .
+  eravr:KE-NNNN vpa:requests eravr:NNNN-n ; # the keeper, with its org Id.
+                vpa:issues eravr:vr-NNNN-n .
   
   # Authorisation serves Registration!
-  erava:vac-51-019-001-6-002-001 vp:supports eravr:vr-NNN-n ; # allows to reuse the linked data of tha auth case regarding vehicles, aou, and underlying evidence.
-            vp:requestFor eravr:NNN-n .
+  erava:vac-51-019-001-6-002-001 vpa:supports eravr:vr-NNN-n ; # allows to reuse the linked data of tha auth case regarding vehicles, aou, and underlying evidence.
+            vpa:requestFor eravr:NNN-n .
   
   ```
   Tools managing data regarding registrations could allow users to find all authorisations linked to those vehicle (collections). The registration would be complemented by the data linked to the supporting authorisation case and would not have to be defined separately.
