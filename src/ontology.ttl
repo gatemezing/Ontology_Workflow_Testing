@@ -95,6 +95,14 @@ _:genid5 a <http://xmlns.com/foaf/0.1/Agent> ;
 xsd:date rdf:type rdfs:Datatype .
 
 
+### http://data.europa.eu/949/vpa/compliant
+vpa:isCompliant rdf:type owl:DatatypeProperty ;
+                rdfs:domain vpa:Compliance
+                rdfs:range xsd:boolean ;
+                rdfs:comment "For the verified section of a Requirement: true when fully compliant, false in other cases (in which a clarifying Restriction is possible)"@en ;
+                rdfs:label "compliant"@en .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -121,6 +129,22 @@ vpa:certifies rdf:type owl:ObjectProperty ;
            rdfs:range vpa:Requirement ;
            rdfs:comment "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."@en ;
            rdfs:label "certifies"@en .
+
+
+###  http://data.europa.eu/949/vpa/checked
+vpa:checked rdf:type owl:ObjectProperty ;
+           rdfs:domain vpa:DocumentedEvidence ;
+           rdfs:range vpa:Compliance ;
+           rdfs:comment "The Compliance checks having been documented by the Appropriate Body in the DocumentedEvidence."@en ;
+           rdfs:label "checked compliance"@en .
+
+
+###  http://data.europa.eu/949/vpa/checkedSection
+vpa:checkedSection rdf:type owl:ObjectProperty ;
+           rdfs:domain vpa:Compliance ;
+           rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+           rdfs:comment "For a Compliance check, the section of the Requirement which was individually checked by the Appropriate Body. The sections in scope of the verification are registered under each Requirement itself."@en ;
+           rdfs:label "checked section"@en .
 
 
 ###  http://data.europa.eu/949/vpa/closes
@@ -203,6 +227,15 @@ vpa:requests rdf:type owl:ObjectProperty ;
           rdfs:label "requests"@en .
 
 
+###  http://data.europa.eu/949/vpa/sections
+vpa:section rdf:type owl:ObjectProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain vpa:Requirement ;
+        rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+        rdfs:comment "section(s) of the requirement to which individual compliance can be registered by the Appropriate Body"@en ;
+        rdfs:label "sections"@en .
+
+
 ###  http://data.europa.eu/949/vpa/status
 vpa:status rdf:type owl:ObjectProperty ,
                  owl:FunctionalProperty ;
@@ -241,7 +274,11 @@ vpa:supports rdf:type owl:ObjectProperty ;
 
 ###  http://data.europa.eu/949/vpa/withRestriction
 vpa:withRestriction rdf:type owl:ObjectProperty ;
-                 rdfs:domain vpa:DocumentedEvidence ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( vpa:DocumentedEvidence 
+                                             vpa:Compliance
+                                           ) 
+                             ] ;
                  rdfs:range vpa:Restriction ;
                  rdfs:comment "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"@en ;
                  rdfs:label "with restriction"@en .
@@ -279,6 +316,11 @@ vpa:Case rdf:type owl:Class ;
       rdfs:comment "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."@en ;
       rdfs:label "Case"@en .
 
+
+###  http://data.europa.eu/949/vpa/Compliance
+vpa:Compliance rdf:type owl:Class ;
+      rdfs:comment "Regroups the result of a compliance check on a specific section of an applicable Requirement as registered in Documented Evicence. If needed, links this examined section to a specific Restriction."@en ;
+      rdfs:label "Compliance"@en .
 
 ###  http://data.europa.eu/949/vpa/DocumentedEvidence
 vpa:DocumentedEvidence rdf:type owl:Class ;
