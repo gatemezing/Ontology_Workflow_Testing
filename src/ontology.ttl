@@ -1,12 +1,13 @@
 @prefix vpa: <https://w3id.org/vpa#> .
+@prefix era: <http://data.europa.eu/949/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix era: <http://data.europa.eu/949/> .
+@prefix time: <https://www.w3.org/TR/owl-time/>
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://w3id.org/vpa> rdf:type owl:Ontology, voaf:Vocabulary ;
         <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
@@ -20,7 +21,7 @@
         <http://purl.org/dc/terms/title> "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en ;
         rdfs:comment "ERA Ontology for verified permissions"@en ;
         rdfs:label "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"@en ;
-        owl:versionInfo "v0.3"@en .
+        owl:versionInfo "v0.4"@en .
 
 _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
           <http://schema.org/affiliation> _:genid2 ;
@@ -274,6 +275,18 @@ vpa:supports rdf:type owl:ObjectProperty ;
           rdfs:range vpa:Request ;
           rdfs:comment "is part of, inherently constitutes"@en ;
           rdfs:label "supports"@en .
+
+
+###  http://data.europa.eu/949/vpa/valid
+vpa:valid rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( vpa:DocumentedEvidence
+                                      vpa:Permission
+                                    )
+                      ] ;
+          rdfs:range time:Interval ;
+          rdfs:comment "is valid during"@en ;
+          rdfs:label "valid during"@en .
 
 
 ###  http://data.europa.eu/949/vpa/withRestriction
