@@ -286,7 +286,7 @@ vpa:valid rdf:type owl:ObjectProperty ;
                                     )
                       ] ;
           rdfs:range time:Interval ;
-          rdfs:comment "is valid during"@en ;
+          rdfs:comment "valid during a certain time"@en ;
           rdfs:label "valid during"@en .
 
 
