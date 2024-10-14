@@ -33,7 +33,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install ontospy
         wget -O widoco.jar https://linkedvocabs.org/tmp/widoco/widoco-1.4.24-jar-with-dependencies-era.jar
-        java-17-widoco-1.4.17-jar-with-dependencies.jar
         mkdir -p docs/browse docs/tree docs/graph docs/lode
 
     - name: Generate docs with Widoco (LODE)
