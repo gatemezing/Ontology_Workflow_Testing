@@ -3,7 +3,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix time: <https://www.w3.org/TR/owl-time/>
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -13,8 +13,9 @@
         <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/contributor> _:genid5 ;
         <http://purl.org/dc/terms/creator> _:genid3 , _:genid1 ;
+        <http://purl.org/dc/terms/created> "2024-06-28"^^xsd:date ;
         <http://purl.org/dc/terms/issued> "2024-06-28"^^xsd:date ;
-        <http://purl.org/dc/terms/modified> "2024-07-02"^^xsd:date ;
+        <http://purl.org/dc/terms/modified> "2024-07-02"^^xsd:date, "2024-10-14"^^xsd:date ;
         vann:preferredNamespacePrefix "vpa";
         vann:preferredNamespaceUri <https://w3id.org/vpa#> ;
         <http://purl.org/dc/terms/publisher> "European Union Agency for Railways"@en ;
