@@ -37,9 +37,10 @@ jobs:
 
     - name: Generate docs with Widoco (LODE)
       run: |
+        mkdir docs/lode/
         java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/lode/ -getOntologyMetadata -oops -rewriteAll -webVowl
-        mv docs/lode docs/lode-tmp
-        mv docs/lode-tmp/doc docs/lode
+        #mv docs/lode docs/lode-tmp
+        #mv docs/lode-tmp/doc docs/lode
         mv docs/lode/index-en.html docs/lode/index.html
         mv docs/lode/OOPSevaluation docs/lode/oops
         mv docs/lode/oops/oopsEval.html docs/lode/oops/index.html
