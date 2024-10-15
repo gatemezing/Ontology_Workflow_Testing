@@ -267,6 +267,7 @@ vpa:submittedIn rdf:type owl:ObjectProperty ;
                                        )
                          ] ;
              rdfs:range vpa:Case ;
+             rdfs:comment "The submission of a permission or a documented evidence to a case"@en ;
              rdfs:label "submitted in"@en .
 
 
