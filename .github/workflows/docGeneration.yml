@@ -43,7 +43,7 @@ jobs:
         #mv docs/lode-tmp/doc docs/lode
         mv vpa-doc/lode/index-en.html vpa-doc/lode/index.html
         mv vpa-doc/lode/OOPSevaluation vpa-doc/lode/oops
-        mv docs/lode/oops/oopsEval.html vpa-doc/lode/oops/index.html
+        mv vpa-doc/lode/oops/oopsEval.html vpa-doc/lode/oops/index.html
 
     - name: Generate docs with Ontospy
       run: |
