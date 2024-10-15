@@ -213,7 +213,7 @@ vpa:permissionType rdf:type owl:ObjectProperty ;
 vpa:regarding rdf:type owl:ObjectProperty ;
            rdfs:domain vpa:Restriction ;
            rdfs:range vpa:Requirement ;
-           rdfs:comments "belonging to, and when being respected, then also fulfilling"@en ;
+           rdfs:comment "belonging to, and when being respected, then also fulfilling"@en ;
            rdfs:label "regarding"@en .
 
 
