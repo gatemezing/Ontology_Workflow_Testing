@@ -56,11 +56,11 @@ jobs:
         git config --global user.name 'Ghislain Atemezing'
         git config --global user.email 'ghislain.atemezing@gmail.com'
         git fetch
-        git checkout gh-pages
-        rm -rf browse tree graph lode
-        mv docs/* .
-        git add browse graph lode tree
-        git commit -m "Automatically generate documentation from EU Rail OWL ontology file using Ontospy and Widoco (lode)."
+        #git checkout gh-pages
+        #rm -rf browse tree graph lode
+        #mv docs/* .
+        #git add browse graph lode tree
+        git commit -m "Automatically generate documentation from VPA OWL ontology file using Ontospy and Widoco (lode)."
         git push || exit 0
 
     

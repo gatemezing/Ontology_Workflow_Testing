@@ -8,6 +8,7 @@
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 <https://w3id.org/vpa> rdf:type owl:Ontology, voaf:Vocabulary ;
         <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
@@ -20,7 +21,7 @@
         vann:preferredNamespaceUri <https://w3id.org/vpa#> ;
         <http://purl.org/dc/terms/publisher> "European Union Agency for Railways"@en ;
         <http://purl.org/dc/terms/title> "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en ;
-        rdfs:comment "ERA Ontology for verified permissions"@en ;
+        dcterms:title "ERA Ontology for verified permissions"@en ;
         rdfs:label "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"@en ;
         owl:versionInfo "v0.4"@en .
 
