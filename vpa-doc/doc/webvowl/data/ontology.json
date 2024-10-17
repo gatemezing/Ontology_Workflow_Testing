@@ -2,18 +2,15 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "en", "undefined" ],
-    "baseIris" : [ "https://w3id.org/vpa", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/ns/org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://data.europa.eu/949", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2004/02/skos/core" ],
+    "baseIris" : [ "https://w3id.org/vpa", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/ns/org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://data.europa.eu/949", "http://xmlns.com/foaf/0.1", "http://www.w3.org/2006/time", "http://www.w3.org/2004/02/skos/core" ],
     "title" : {
-      "en" : "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"
+      "en" : "ERA Ontology for verified permissions"
     },
     "iri" : "https://w3id.org/vpa",
-    "version" : "v0.3",
-    "author" : [ "_:genid2147483649", "_:genid2147483648" ],
+    "version" : "v0.4",
+    "author" : [ "_:genid2147483649", "_:genid2147483650" ],
     "labels" : {
       "en" : "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"
-    },
-    "comments" : {
-      "en" : "ERA Ontology for verified permissions"
     },
     "other" : {
       "license" : [ {
@@ -25,7 +22,7 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483648",
+        "value" : "_:genid2147483650",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -36,10 +33,27 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483650",
+        "value" : "_:genid2147483648",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2024-06-28",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "vpa",
         "type" : "label"
       } ],
       "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2024-10-14",
+        "type" : "label"
+      }, {
         "identifier" : "modified",
         "language" : "undefined",
         "value" : "2024-07-02",
@@ -51,16 +65,27 @@
         "value" : "European Union Agency for Railways",
         "type" : "label"
       } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/vpa#",
+        "type" : "iri"
+      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
-        "language" : "en",
-        "value" : "v0.3",
+        "language" : "undefined",
+        "value" : "v0.4",
         "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
         "value" : "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "ERA Ontology for verified permissions",
         "type" : "label"
       } ],
       "issued" : [ {
@@ -76,61 +101,92 @@
     "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
     "id" : "8",
     "type" : "owl:Class"
   }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
     "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
     "type" : "owl:Class"
   }, {
     "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
     "type" : "owl:Class"
   }, {
     "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "42",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "33",
     "type" : "owl:unionOf"
   }, {
-    "id" : "10",
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "15",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2006/time#Interval",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval",
+      "en" : "Interval"
+    },
+    "comment" : {
+      "en" : "A temporal entity with an extent or duration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
     "iri" : "https://w3id.org/vpa#PermittingBody",
     "baseIri" : "https://w3id.org/vpa",
     "instances" : 0,
@@ -141,8 +197,8 @@
     "comment" : {
       "en" : "Within its legally recognized mandate, this Body is able to receive DocumentedEvidence as submitted in a Request and based upon it, issue a Permit to the RequestingBody for the activities covered by the mentioned legislation."
     },
-    "id" : "5",
-    "superClasses" : [ "6" ]
+    "id" : "6",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
     "baseIri" : "http://www.w3.org/2004/02/skos/core",
@@ -151,7 +207,7 @@
       "IRI-based" : "Concept"
     },
     "attributes" : [ "external" ],
-    "id" : "7"
+    "id" : "8"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Agent",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -160,7 +216,7 @@
       "IRI-based" : "Agent"
     },
     "attributes" : [ "external" ],
-    "id" : "8"
+    "id" : "9"
   }, {
     "iri" : "https://w3id.org/vpa#Request",
     "baseIri" : "https://w3id.org/vpa",
@@ -184,7 +240,7 @@
     "comment" : {
       "en" : "Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks."
     },
-    "id" : "15"
+    "id" : "18"
   }, {
     "iri" : "https://w3id.org/vpa#RequestingBody",
     "baseIri" : "https://w3id.org/vpa",
@@ -196,8 +252,8 @@
     "comment" : {
       "en" : "Within its legally recognized role, this Body is able to express the intention to act under the condition of reception of a Permission. The intended action being covered by legal or standardized Requirements to fullfil, this Body will present all required information, as verified by the Appropriate and examined by the Permitting Bodies, to the latter in order to receive the mentioned Permission."
     },
-    "id" : "16",
-    "superClasses" : [ "6" ]
+    "id" : "22",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/ns/org#Organization",
     "baseIri" : "http://www.w3.org/ns/org",
@@ -206,7 +262,30 @@
       "IRI-based" : "Organization"
     },
     "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/vpa",
+      "baseIri" : "https://w3id.org",
+      "labels" : {
+        "IRI-based" : "vpa"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "38"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -215,12 +294,19 @@
       "IRI-based" : "Person"
     },
     "attributes" : [ "external" ],
-    "id" : "27"
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "42",
+    "label" : {
+      "undefined" : "Thing"
+    }
   }, {
     "instances" : 0,
-    "union" : [ "1", "15" ],
+    "union" : [ "1", "18" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "24"
+    "id" : "33"
   }, {
     "iri" : "https://w3id.org/vpa#AppropriateBody",
     "baseIri" : "https://w3id.org/vpa",
@@ -233,14 +319,12 @@
       "en" : "Accredited organization which is able to express a formal opinion on Requirements, expressing them in DocumentedEvidence (mostly called Certificates), and if necessary making them dependent on Restrictions, which shall be fulfilled."
     },
     "id" : "4",
-    "superClasses" : [ "6" ]
+    "superClasses" : [ "7" ]
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "32",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "instances" : 0,
+    "union" : [ "1", "18" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "20"
   }, {
     "iri" : "https://w3id.org/vpa#Requirement",
     "baseIri" : "https://w3id.org/vpa",
@@ -252,7 +336,12 @@
     "comment" : {
       "en" : "A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions."
     },
-    "id" : "11"
+    "id" : "13"
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "50"
   }, {
     "iri" : "https://w3id.org/vpa#Case",
     "baseIri" : "https://w3id.org/vpa",
@@ -264,7 +353,7 @@
     "comment" : {
       "en" : "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."
     },
-    "id" : "13"
+    "id" : "11"
   }, {
     "iri" : "https://w3id.org/vpa#DocumentedEvidence",
     "baseIri" : "https://w3id.org/vpa",
@@ -277,7 +366,19 @@
       "en" : "Issued by an AppropriateBody, it is the summary of its formal and accredited verification process, enabling the receiver (RequestingBody) to issue a Request for a Permission to the PermittingBody."
     },
     "id" : "1",
-    "superClasses" : [ "39" ]
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "https://w3id.org/vpa#Compliance",
+    "baseIri" : "https://w3id.org/vpa",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Compliance",
+      "en" : "Compliance"
+    },
+    "comment" : {
+      "en" : "Regroups the result of a compliance check on a specific section of an applicable Requirement as registered in Documented Evicence. If needed, links this examined section to a specific Restriction."
+    },
+    "id" : "17"
   }, {
     "iri" : "http://data.europa.eu/949/OrganisationRole",
     "baseIri" : "http://data.europa.eu/949",
@@ -287,7 +388,7 @@
       "en" : "Organisation Role"
     },
     "attributes" : [ "external" ],
-    "id" : "18"
+    "id" : "24"
   }, {
     "iri" : "https://w3id.org/vpa#Scope",
     "baseIri" : "https://w3id.org/vpa",
@@ -299,7 +400,7 @@
     "comment" : {
       "en" : "A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together."
     },
-    "id" : "44"
+    "id" : "55"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Document",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -309,7 +410,7 @@
     },
     "subClasses" : [ "1" ],
     "attributes" : [ "external" ],
-    "id" : "39"
+    "id" : "41"
   }, {
     "iri" : "http://data.europa.eu/949/Body",
     "baseIri" : "http://data.europa.eu/949",
@@ -318,10 +419,10 @@
       "IRI-based" : "Body",
       "en" : "Body"
     },
-    "union" : [ "21", "27" ],
-    "subClasses" : [ "16", "5", "4" ],
+    "union" : [ "30", "39" ],
+    "subClasses" : [ "22", "6", "4" ],
     "attributes" : [ "external", "union" ],
-    "id" : "6"
+    "id" : "7"
   }, {
     "iri" : "https://w3id.org/vpa#Restriction",
     "baseIri" : "https://w3id.org/vpa",
@@ -333,7 +434,7 @@
     "comment" : {
       "en" : "Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way."
     },
-    "id" : "10"
+    "id" : "15"
   } ],
   "property" : [ {
     "id" : "0",
@@ -342,7 +443,7 @@
     "id" : "3",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "9",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
     "id" : "12",
@@ -351,76 +452,91 @@
     "id" : "14",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "17",
+    "id" : "16",
     "type" : "owl:objectProperty"
   }, {
     "id" : "19",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "20",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "22",
+    "id" : "21",
     "type" : "owl:objectProperty"
   }, {
     "id" : "23",
     "type" : "owl:objectProperty"
   }, {
     "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "26",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "28",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "29",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "30",
     "type" : "owl:objectProperty"
   }, {
     "id" : "31",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "33",
-    "type" : "owl:disjointWith"
+    "id" : "32",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "34",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "35",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "36",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "37",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "38",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "40",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "41",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "42",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "43",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "45",
+    "id" : "44",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "46",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -452,42 +568,23 @@
     "attributes" : [ "object" ],
     "id" : "3"
   }, {
-    "iri" : "https://w3id.org/vpa#regarding",
-    "baseIri" : "https://w3id.org/vpa",
-    "range" : "11",
-    "annotations" : {
-      "comments" : [ {
-        "identifier" : "comments",
-        "language" : "en",
-        "value" : "belonging to, and when being respected, then also fulfilling",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "regarding",
-      "en" : "regarding"
-    },
-    "domain" : "10",
-    "attributes" : [ "object" ],
-    "id" : "9"
-  }, {
     "iri" : "https://w3id.org/vpa#permissionType",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "7",
+    "range" : "8",
     "label" : {
       "IRI-based" : "permissionType",
       "en" : "permission type"
     },
-    "domain" : "13",
+    "domain" : "11",
     "comment" : {
       "en" : "the detailed process which constitutes this Case's permission conditions"
     },
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "10"
   }, {
     "iri" : "https://w3id.org/vpa#closes",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "11",
+    "range" : "13",
     "label" : {
       "IRI-based" : "closes",
       "en" : "closes"
@@ -497,25 +594,95 @@
       "en" : "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."
     },
     "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/vpa#regarding",
+    "baseIri" : "https://w3id.org/vpa",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "regarding",
+      "en" : "regarding"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "belonging to, and when being respected, then also fulfilling"
+    },
+    "attributes" : [ "object" ],
     "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/vpa#checkedSection",
+    "baseIri" : "https://w3id.org/vpa",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "checkedSection",
+      "en" : "checked section"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "For a Compliance check, the section of the Requirement which was individually checked by the Appropriate Body. The sections in scope of the verification are registered under each Requirement itself."
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/vpa#valid",
+    "baseIri" : "https://w3id.org/vpa",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "valid",
+      "en" : "valid"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "valid during a certain time"
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/vpa#checked",
+    "baseIri" : "https://w3id.org/vpa",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "checked",
+      "en" : "checked compliance"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The Compliance checks having been documented by the Appropriate Body in the DocumentedEvidence."
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
   }, {
     "iri" : "https://w3id.org/vpa#requests",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "15",
+    "range" : "18",
     "label" : {
       "IRI-based" : "requests",
       "en" : "requests"
     },
-    "domain" : "18",
+    "domain" : "24",
     "comment" : {
       "en" : "aims to be allowed to act according to a legally verified process, by receiving"
     },
     "attributes" : [ "object" ],
-    "id" : "17"
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/vpa#isCompliant",
+    "baseIri" : "https://w3id.org/vpa",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "isCompliant",
+      "en" : "compliant"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "For the verified section of a Requirement: true when fully compliant, false in other cases (in which a clarifying Restriction is possible)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "25"
   }, {
     "iri" : "https://w3id.org/vpa#certifies",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "11",
+    "range" : "13",
     "label" : {
       "IRI-based" : "certifies",
       "en" : "certifies"
@@ -525,44 +692,66 @@
       "en" : "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."
     },
     "attributes" : [ "object" ],
-    "id" : "19"
+    "id" : "27"
   }, {
     "iri" : "http://data.europa.eu/949/hasOrganisationRole",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "7",
+    "range" : "8",
     "label" : {
       "IRI-based" : "hasOrganisationRole",
       "en" : "has organisation role"
     },
-    "domain" : "18",
-    "attributes" : [ "external", "functional", "object" ],
-    "id" : "20"
+    "domain" : "24",
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/vpa#section",
+    "baseIri" : "https://w3id.org/vpa",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "section",
+      "en" : "sections"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "section(s) of the requirement to which individual compliance can be registered by the Appropriate Body"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "29"
   }, {
     "iri" : "http://data.europa.eu/949/role",
     "baseIri" : "http://data.europa.eu/949",
-    "range" : "18",
+    "range" : "24",
     "label" : {
       "IRI-based" : "role",
       "en" : "role"
     },
-    "domain" : "21",
-    "attributes" : [ "external", "object" ],
-    "id" : "22"
+    "domain" : "30",
+    "attributes" : [ "object", "external" ],
+    "id" : "31"
   }, {
     "iri" : "https://w3id.org/vpa#submittedIn",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "13",
+    "range" : "11",
     "label" : {
       "IRI-based" : "submittedIn",
       "en" : "submitted in"
     },
-    "domain" : "24",
+    "domain" : "33",
+    "comment" : {
+      "en" : "The submission of a permission or a documented evidence to a case"
+    },
     "attributes" : [ "object" ],
-    "id" : "23"
+    "id" : "32"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
   }, {
     "iri" : "https://w3id.org/vpa#status",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "7",
+    "range" : "8",
     "label" : {
       "IRI-based" : "status",
       "en" : "status"
@@ -571,91 +760,86 @@
     "comment" : {
       "en" : "the status of the Request as it is being treated by the PermittingBody"
     },
-    "attributes" : [ "functional", "object" ],
-    "id" : "25"
+    "attributes" : [ "object", "functional" ],
+    "id" : "35"
   }, {
-    "range" : "6",
-    "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "26"
+    "range" : "7",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
   }, {
-    "range" : "6",
+    "range" : "7",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "28"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
   }, {
-    "range" : "6",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "29"
+    "range" : "41",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
   }, {
     "iri" : "https://w3id.org/vpa#grants",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "15",
+    "range" : "18",
     "label" : {
       "IRI-based" : "grants",
       "en" : "grants"
     },
-    "domain" : "18",
+    "domain" : "24",
     "comment" : {
       "en" : "within its legally recognized mandate, issues, delivers in a traceable and qualitative manner, such that the receiver is able to act within the authorisation cases and its verified documentation"
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "43"
   }, {
     "iri" : "https://w3id.org/vpa#concerns",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "32",
+    "range" : "42",
     "label" : {
       "IRI-based" : "concerns",
       "en" : "concerns"
     },
-    "domain" : "13",
+    "domain" : "11",
     "comment" : {
       "en" : "holds as material content, constitutes, embodies the material components of the Scope."
     },
     "attributes" : [ "object" ],
-    "id" : "31"
+    "id" : "44"
   }, {
-    "range" : "15",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "33"
-  }, {
-    "range" : "2",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "34"
-  }, {
-    "range" : "15",
-    "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "35"
+    "range" : "18",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
   }, {
     "range" : "2",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "18",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "36"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
   }, {
     "range" : "2",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "37"
-  }, {
-    "range" : "39",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "38"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
   }, {
-    "range" : "21",
+    "range" : "2",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "40"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "30",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
   }, {
     "range" : "1",
-    "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "41"
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
   }, {
     "iri" : "https://w3id.org/vpa#supports",
     "baseIri" : "https://w3id.org/vpa",
@@ -664,30 +848,30 @@
       "IRI-based" : "supports",
       "en" : "supports"
     },
-    "domain" : "13",
+    "domain" : "11",
     "comment" : {
       "en" : "is part of, inherently constitutes"
     },
     "attributes" : [ "object" ],
-    "id" : "42"
+    "id" : "53"
   }, {
     "iri" : "https://w3id.org/vpa#definesCase",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "13",
+    "range" : "11",
     "label" : {
       "IRI-based" : "definesCase",
       "en" : "defines case"
     },
-    "domain" : "44",
+    "domain" : "55",
     "comment" : {
       "en" : "is covered by, included in"
     },
     "attributes" : [ "object" ],
-    "id" : "43"
+    "id" : "54"
   }, {
     "iri" : "https://w3id.org/vpa#requestFor",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "15",
+    "range" : "18",
     "label" : {
       "IRI-based" : "requestFor",
       "en" : "request for"
@@ -697,7 +881,7 @@
       "en" : "aiming to be enabled to act as covered by the Permission and its conditions, by receiving"
     },
     "attributes" : [ "object" ],
-    "id" : "45"
+    "id" : "56"
   }, {
     "iri" : "https://w3id.org/vpa#issues",
     "baseIri" : "https://w3id.org/vpa",
@@ -706,25 +890,25 @@
       "IRI-based" : "issues",
       "en" : "issues"
     },
-    "domain" : "16",
+    "domain" : "22",
     "comment" : {
       "en" : "transmits with the intention to be allowed to act according to a legally verified process"
     },
     "attributes" : [ "object" ],
-    "id" : "46"
+    "id" : "57"
   }, {
     "iri" : "https://w3id.org/vpa#withRestriction",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "10",
+    "range" : "15",
     "label" : {
       "IRI-based" : "withRestriction",
       "en" : "with restriction"
     },
-    "domain" : "1",
+    "domain" : "50",
     "comment" : {
       "en" : "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"
     },
     "attributes" : [ "object" ],
-    "id" : "47"
+    "id" : "58"
   } ]
 }

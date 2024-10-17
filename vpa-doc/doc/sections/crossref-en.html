@@ -7,7 +7,9 @@ These specific subclasses are marked with their abbreviations.
     <li><a href="#AppropriateBody" title="https://w3id.org/vpa#AppropriateBody">Appropriate Body</a></li>
     <li><a href="#http://data.europa.eu/949/Body" title="http://data.europa.eu/949/Body">Body</a></li>
     <li><a href="#Case" title="https://w3id.org/vpa#Case">Case</a></li>
+    <li><a href="#Compliance" title="https://w3id.org/vpa#Compliance">Compliance</a></li>
     <li><a href="#DocumentedEvidence" title="https://w3id.org/vpa#DocumentedEvidence">Documented Evidence</a></li>
+    <li><a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Interval</a></li>
     <li><a href="#http://data.europa.eu/949/OrganisationRole" title="http://data.europa.eu/949/OrganisationRole">Organisation Role</a></li>
     <li><a href="#Permission" title="https://w3id.org/vpa#Permission">Permission</a></li>
     <li><a href="#PermittingBody" title="https://w3id.org/vpa#PermittingBody">Permitting Body</a></li>
@@ -83,6 +85,27 @@ These specific subclasses are marked with their abbreviations.
      </dd>
     </dl>
    </div>
+   <div class="entity" id="Compliance">
+    <h3>Compliance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+    <p><strong>IRI:</strong> https://w3id.org/vpa#Compliance</p>
+    <div class="comment">
+     <span class="markdown">Regroups the result of a compliance check on a specific section of an applicable Requirement as registered in Documented Evicence. If needed, links this examined section to a specific Restriction.</span>
+    </div>
+    <dl class="description">
+     <dt>
+      is in domain of
+     </dt>
+     <dd>
+      <a href="#checkedSection" title="https://w3id.org/vpa#checkedSection">checked section</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCompliant" title="https://w3id.org/vpa#isCompliant">compliant</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#withRestriction" title="https://w3id.org/vpa#withRestriction">with restriction</a> <sup class="type-op" title="object property">op</sup>
+     </dd>
+     <dt>
+      is in range of
+     </dt>
+     <dd>
+      <a href="#checked" title="https://w3id.org/vpa#checked">checked compliance</a> <sup class="type-op" title="object property">op</sup>
+     </dd>
+    </dl>
+   </div>
    <div class="entity" id="DocumentedEvidence">
     <h3>Documented Evidence<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
     <p><strong>IRI:</strong> https://w3id.org/vpa#DocumentedEvidence</p>
@@ -100,7 +123,7 @@ These specific subclasses are marked with their abbreviations.
       is in domain of
      </dt>
      <dd>
-      <a href="#closes" title="https://w3id.org/vpa#closes">closes</a> <sup class="type-op" title="object property">op</sup>, <a href="#submittedFor" title="https://w3id.org/vpa#submittedFor">submitted for</a> <sup class="type-op" title="object property">op</sup>, <a href="#submittedIn" title="https://w3id.org/vpa#submittedIn">submitted in</a> <sup class="type-op" title="object property">op</sup>, <a href="#withRestriction" title="https://w3id.org/vpa#withRestriction">with restriction</a> <sup class="type-op" title="object property">op</sup>
+      <a href="#checked" title="https://w3id.org/vpa#checked">checked compliance</a> <sup class="type-op" title="object property">op</sup>, <a href="#closes" title="https://w3id.org/vpa#closes">closes</a> <sup class="type-op" title="object property">op</sup>, <a href="#submittedFor" title="https://w3id.org/vpa#submittedFor">submitted for</a> <sup class="type-op" title="object property">op</sup>, <a href="#submittedIn" title="https://w3id.org/vpa#submittedIn">submitted in</a> <sup class="type-op" title="object property">op</sup>, <a href="#valid" title="https://w3id.org/vpa#valid">valid</a> <sup class="type-op" title="object property">op</sup>, <a href="#withRestriction" title="https://w3id.org/vpa#withRestriction">with restriction</a> <sup class="type-op" title="object property">op</sup>
      </dd>
      <dt>
       is in range of
@@ -113,6 +136,21 @@ These specific subclasses are marked with their abbreviations.
      </dt>
      <dd>
       <a href="#Case" title="https://w3id.org/vpa#Case">Case</a> <sup class="type-c" title="class">c</sup>, <a href="#Permission" title="https://w3id.org/vpa#Permission">Permission</a> <sup class="type-c" title="class">c</sup>, <a href="#Request" title="https://w3id.org/vpa#Request">Request</a> <sup class="type-c" title="class">c</sup>
+     </dd>
+    </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/2006/time#Interval">
+    <h3>Interval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+    <p><strong>IRI:</strong> http://www.w3.org/2006/time#Interval</p>
+    <div class="comment">
+     <span class="markdown">A temporal entity with an extent or duration</span>
+    </div>
+    <dl class="description">
+     <dt>
+      is in range of
+     </dt>
+     <dd>
+      <a href="#valid" title="https://w3id.org/vpa#valid">valid</a> <sup class="type-op" title="object property">op</sup>
      </dd>
     </dl>
    </div>
@@ -151,7 +189,7 @@ These specific subclasses are marked with their abbreviations.
       is in domain of
      </dt>
      <dd>
-      <a href="#submittedIn" title="https://w3id.org/vpa#submittedIn">submitted in</a> <sup class="type-op" title="object property">op</sup>
+      <a href="#submittedIn" title="https://w3id.org/vpa#submittedIn">submitted in</a> <sup class="type-op" title="object property">op</sup>, <a href="#valid" title="https://w3id.org/vpa#valid">valid</a> <sup class="type-op" title="object property">op</sup>
      </dd>
      <dt>
       is in range of
@@ -238,6 +276,12 @@ These specific subclasses are marked with their abbreviations.
     </div>
     <dl class="description">
      <dt>
+      is in domain of
+     </dt>
+     <dd>
+      <a href="#section" title="https://w3id.org/vpa#section">sections</a> <sup class="type-op" title="object property">op</sup>
+     </dd>
+     <dt>
       is in range of
      </dt>
      <dd>
@@ -285,6 +329,8 @@ These specific subclasses are marked with their abbreviations.
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
     <li><a href="#certifies" title="https://w3id.org/vpa#certifies">certifies</a></li>
+    <li><a href="#checked" title="https://w3id.org/vpa#checked">checked compliance</a></li>
+    <li><a href="#checkedSection" title="https://w3id.org/vpa#checkedSection">checked section</a></li>
     <li><a href="#closes" title="https://w3id.org/vpa#closes">closes</a></li>
     <li><a href="#concerns" title="https://w3id.org/vpa#concerns">concerns</a></li>
     <li><a href="#definesCase" title="https://w3id.org/vpa#definesCase">defines case</a></li>
@@ -297,10 +343,12 @@ These specific subclasses are marked with their abbreviations.
     <li><a href="#requestFor" title="https://w3id.org/vpa#requestFor">request for</a></li>
     <li><a href="#requests" title="https://w3id.org/vpa#requests">requests</a></li>
     <li><a href="#http://data.europa.eu/949/role" title="http://data.europa.eu/949/role">role</a></li>
+    <li><a href="#section" title="https://w3id.org/vpa#section">sections</a></li>
     <li><a href="#status" title="https://w3id.org/vpa#status">status</a></li>
     <li><a href="#submittedFor" title="https://w3id.org/vpa#submittedFor">submitted for</a></li>
     <li><a href="#submittedIn" title="https://w3id.org/vpa#submittedIn">submitted in</a></li>
     <li><a href="#supports" title="https://w3id.org/vpa#supports">supports</a></li>
+    <li><a href="#valid" title="https://w3id.org/vpa#valid">valid</a></li>
     <li><a href="#withRestriction" title="https://w3id.org/vpa#withRestriction">with restriction</a></li>
    </ul>
    <div class="entity" id="certifies">
@@ -322,6 +370,52 @@ These specific subclasses are marked with their abbreviations.
       </dt>
       <dd>
        <a href="#Requirement" title="https://w3id.org/vpa#Requirement">Requirement</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div class="entity" id="checked">
+    <h3>checked compliance<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+    <p><strong>IRI:</strong> https://w3id.org/vpa#checked</p>
+    <div class="comment">
+     <span class="markdown">The Compliance checks having been documented by the Appropriate Body in the DocumentedEvidence.</span>
+    </div>
+    <div class="description">
+     <dl>
+      <dt>
+       has domain
+      </dt>
+      <dd>
+       <a href="#DocumentedEvidence" title="https://w3id.org/vpa#DocumentedEvidence">Documented Evidence</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+      <dt>
+       has range
+      </dt>
+      <dd>
+       <a href="#Compliance" title="https://w3id.org/vpa#Compliance">Compliance</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+     </dl>
+    </div>
+   </div>
+   <div class="entity" id="checkedSection">
+    <h3>checked section<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+    <p><strong>IRI:</strong> https://w3id.org/vpa#checkedSection</p>
+    <div class="comment">
+     <span class="markdown">For a Compliance check, the section of the Requirement which was individually checked by the Appropriate Body. The sections in scope of the verification are registered under each Requirement itself.</span>
+    </div>
+    <div class="description">
+     <dl>
+      <dt>
+       has domain
+      </dt>
+      <dd>
+       <a href="#Compliance" title="https://w3id.org/vpa#Compliance">Compliance</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+      <dt>
+       has range
+      </dt>
+      <dd>
+       <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>
       </dd>
      </dl>
     </div>
@@ -505,6 +599,9 @@ These specific subclasses are marked with their abbreviations.
    <div class="entity" id="regarding">
     <h3>regarding<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
     <p><strong>IRI:</strong> https://w3id.org/vpa#regarding</p>
+    <div class="comment">
+     <span class="markdown">belonging to, and when being respected, then also fulfilling</span>
+    </div>
     <div class="description">
      <dl>
       <dt>
@@ -588,6 +685,30 @@ These specific subclasses are marked with their abbreviations.
      </dl>
     </div>
    </div>
+   <div class="entity" id="section">
+    <h3>sections<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+    <p><strong>IRI:</strong> https://w3id.org/vpa#section</p>
+    <div class="comment">
+     <span class="markdown">section(s) of the requirement to which individual compliance can be registered by the Appropriate Body</span>
+    </div>
+    <div class="description">
+     <p><strong>has characteristics: </strong> functional</p>
+     <dl>
+      <dt>
+       has domain
+      </dt>
+      <dd>
+       <a href="#Requirement" title="https://w3id.org/vpa#Requirement">Requirement</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+      <dt>
+       has range
+      </dt>
+      <dd>
+       <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+     </dl>
+    </div>
+   </div>
    <div class="entity" id="status">
     <h3>status<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
     <p><strong>IRI:</strong> https://w3id.org/vpa#status</p>
@@ -638,6 +759,9 @@ These specific subclasses are marked with their abbreviations.
    <div class="entity" id="submittedIn">
     <h3>submitted in<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
     <p><strong>IRI:</strong> https://w3id.org/vpa#submittedIn</p>
+    <div class="comment">
+     <span class="markdown">The submission of a permission or a documented evidence to a case</span>
+    </div>
     <div class="description">
      <dl>
       <dt>
@@ -678,6 +802,29 @@ These specific subclasses are marked with their abbreviations.
      </dl>
     </div>
    </div>
+   <div class="entity" id="valid">
+    <h3>valid<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+    <p><strong>IRI:</strong> https://w3id.org/vpa#valid</p>
+    <div class="comment">
+     <span class="markdown">valid during a certain time</span>
+    </div>
+    <div class="description">
+     <dl>
+      <dt>
+       has domain
+      </dt>
+      <dd>
+       <a href="#DocumentedEvidence" title="https://w3id.org/vpa#DocumentedEvidence">Documented Evidence</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Permission" title="https://w3id.org/vpa#Permission">Permission</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+      <dt>
+       has range
+      </dt>
+      <dd>
+       <a href="#http://www.w3.org/2006/time#Interval" title="http://www.w3.org/2006/time#Interval">Interval</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+     </dl>
+    </div>
+   </div>
    <div class="entity" id="withRestriction">
     <h3>with restriction<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
     <p><strong>IRI:</strong> https://w3id.org/vpa#withRestriction</p>
@@ -690,7 +837,7 @@ These specific subclasses are marked with their abbreviations.
        has domain
       </dt>
       <dd>
-       <a href="#DocumentedEvidence" title="https://w3id.org/vpa#DocumentedEvidence">Documented Evidence</a> <sup class="type-c" title="class">c</sup>
+       <a href="#Compliance" title="https://w3id.org/vpa#Compliance">Compliance</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#DocumentedEvidence" title="https://w3id.org/vpa#DocumentedEvidence">Documented Evidence</a> <sup class="type-c" title="class">c</sup>
       </dd>
       <dt>
        has range
@@ -701,10 +848,39 @@ These specific subclasses are marked with their abbreviations.
      </dl>
     </div>
    </div>
+  </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+    <li><a href="#isCompliant" title="https://w3id.org/vpa#isCompliant">compliant</a></li>
+   </ul>
+   <div class="entity" id="isCompliant">
+    <h3>compliant<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+    <p><strong>IRI:</strong> https://w3id.org/vpa#isCompliant</p>
+    <div class="comment">
+     <span class="markdown">For the verified section of a Requirement: true when fully compliant, false in other cases (in which a clarifying Restriction is possible)</span>
+    </div>
+    <div class="description">
+     <dl>
+      <dt>
+       has domain
+      </dt>
+      <dd>
+       <a href="#Compliance" title="https://w3id.org/vpa#Compliance">Compliance</a> <sup class="type-c" title="class">c</sup>
+      </dd>
+      <dt>
+       has range
+      </dt>
+      <dd>
+       <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+      </dd>
+     </dl>
+    </div>
+   </div>
   </div><div id="legend">
   <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
   <div   class="entity">
   <sup class="type-c" title="Classes">c</sup>: Classes <br/>
   <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+  <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
   </div>
   </div>

@@ -9,15 +9,19 @@
 <https://w3id.org/vpa> rdf:type owl:Ontology ;
                         <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> ;
                         <http://purl.org/dc/terms/contributor> _:genid1 ;
+                        <http://purl.org/dc/terms/created> "2024-06-28"^^xsd:date ;
                         <http://purl.org/dc/terms/creator> _:genid2 ,
                                                            _:genid4 ;
                         <http://purl.org/dc/terms/issued> "2024-06-28"^^xsd:date ;
-                        <http://purl.org/dc/terms/modified> "2024-07-02"^^xsd:date ;
+                        <http://purl.org/dc/terms/modified> "2024-07-02"^^xsd:date ,
+                                                            "2024-10-14"^^xsd:date ;
                         <http://purl.org/dc/terms/publisher> "European Union Agency for Railways"@en ;
-                        <http://purl.org/dc/terms/title> "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en ;
-                        rdfs:comment "ERA Ontology for verified permissions"@en ;
+                        <http://purl.org/dc/terms/title> "ERA Ontology for verified permissions"@en ,
+                                                         "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en ;
+                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "vpa" ;
+                        <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
                         rdfs:label "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"@en ;
-                        owl:versionInfo "v0.3"@en .
+                        owl:versionInfo "v0.4" .
 
 _:genid1 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
           <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
@@ -52,6 +56,10 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
 <http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
@@ -72,12 +80,16 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
 ###  http://schema.org/affiliation
 <http://schema.org/affiliation> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2000/01/rdf-schema#comments
-rdfs:comments rdf:type owl:AnnotationProperty .
 
 
 ###  http://xmlns.com/foaf/0.1/homepage
@@ -125,6 +137,22 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:range :Requirement ;
            rdfs:comment "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."@en ;
            rdfs:label "certifies"@en .
+
+
+###  https://w3id.org/vpa#checked
+:checked rdf:type owl:ObjectProperty ;
+         rdfs:domain :DocumentedEvidence ;
+         rdfs:range :Compliance ;
+         rdfs:comment "The Compliance checks having been documented by the Appropriate Body in the DocumentedEvidence."@en ;
+         rdfs:label "checked compliance"@en .
+
+
+###  https://w3id.org/vpa#checkedSection
+:checkedSection rdf:type owl:ObjectProperty ;
+                rdfs:domain :Compliance ;
+                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                rdfs:comment "For a Compliance check, the section of the Requirement which was individually checked by the Appropriate Body. The sections in scope of the verification are registered under each Requirement itself."@en ;
+                rdfs:label "checked section"@en .
 
 
 ###  https://w3id.org/vpa#closes
@@ -186,7 +214,7 @@ xsd:date rdf:type rdfs:Datatype .
 :regarding rdf:type owl:ObjectProperty ;
            rdfs:domain :Restriction ;
            rdfs:range :Requirement ;
-           rdfs:comments "belonging to, and when being respected, then also fulfilling"@en ;
+           rdfs:comment "belonging to, and when being respected, then also fulfilling"@en ;
            rdfs:label "regarding"@en .
 
 
@@ -204,6 +232,15 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:range :Permission ;
           rdfs:comment "aims to be allowed to act according to a legally verified process, by receiving"@en ;
           rdfs:label "requests"@en .
+
+
+###  https://w3id.org/vpa#section
+:section rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :Requirement ;
+         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+         rdfs:comment "section(s) of the requirement to which individual compliance can be registered by the Appropriate Body"@en ;
+         rdfs:label "sections"@en .
 
 
 ###  https://w3id.org/vpa#status
@@ -231,6 +268,7 @@ xsd:date rdf:type rdfs:Datatype .
                                        )
                          ] ;
              rdfs:range :Case ;
+             rdfs:comment "The submission of a permission or a documented evidence to a case"@en ;
              rdfs:label "submitted in"@en .
 
 
@@ -242,12 +280,40 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "supports"@en .
 
 
+###  https://w3id.org/vpa#valid
+:valid rdf:type owl:ObjectProperty ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :DocumentedEvidence
+                                   :Permission
+                                 )
+                   ] ;
+       rdfs:range <http://www.w3.org/2006/time#Interval> ;
+       rdfs:comment "valid during a certain time"@en ;
+       rdfs:label "valid"@en .
+
+
 ###  https://w3id.org/vpa#withRestriction
 :withRestriction rdf:type owl:ObjectProperty ;
-                 rdfs:domain :DocumentedEvidence ;
+                 rdfs:domain [ rdf:type owl:Class ;
+                               owl:unionOf ( :Compliance
+                                             :DocumentedEvidence
+                                           )
+                             ] ;
                  rdfs:range :Restriction ;
                  rdfs:comment "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"@en ;
                  rdfs:label "with restriction"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/vpa#isCompliant
+:isCompliant rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Compliance ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment "For the verified section of a Requirement: true when fully compliant, false in other cases (in which a clarifying Restriction is possible)"@en ;
+             rdfs:label "compliant"@en .
 
 
 #################################################################
@@ -270,8 +336,18 @@ xsd:date rdf:type rdfs:Datatype .
                                              rdfs:label "Organisation Role"@en .
 
 
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
 ###  http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:comment "A temporal entity with an extent or duration"@en ;
+                                       rdfs:label "Interval"@en .
 
 
 ###  http://www.w3.org/ns/org#Organization
@@ -301,6 +377,12 @@ xsd:date rdf:type rdfs:Datatype .
 :Case rdf:type owl:Class ;
       rdfs:comment "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."@en ;
       rdfs:label "Case"@en .
+
+
+###  https://w3id.org/vpa#Compliance
+:Compliance rdf:type owl:Class ;
+            rdfs:comment "Regroups the result of a compliance check on a specific section of an applicable Requirement as registered in Documented Evicence. If needed, links this examined section to a specific Restriction."@en ;
+            rdfs:label "Compliance"@en .
 
 
 ###  https://w3id.org/vpa#DocumentedEvidence
@@ -352,6 +434,15 @@ xsd:date rdf:type rdfs:Datatype .
 :Scope rdf:type owl:Class ;
        rdfs:comment "A collection of Scopes together defining a Case. Scope is mostly the specific material object of the Case, where the Case groups them together."@en ;
        rdfs:label "Scope"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/vpa
+<https://w3id.org/vpa> rdf:type owl:NamedIndividual ,
+                                <http://purl.org/vocommons/voaf#Vocabulary> .
 
 
 #################################################################

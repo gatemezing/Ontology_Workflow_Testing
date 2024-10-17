@@ -4,7 +4,7 @@
 _:genid1 <http://xmlns.com/foaf/0.1/name> "OPD Unit" .
 _:genid1 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
-<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/created> "2024-06-28"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/vpa> <http://purl.org/dc/terms/creator> _:genid2 .
 _:genid2 <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA> .
 _:genid2 <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing"@en .
@@ -22,11 +22,14 @@ _:genid5 <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <https://w3id.org/vpa> <http://purl.org/dc/terms/issued> "2024-06-28"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/vpa> <http://purl.org/dc/terms/modified> "2024-07-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/modified> "2024-10-14"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://w3id.org/vpa> <http://purl.org/dc/terms/publisher> "European Union Agency for Railways"@en .
+<https://w3id.org/vpa> <http://purl.org/dc/terms/title> "ERA Ontology for verified permissions"@en .
 <https://w3id.org/vpa> <http://purl.org/dc/terms/title> "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en .
-<https://w3id.org/vpa> <http://www.w3.org/2000/01/rdf-schema#comment> "ERA Ontology for verified permissions"@en .
+<https://w3id.org/vpa> <http://purl.org/vocab/vann/preferredNamespacePrefix> "vpa" .
+<https://w3id.org/vpa> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/vpa#> .
 <https://w3id.org/vpa> <http://www.w3.org/2000/01/rdf-schema#label> "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"@en .
-<https://w3id.org/vpa> <http://www.w3.org/2002/07/owl#versionInfo> "v0.3"@en .
+<https://w3id.org/vpa> <http://www.w3.org/2002/07/owl#versionInfo> "v0.4" .
 # 
 # 
 # #################################################################
@@ -41,6 +44,9 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -57,11 +63,14 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://schema.org/affiliation
 <http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://www.w3.org/2000/01/rdf-schema#comments
-<http://www.w3.org/2000/01/rdf-schema#comments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://xmlns.com/foaf/0.1/homepage
 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -112,6 +121,20 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/vpa#certifies> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Requirement> .
 <https://w3id.org/vpa#certifies> <http://www.w3.org/2000/01/rdf-schema#comment> "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."@en .
 <https://w3id.org/vpa#certifies> <http://www.w3.org/2000/01/rdf-schema#label> "certifies"@en .
+# 
+# https://w3id.org/vpa#checked
+<https://w3id.org/vpa#checked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#checked> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#DocumentedEvidence> .
+<https://w3id.org/vpa#checked> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Compliance> .
+<https://w3id.org/vpa#checked> <http://www.w3.org/2000/01/rdf-schema#comment> "The Compliance checks having been documented by the Appropriate Body in the DocumentedEvidence."@en .
+<https://w3id.org/vpa#checked> <http://www.w3.org/2000/01/rdf-schema#label> "checked compliance"@en .
+# 
+# https://w3id.org/vpa#checkedSection
+<https://w3id.org/vpa#checkedSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#checkedSection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Compliance> .
+<https://w3id.org/vpa#checkedSection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/vpa#checkedSection> <http://www.w3.org/2000/01/rdf-schema#comment> "For a Compliance check, the section of the Requirement which was individually checked by the Appropriate Body. The sections in scope of the verification are registered under each Requirement itself."@en .
+<https://w3id.org/vpa#checkedSection> <http://www.w3.org/2000/01/rdf-schema#label> "checked section"@en .
 # 
 # https://w3id.org/vpa#closes
 <https://w3id.org/vpa#closes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -165,7 +188,7 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/vpa#regarding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Restriction> .
 <https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Requirement> .
-<https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#comments> "belonging to, and when being respected, then also fulfilling"@en .
+<https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#comment> "belonging to, and when being respected, then also fulfilling"@en .
 <https://w3id.org/vpa#regarding> <http://www.w3.org/2000/01/rdf-schema#label> "regarding"@en .
 # 
 # https://w3id.org/vpa#requestFor
@@ -181,6 +204,14 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foa
 <https://w3id.org/vpa#requests> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Permission> .
 <https://w3id.org/vpa#requests> <http://www.w3.org/2000/01/rdf-schema#comment> "aims to be allowed to act according to a legally verified process, by receiving"@en .
 <https://w3id.org/vpa#requests> <http://www.w3.org/2000/01/rdf-schema#label> "requests"@en .
+# 
+# https://w3id.org/vpa#section
+<https://w3id.org/vpa#section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://w3id.org/vpa#section> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Requirement> .
+<https://w3id.org/vpa#section> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/vpa#section> <http://www.w3.org/2000/01/rdf-schema#comment> "section(s) of the requirement to which individual compliance can be registered by the Appropriate Body"@en .
+<https://w3id.org/vpa#section> <http://www.w3.org/2000/01/rdf-schema#label> "sections"@en .
 # 
 # https://w3id.org/vpa#status
 <https://w3id.org/vpa#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -209,6 +240,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vp
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/vpa#submittedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Case> .
+<https://w3id.org/vpa#submittedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The submission of a permission or a documented evidence to a case"@en .
 <https://w3id.org/vpa#submittedIn> <http://www.w3.org/2000/01/rdf-schema#label> "submitted in"@en .
 # 
 # https://w3id.org/vpa#supports
@@ -218,12 +250,51 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/vpa#supports> <http://www.w3.org/2000/01/rdf-schema#comment> "is part of, inherently constitutes"@en .
 <https://w3id.org/vpa#supports> <http://www.w3.org/2000/01/rdf-schema#label> "supports"@en .
 # 
+# https://w3id.org/vpa#valid
+<https://w3id.org/vpa#valid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/vpa#valid> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Permission> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#DocumentedEvidence> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#valid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<https://w3id.org/vpa#valid> <http://www.w3.org/2000/01/rdf-schema#comment> "valid during a certain time"@en .
+<https://w3id.org/vpa#valid> <http://www.w3.org/2000/01/rdf-schema#label> "valid"@en .
+# 
 # https://w3id.org/vpa#withRestriction
 <https://w3id.org/vpa#withRestriction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#DocumentedEvidence> .
+<https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#DocumentedEvidence> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Compliance> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/vpa#Restriction> .
 <https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#comment> "when taken into account in the final act to be permitted, can be accepted under the condition that the conditions of the Restriction are fully answered to"@en .
 <https://w3id.org/vpa#withRestriction> <http://www.w3.org/2000/01/rdf-schema#label> "with restriction"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/vpa#isCompliant
+<https://w3id.org/vpa#isCompliant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/vpa#isCompliant> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/vpa#Compliance> .
+<https://w3id.org/vpa#isCompliant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/vpa#isCompliant> <http://www.w3.org/2000/01/rdf-schema#comment> "For the verified section of a Requirement: true when fully compliant, false in other cases (in which a clarifying Restriction is possible)"@en .
+<https://w3id.org/vpa#isCompliant> <http://www.w3.org/2000/01/rdf-schema#label> "compliant"@en .
 # 
 # 
 # 
@@ -236,15 +307,15 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://data.europa.eu/949/Body
 <http://data.europa.eu/949/Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://data.europa.eu/949/Body> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Organization> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://data.europa.eu/949/Body> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/org#Organization> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://data.europa.eu/949/Body> <http://www.w3.org/2000/01/rdf-schema#label> "Body"@en .
 # 
 # http://data.europa.eu/949/OrganisationRole
@@ -252,13 +323,22 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/org#Organization> .
 <http://data.europa.eu/949/OrganisationRole> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation Role"@en .
 # 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with an extent or duration"@en .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "Interval"@en .
 # 
 # http://www.w3.org/ns/org#Organization
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://xmlns.com/foaf/0.1/Document
 <http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -276,6 +356,11 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://w3id.org/vpa#Case> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/vpa#Case> <http://www.w3.org/2000/01/rdf-schema#comment> "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."@en .
 <https://w3id.org/vpa#Case> <http://www.w3.org/2000/01/rdf-schema#label> "Case"@en .
+# 
+# https://w3id.org/vpa#Compliance
+<https://w3id.org/vpa#Compliance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/vpa#Compliance> <http://www.w3.org/2000/01/rdf-schema#comment> "Regroups the result of a compliance check on a specific section of an applicable Requirement as registered in Documented Evicence. If needed, links this examined section to a specific Restriction."@en .
+<https://w3id.org/vpa#Compliance> <http://www.w3.org/2000/01/rdf-schema#label> "Compliance"@en .
 # 
 # https://w3id.org/vpa#DocumentedEvidence
 <https://w3id.org/vpa#DocumentedEvidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -324,24 +409,37 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # #################################################################
 # #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/vpa
+<https://w3id.org/vpa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/vpa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# 
+# 
+# #################################################################
+# #
 # #    General axioms
 # #
 # #################################################################
 # 
 # 
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid12 <http://www.w3.org/2002/07/owl#members> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Request> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Permission> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#DocumentedEvidence> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Case> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid18 <http://www.w3.org/2002/07/owl#members> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Request> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Permission> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#DocumentedEvidence> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/vpa#Case> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
