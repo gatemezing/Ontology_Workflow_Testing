@@ -138,7 +138,8 @@ vpa:certifies rdf:type owl:ObjectProperty ;
               rdfs:domain vpa:AppropriateBody ;
               rdfs:range vpa:Requirement ;
               rdfs:comment "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."@en ;
-              rdfs:label "certifies"@en .
+              rdfs:label "certifies"@en ;
+              rdfs:isDefinedBy vpa: .
 
 
 ###  https://w3id.org/vpa#checked
@@ -146,7 +147,8 @@ vpa:checked rdf:type owl:ObjectProperty ;
             rdfs:domain vpa:DocumentedEvidence ;
             rdfs:range vpa:Compliance ;
             rdfs:comment "The Compliance checks having been documented by the Appropriate Body in the DocumentedEvidence."@en ;
-            rdfs:label "checked compliance"@en .
+            rdfs:label "checked compliance"@en ;
+            rdfs:isDefinedBy vpa: .
 
 
 ###  https://w3id.org/vpa#checkedSection
