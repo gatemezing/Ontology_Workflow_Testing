@@ -165,7 +165,8 @@ vpa:closes rdf:type owl:ObjectProperty ;
            rdfs:domain vpa:DocumentedEvidence ;
            rdfs:range vpa:Requirement ;
            rdfs:comment "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."@en ;
-           rdfs:label "closes"@en .
+           rdfs:label "closes"@en ;
+           rdfs:isDefinedBy vpa: .
 
 
 ###  https://w3id.org/vpa#concerns
