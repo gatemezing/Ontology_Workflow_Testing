@@ -37,8 +37,8 @@
                         dcterms:modified "2024-07-02"^^xsd:date ,
                                          "2024-10-14"^^xsd:date ;
                         dcterms:publisher "European Union Agency for Railways"@en ;
-                        dcterms:title "ERA Ontology for verified permissions"@en ,
-                                      "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en ;
+                        dcterms:title "ERA Ontology for verified permissions"@en ;
+                        rdfs:comment "ERA ontology for verified permissions, as applied in vehicle(type) authorisations, registrations and approvals"@en ;
                         vann:preferredNamespacePrefix "vpa" ;
                         vann:preferredNamespaceUri vpa: ;
                         rdfs:label "The Verified Permissions (VP) ontology, applied for Vehicle(Type) Authorizations and Vehicle Registrations"@en ;
