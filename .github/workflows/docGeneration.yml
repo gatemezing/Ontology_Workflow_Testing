@@ -47,9 +47,12 @@ jobs:
 
     - name: Generate docs with Ontospy
       run: |
-        ontospy gendocs -o vpa-doc/browse --type 2 --preflabel label --nobrowser $ONTOLOGY_FILE
-        ontospy gendocs -o vpa-doc/tree --type 4 --preflabel label --nobrowser $ONTOLOGY_FILE
-        ontospy gendocs -o vpa-doc/graph --type 10 --preflabel label --nobrowser $ONTOLOGY_FILE
+        mkdir vpa-doc/browse
+        mkdir vpa-doc/tree
+        mkdir vpa-doc/graph
+        ontospy gendocs -o vpa-doc/browse/ --type 2 --preflabel label --nobrowser $ONTOLOGY_FILE
+        ontospy gendocs -o vpa-doc/tree/ --type 4 --preflabel label --nobrowser $ONTOLOGY_FILE
+        ontospy gendocs -o vpa-doc/graph/ --type 10 --preflabel label --nobrowser $ONTOLOGY_FILE
 
     - name: Commit and push
       run: |
