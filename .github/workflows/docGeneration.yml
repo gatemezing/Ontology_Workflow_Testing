@@ -58,7 +58,7 @@ jobs:
       run: |
         git config --global user.name 'Ghislain Atemezing'
         git config --global user.email 'ghislain.atemezing@gmail.com'
-        git config --global remote.origin.url 'git@github.com:gatemezing/ERA-VPA_Ontology.git'
+        git config --global remote.origin.url 'https://github.com/gatemezing/ERA-VPA_Ontology.git'
         git config --global credential.helper 'osxkeychain'
         git fetch
         #git checkout gh-pages

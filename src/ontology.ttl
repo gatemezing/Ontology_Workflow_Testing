@@ -156,7 +156,8 @@ vpa:checkedSection rdf:type owl:ObjectProperty ;
                    rdfs:domain vpa:Compliance ;
                    rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
                    rdfs:comment "For a Compliance check, the section of the Requirement which was individually checked by the Appropriate Body. The sections in scope of the verification are registered under each Requirement itself."@en ;
-                   rdfs:label "checked section"@en .
+                   rdfs:label "checked section"@en ;
+                   rdfs:isDefinedBy vpa: .
 
 
 ###  https://w3id.org/vpa#closes
