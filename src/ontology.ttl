@@ -121,14 +121,16 @@ era:hasOrganisationRole rdf:type owl:ObjectProperty ,
                                  owl:FunctionalProperty ;
                         rdfs:domain era:OrganisationRole ;
                         rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                        rdfs:label "has organisation role"@en .
+                        rdfs:label "has organisation role"@en ;
+                        rdfs:isDefinedBy era: .
 
 
 ###  http://data.europa.eu/949/role
 era:role rdf:type owl:ObjectProperty ;
          rdfs:domain <http://www.w3.org/ns/org#Organization> ;
          rdfs:range era:OrganisationRole ;
-         rdfs:label "role"@en .
+         rdfs:label "role"@en ;
+         rdfs:isDefinedBy era: .
 
 
 ###  https://w3id.org/vpa#certifies
