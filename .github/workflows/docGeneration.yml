@@ -53,6 +53,7 @@ jobs:
         ontospy gendocs -o vpa-doc/browse/ --type 2 --preflabel label --nobrowser $ONTOLOGY_FILE
         ontospy gendocs -o vpa-doc/tree/ --type 4 --preflabel label --nobrowser $ONTOLOGY_FILE
         ontospy gendocs -o vpa-doc/graph/ --type 10 --preflabel label --nobrowser $ONTOLOGY_FILE
+  
 
     - name: Commit and push
       run: |
@@ -68,5 +69,10 @@ jobs:
         git add vpa-doc/lode vpa-doc/browse vpa-doc/graph
         git commit -m "Automatically generate documentation from VPA OWL ontology file using Ontospy and Widoco (lode)."
         git push || exit 0
+  
+    
+    - uses: actions/download-artifact@v4
+    - name: Display structure of downloaded files
+      run: ls -R
 
     
