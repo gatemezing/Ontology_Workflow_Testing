@@ -60,6 +60,7 @@ jobs:
         #rm -rf browse tree graph lode
         #mv docs/* .
         #git add browse graph lode tree
+        git add vpa-doc/lode vpa-doc/browse vpa-doc/graph
         git commit -m "Automatically generate documentation from VPA OWL ontology file using Ontospy and Widoco (lode)."
         git push || exit 0
 
