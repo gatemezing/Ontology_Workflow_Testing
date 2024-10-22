@@ -37,22 +37,22 @@ jobs:
 
     - name: Generate docs with Widoco (LODE)
       run: |
-        mkdir docs/lode/
+        mkdir vpa-doc/lode/
         java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder vpa-doc/lode/ -getOntologyMetadata -oops -rewriteAll -webVowl
-        mv docs/lode docs/lode-tmp
-        mv docs/lode-tmp/doc docs/lode
-        mv docs/lode/index-en.html docs/lode/index.html
-        mv docs/lode/OOPSevaluation docs/lode/oops
-        mv docs/lode/oops/oopsEval.html docs/lode/oops/index.html
+        mv vpa-doc/lode vpa-doc/lode-tmp
+        mv vpa-doc/lode-tmp/doc vpa-doc/lode
+        mv vpa-doc/lode/index-en.html vpa-doc/lode/index.html
+        mv vpa-doc/lode/OOPSevaluation vpa-doc/lode/oops
+        mv vpa-doc/lode/oops/oopsEval.html vpa-doc/lode/oops/index.html
 
     - name: Generate docs with Ontospy
       run: |
-        mkdir docs/browse
-        mkdir docs/tree
-        mkdir docs/graph
-        ontospy gendocs -o docs/browse/ --type 2 --preflabel label --nobrowser $ONTOLOGY_FILE
-        ontospy gendocs -o docs/tree/ --type 4 --preflabel label --nobrowser $ONTOLOGY_FILE
-        ontospy gendocs -o docs/graph/ --type 10 --preflabel label --nobrowser $ONTOLOGY_FILE
+        mkdir vpa-doc/browse
+        mkdir vpa-doc/tree
+        mkdir vpa-doc/graph
+        ontospy gendocs -o vpa-doc/browse/ --type 2 --preflabel label --nobrowser $ONTOLOGY_FILE
+        ontospy gendocs -o vpa-doc/tree/ --type 4 --preflabel label --nobrowser $ONTOLOGY_FILE
+        ontospy gendocs -o vpa-doc/graph/ --type 10 --preflabel label --nobrowser $ONTOLOGY_FILE
   
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.3.3
