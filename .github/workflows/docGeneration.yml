@@ -39,7 +39,7 @@ jobs:
       run: |
         mkdir vpa-doc/lode/
         java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder vpa-doc/lode/ -getOntologyMetadata -oops -rewriteAll -webVowl
-        mv vpa-doc/lode vpa-doc/lode-tmp
+        # mv vpa-doc/lode vpa-doc/lode-tmp
         mv vpa-doc/lode/index-en.html vpa-doc/lode/index.html
         mv vpa-doc/lode/OOPSevaluation vpa-doc/lode/oops
         mv vpa-doc/lode/oops/oopsEval.html vpa-doc/lode/oops/index.html
