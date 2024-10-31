@@ -182,7 +182,8 @@ vpa:definesCase rdf:type owl:ObjectProperty ;
                 rdfs:domain vpa:Scope ;
                 rdfs:range vpa:Case ;
                 rdfs:comment "is covered by, included in"@en ;
-                rdfs:label "defines case"@en .
+                rdfs:label "defines case"@en ;
+                rdfs:isDefinedBy vpa: .
 
 
 ###  https://w3id.org/vpa#delivers
