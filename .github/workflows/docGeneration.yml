@@ -37,12 +37,12 @@ jobs:
 
     - name: Generate docs with Widoco (LODE)
       run: |
-        mkdir vpa-doc/lode/
-        java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder vpa-doc/lode/ -getOntologyMetadata -oops -rewriteAll -webVowl
+        mkdir docs/
+        java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/ -getOntologyMetadata -oops -rewriteAll -webVowl
         # mv vpa-doc/lode vpa-doc/lode-tmp
-        mv vpa-doc/lode/index-en.html vpa-doc/lode/index.html
-        mv vpa-doc/lode/OOPSevaluation vpa-doc/lode/oops
-        mv vpa-doc/lode/oops/oopsEval.html vpa-doc/lode/oops/index.html
+        mv docs/index-en.html docs/index.html
+        mv docs/OOPSevaluation docs/oops
+        mv docs/oops/oopsEval.html docs/oops/index.html
 
   download-docs:
     name: Download Documentations
@@ -53,9 +53,9 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           
-          path: vpa-doc/lode
+          path: docs/
       - name: Test doc download
-        run: ls -R
+        run: ls -R docs/
 
     
 
