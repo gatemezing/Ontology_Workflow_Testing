@@ -191,7 +191,8 @@ vpa:delivers rdf:type owl:ObjectProperty ;
              rdfs:domain vpa:AppropriateBody ;
              rdfs:range vpa:DocumentedEvidence ;
              rdfs:comment "within its accredited mandate, issues in a traceable and qualitative manner for reuse in a Permission process"@en ;
-             rdfs:label "delivers"@en .
+             rdfs:label "delivers"@en ;
+             rdfs:isDefinedBy vpa: .
 
 
 ###  https://w3id.org/vpa#grants
