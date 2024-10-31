@@ -173,7 +173,8 @@ vpa:closes rdf:type owl:ObjectProperty ;
 vpa:concerns rdf:type owl:ObjectProperty ;
              rdfs:domain vpa:Case ;
              rdfs:comment "holds as material content, constitutes, embodies the material components of the Scope."@en ;
-             rdfs:label "concerns"@en .
+             rdfs:label "concerns"@en ;
+             rdfs:isDefinedBy vpa: .
 
 
 ###  https://w3id.org/vpa#definesCase
