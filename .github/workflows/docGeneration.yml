@@ -52,7 +52,7 @@ jobs:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
-          name: doc-html
+          
           path: vpa-doc/lode
       - name: Test doc download
         run: ls -R
