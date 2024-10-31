@@ -44,25 +44,16 @@ jobs:
         mv vpa-doc/lode/OOPSevaluation vpa-doc/lode/oops
         mv vpa-doc/lode/oops/oopsEval.html vpa-doc/lode/oops/index.html
 
-    - name: Generate docs with Ontospy
-      run: |
-        mkdir vpa-doc/browse
-        mkdir vpa-doc/tree
-        mkdir vpa-doc/graph
-        ontospy gendocs -o vpa-doc/browse/ --type 2 --preflabel label --nobrowser $ONTOLOGY_FILE
-        ontospy gendocs -o vpa-doc/tree/ --type 4 --preflabel label --nobrowser $ONTOLOGY_FILE
-        ontospy gendocs -o vpa-doc/graph/ --type 10 --preflabel label --nobrowser $ONTOLOGY_FILE
-  
-
   download-docs:
     name: Download Documentations
     runs-on: ubuntu-latest
-    needs: generates-docs 
+   
     steps:
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
           name: doc-html
+          path: vpa-doc/lode
       - name: Test doc download
         run: ls -R
 
