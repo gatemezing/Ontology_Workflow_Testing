@@ -1,0 +1,41 @@
+name: Ontology Documentation CI
+
+on: [push]
+env:
+  ONTOLOGY_FILE: src/ontology.ttl
+
+jobs:
+     
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'zulu'
+    - name: Install dependencies
+      run: | 
+         sudo apt-get update
+         sudo apt-get install python3 python3-setuptools python3-pip python3-dev  -y
+         sudo apt-get install gcc libpq-dev -y
+         sudo apt-get install doxygen graphviz -y
+         sudo apt-get install python3-venv python3-wheel -y
+         sudo pip3 install wheel pylode==2.13.2
+    - name: Create Ontology Documentation 🔧
+      run: |
+         wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar
+         mkdir docs
+         mv src/*.ttl docs/
+         java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/ -getOntologyMetadata -rewriteAll -webVowl
+         mv docs/index-en.html docs/index.html
+         cd docs
+
+         
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+         BRANCH: gh-pages
+         FOLDER: docs/
+         clean: false
