@@ -28,8 +28,8 @@ jobs:
          wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar
          mkdir docs
          #cd src
-         mv src/*.ttl ..
-         java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs/ -getOntologyMetadata -rewriteAll -webVowl
+         #mv src/*.ttl ..
+         java -jar widoco.jar -ontFile src/ontology.ttl -outFolder docs/ -getOntologyMetadata -rewriteAll -webVowl
          mv docs/index-en.html docs/index.html
          cd docs
 
