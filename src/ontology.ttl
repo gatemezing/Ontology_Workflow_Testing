@@ -23,14 +23,14 @@
                                                                             <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways"
                                                                           ] ;
                                           rdfs:seeAlso <https://orcid.org/0000-0003-1562-6922> ;
-                                          <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing"@en ;
+                                          <http://xmlns.com/foaf/0.1/name> "Ghislain Atemezing" ;
                                           <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA>
                                         ] ,
                                         [ rdf:type <http://xmlns.com/foaf/0.1/Person> ;
                                           <http://schema.org/affiliation> [ <http://xmlns.com/foaf/0.1/homepage> <https://www.era.europa.eu/> ;
-                                                                            <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways"
+                                                                            <http://xmlns.com/foaf/0.1/name> "European Union Agency for Railways"@en
                                                                           ] ;
-                                          <http://xmlns.com/foaf/0.1/name> "Maarten Duhoux"@en ;
+                                          <http://xmlns.com/foaf/0.1/name> "Maarten Duhoux" ;
                                           <http://xmlns.com/foaf/0.1/workInfoHomepage> <http://publications.europa.eu/resource/authority/corporate-body/ERA>
                                         ] ;
                         dcterms:issued "2024-06-28"^^xsd:date ;
