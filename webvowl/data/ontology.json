@@ -726,7 +726,7 @@
       "en" : "has organisation role"
     },
     "domain" : "24",
-    "attributes" : [ "object", "external", "functional" ],
+    "attributes" : [ "object", "functional", "external" ],
     "id" : "27"
   }, {
     "iri" : "https://w3id.org/vpa#certifies",
