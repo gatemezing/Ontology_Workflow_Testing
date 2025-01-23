@@ -25,12 +25,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483649",
+        "value" : "_:genid2147483650",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483650",
+        "value" : "_:genid2147483649",
         "type" : "label"
       } ],
       "contributor" : [ {
@@ -111,7 +111,7 @@
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
     "id" : "22",
@@ -138,7 +138,7 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "20",
     "type" : "owl:unionOf"
   }, {
     "id" : "12",
@@ -147,7 +147,7 @@
     "id" : "50",
     "type" : "owl:unionOf"
   }, {
-    "id" : "15",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -238,7 +238,7 @@
     "comment" : {
       "en" : "Issued by a PermittingBody, it enables - mostly because of legal frameworks in place - the RequestingBody to execute the processes covered under these requirement frameworks."
     },
-    "id" : "20"
+    "id" : "18"
   }, {
     "iri" : "https://w3id.org/vpa#RequestingBody",
     "baseIri" : "https://w3id.org/vpa",
@@ -302,8 +302,8 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "1", "20" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "1", "18" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "33"
   }, {
     "iri" : "https://w3id.org/vpa#AppropriateBody",
@@ -320,9 +320,9 @@
     "superClasses" : [ "7" ]
   }, {
     "instances" : 0,
-    "union" : [ "1", "20" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "19"
+    "union" : [ "1", "18" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "20"
   }, {
     "iri" : "https://w3id.org/vpa#Requirement",
     "baseIri" : "https://w3id.org/vpa",
@@ -338,7 +338,7 @@
   }, {
     "instances" : 0,
     "union" : [ "17", "1" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "50"
   }, {
     "iri" : "https://w3id.org/vpa#Case",
@@ -351,7 +351,7 @@
     "comment" : {
       "en" : "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."
     },
-    "id" : "15"
+    "id" : "14"
   }, {
     "iri" : "https://w3id.org/vpa#DocumentedEvidence",
     "baseIri" : "https://w3id.org/vpa",
@@ -419,7 +419,7 @@
     },
     "union" : [ "30", "39" ],
     "subClasses" : [ "22", "6", "4" ],
-    "attributes" : [ "union", "external" ],
+    "attributes" : [ "external", "union" ],
     "id" : "7"
   }, {
     "iri" : "https://w3id.org/vpa#Restriction",
@@ -447,13 +447,13 @@
     "id" : "13",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "14",
+    "id" : "15",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "18",
+    "id" : "19",
     "type" : "owl:objectProperty"
   }, {
     "id" : "21",
@@ -588,6 +588,20 @@
     "attributes" : [ "object" ],
     "id" : "10"
   }, {
+    "iri" : "https://w3id.org/vpa#permissionType",
+    "baseIri" : "https://w3id.org/vpa",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "permissionType",
+      "en" : "permission type"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "the detailed process which constitutes this Case's permission conditions"
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
     "iri" : "https://w3id.org/vpa#closes",
     "baseIri" : "https://w3id.org/vpa",
     "range" : "12",
@@ -608,21 +622,7 @@
       "en" : "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."
     },
     "attributes" : [ "object" ],
-    "id" : "13"
-  }, {
-    "iri" : "https://w3id.org/vpa#permissionType",
-    "baseIri" : "https://w3id.org/vpa",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "permissionType",
-      "en" : "permission type"
-    },
-    "domain" : "15",
-    "comment" : {
-      "en" : "the detailed process which constitutes this Case's permission conditions"
-    },
-    "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "15"
   }, {
     "iri" : "https://w3id.org/vpa#checkedSection",
     "baseIri" : "https://w3id.org/vpa",
@@ -653,12 +653,12 @@
       "IRI-based" : "valid",
       "en" : "valid"
     },
-    "domain" : "19",
+    "domain" : "20",
     "comment" : {
       "en" : "valid during a certain time"
     },
     "attributes" : [ "object" ],
-    "id" : "18"
+    "id" : "19"
   }, {
     "iri" : "https://w3id.org/vpa#checked",
     "baseIri" : "https://w3id.org/vpa",
@@ -684,7 +684,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#requests",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "20",
+    "range" : "18",
     "label" : {
       "IRI-based" : "requests",
       "en" : "requests"
@@ -726,7 +726,7 @@
       "en" : "has organisation role"
     },
     "domain" : "24",
-    "attributes" : [ "functional", "object", "external" ],
+    "attributes" : [ "object", "external", "functional" ],
     "id" : "27"
   }, {
     "iri" : "https://w3id.org/vpa#certifies",
@@ -762,7 +762,7 @@
     "comment" : {
       "en" : "section(s) of the requirement to which individual compliance can be registered by the Appropriate Body"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "29"
   }, {
     "iri" : "http://data.europa.eu/949/role",
@@ -786,7 +786,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#submittedIn",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "15",
+    "range" : "14",
     "label" : {
       "IRI-based" : "submittedIn",
       "en" : "submitted in"
@@ -814,7 +814,7 @@
     "comment" : {
       "en" : "the status of the Request as it is being treated by the PermittingBody"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "35"
   }, {
     "range" : "7",
@@ -834,7 +834,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#grants",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "20",
+    "range" : "18",
     "label" : {
       "IRI-based" : "grants",
       "en" : "grants"
@@ -861,24 +861,24 @@
       "IRI-based" : "concerns",
       "en" : "concerns"
     },
-    "domain" : "15",
+    "domain" : "14",
     "comment" : {
       "en" : "holds as material content, constitutes, embodies the material components of the Scope."
     },
     "attributes" : [ "object" ],
     "id" : "44"
   }, {
-    "range" : "20",
-    "domain" : "15",
+    "range" : "18",
+    "domain" : "14",
     "attributes" : [ "object", "anonymous" ],
     "id" : "45"
   }, {
     "range" : "2",
-    "domain" : "15",
+    "domain" : "14",
     "attributes" : [ "object", "anonymous" ],
     "id" : "46"
   }, {
-    "range" : "20",
+    "range" : "18",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "47"
@@ -889,7 +889,7 @@
     "id" : "48"
   }, {
     "range" : "2",
-    "domain" : "20",
+    "domain" : "18",
     "attributes" : [ "object", "anonymous" ],
     "id" : "49"
   }, {
@@ -899,7 +899,7 @@
     "id" : "51"
   }, {
     "range" : "1",
-    "domain" : "15",
+    "domain" : "14",
     "attributes" : [ "object", "anonymous" ],
     "id" : "52"
   }, {
@@ -910,7 +910,7 @@
       "IRI-based" : "supports",
       "en" : "supports"
     },
-    "domain" : "15",
+    "domain" : "14",
     "comment" : {
       "en" : "is part of, inherently constitutes"
     },
@@ -919,7 +919,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#definesCase",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "15",
+    "range" : "14",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -941,7 +941,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#requestFor",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "20",
+    "range" : "18",
     "label" : {
       "IRI-based" : "requestFor",
       "en" : "request for"
