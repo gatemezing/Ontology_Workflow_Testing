@@ -1,0 +1,36 @@
+name: Ontology checking
+
+on: [push]
+env:
+  ONTOLOGY_FILE: src/ontology.ttl
+
+jobs:
+     
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'zulu'
+
+    - name: Checking ontology with Robot 🔧
+      run: |
+         wget -O robot.jar https://github.com/ontodev/robot/releases/download/v1.9.7/robot.jar
+         mkdir quality
+         java -jar robot.jar convert --input src/ontology.ttl --format owl --output quality/ontology.owl 
+         
+         java -jar robot.jar convert --input src/ontology.ttl --format owl --output quality/ontology.owl 
+         java -jar robot.jar report --input quality/ontology.owl  --base-iri "http://data.europa.eu/949/" --output quality/era-onto-report.tsv
+         
+
+    
+    
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.3.3
+      with:
+         BRANCH: docs
+         FOLDER: quality/
+         clean: true
