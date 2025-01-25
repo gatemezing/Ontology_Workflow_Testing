@@ -141,13 +141,13 @@
     "id" : "20",
     "type" : "owl:unionOf"
   }, {
-    "id" : "13",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
     "id" : "50",
     "type" : "owl:unionOf"
   }, {
-    "id" : "11",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -168,7 +168,7 @@
     "id" : "7",
     "type" : "owl:unionOf"
   }, {
-    "id" : "15",
+    "id" : "11",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -334,7 +334,7 @@
     "comment" : {
       "en" : "A legal/standardised collection of rules, which must be verified independently to be met in the context of a Permission Request, and of which the measure of compliance is expressed in DocumentedEvidence, with or without added Restrictions."
     },
-    "id" : "13"
+    "id" : "12"
   }, {
     "instances" : 0,
     "union" : [ "17", "1" ],
@@ -351,7 +351,7 @@
     "comment" : {
       "en" : "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."
     },
-    "id" : "11"
+    "id" : "15"
   }, {
     "iri" : "https://w3id.org/vpa#DocumentedEvidence",
     "baseIri" : "https://w3id.org/vpa",
@@ -432,7 +432,7 @@
     "comment" : {
       "en" : "Issued by an Appropriate Body in connection with its documented evidence on a certain requirement, it contains all aspects to take into account in order to accept the DocumentedEvidence as proof, enabling the scope of the Permission. It is possible that the Restriction limits the Permission in the same way."
     },
-    "id" : "15"
+    "id" : "11"
   } ],
   "property" : [ {
     "id" : "0",
@@ -444,7 +444,7 @@
     "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "12",
+    "id" : "13",
     "type" : "owl:objectProperty"
   }, {
     "id" : "14",
@@ -574,23 +574,23 @@
     "attributes" : [ "object" ],
     "id" : "3"
   }, {
-    "iri" : "https://w3id.org/vpa#permissionType",
+    "iri" : "https://w3id.org/vpa#regarding",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "8",
+    "range" : "12",
     "label" : {
-      "IRI-based" : "permissionType",
-      "en" : "permission type"
+      "IRI-based" : "regarding",
+      "en" : "regarding"
     },
     "domain" : "11",
     "comment" : {
-      "en" : "the detailed process which constitutes this Case's permission conditions"
+      "en" : "belonging to, and when being respected, then also fulfilling"
     },
     "attributes" : [ "object" ],
     "id" : "10"
   }, {
     "iri" : "https://w3id.org/vpa#closes",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "13",
+    "range" : "12",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -608,18 +608,18 @@
       "en" : "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."
     },
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "13"
   }, {
-    "iri" : "https://w3id.org/vpa#regarding",
+    "iri" : "https://w3id.org/vpa#permissionType",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "13",
+    "range" : "8",
     "label" : {
-      "IRI-based" : "regarding",
-      "en" : "regarding"
+      "IRI-based" : "permissionType",
+      "en" : "permission type"
     },
     "domain" : "15",
     "comment" : {
-      "en" : "belonging to, and when being respected, then also fulfilling"
+      "en" : "the detailed process which constitutes this Case's permission conditions"
     },
     "attributes" : [ "object" ],
     "id" : "14"
@@ -710,9 +710,28 @@
     "attributes" : [ "datatype" ],
     "id" : "25"
   }, {
+    "iri" : "http://data.europa.eu/949/hasOrganisationRole",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOrganisationRole",
+      "en" : "has organisation role"
+    },
+    "domain" : "24",
+    "attributes" : [ "object", "functional", "external" ],
+    "id" : "27"
+  }, {
     "iri" : "https://w3id.org/vpa#certifies",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "13",
+    "range" : "12",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -730,25 +749,6 @@
       "en" : "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."
     },
     "attributes" : [ "object" ],
-    "id" : "27"
-  }, {
-    "iri" : "http://data.europa.eu/949/hasOrganisationRole",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "8",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasOrganisationRole",
-      "en" : "has organisation role"
-    },
-    "domain" : "24",
-    "attributes" : [ "external", "functional", "object" ],
     "id" : "28"
   }, {
     "iri" : "https://w3id.org/vpa#section",
@@ -758,11 +758,11 @@
       "IRI-based" : "section",
       "en" : "sections"
     },
-    "domain" : "13",
+    "domain" : "12",
     "comment" : {
       "en" : "section(s) of the requirement to which individual compliance can be registered by the Appropriate Body"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "29"
   }, {
     "iri" : "http://data.europa.eu/949/role",
@@ -781,12 +781,12 @@
       "en" : "role"
     },
     "domain" : "30",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "31"
   }, {
     "iri" : "https://w3id.org/vpa#submittedIn",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "11",
+    "range" : "15",
     "label" : {
       "IRI-based" : "submittedIn",
       "en" : "submitted in"
@@ -814,7 +814,7 @@
     "comment" : {
       "en" : "the status of the Request as it is being treated by the PermittingBody"
     },
-    "attributes" : [ "functional", "object" ],
+    "attributes" : [ "object", "functional" ],
     "id" : "35"
   }, {
     "range" : "7",
@@ -861,7 +861,7 @@
       "IRI-based" : "concerns",
       "en" : "concerns"
     },
-    "domain" : "11",
+    "domain" : "15",
     "comment" : {
       "en" : "holds as material content, constitutes, embodies the material components of the Scope."
     },
@@ -869,12 +869,12 @@
     "id" : "44"
   }, {
     "range" : "18",
-    "domain" : "11",
+    "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
     "id" : "45"
   }, {
     "range" : "2",
-    "domain" : "11",
+    "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
     "id" : "46"
   }, {
@@ -899,7 +899,7 @@
     "id" : "51"
   }, {
     "range" : "1",
-    "domain" : "11",
+    "domain" : "15",
     "attributes" : [ "anonymous", "object" ],
     "id" : "52"
   }, {
@@ -910,7 +910,7 @@
       "IRI-based" : "supports",
       "en" : "supports"
     },
-    "domain" : "11",
+    "domain" : "15",
     "comment" : {
       "en" : "is part of, inherently constitutes"
     },
@@ -919,7 +919,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#definesCase",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "11",
+    "range" : "15",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -969,7 +969,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#withRestriction",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "15",
+    "range" : "11",
     "label" : {
       "IRI-based" : "withRestriction",
       "en" : "with restriction"
