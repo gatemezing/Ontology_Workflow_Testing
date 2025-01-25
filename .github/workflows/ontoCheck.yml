@@ -24,7 +24,7 @@ jobs:
          
          java -jar robot.jar convert --input src/ontology.ttl --format owl --output quality/ontology.owl 
          java -jar robot.jar report --input quality/ontology.owl  --base-iri "http://data.europa.eu/949/" --output quality/era-onto-report.csv
-         
+         java -jar robot.jar measure --input quality/ontology.owl --format json --metrics extended --output quality/metrics_extended.json
 
     
     
