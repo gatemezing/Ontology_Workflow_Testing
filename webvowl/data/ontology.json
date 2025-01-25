@@ -710,25 +710,6 @@
     "attributes" : [ "datatype" ],
     "id" : "25"
   }, {
-    "iri" : "http://data.europa.eu/949/hasOrganisationRole",
-    "baseIri" : "http://data.europa.eu/949",
-    "range" : "8",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/949/",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasOrganisationRole",
-      "en" : "has organisation role"
-    },
-    "domain" : "24",
-    "attributes" : [ "object", "functional", "external" ],
-    "id" : "27"
-  }, {
     "iri" : "https://w3id.org/vpa#certifies",
     "baseIri" : "https://w3id.org/vpa",
     "range" : "13",
@@ -749,6 +730,25 @@
       "en" : "within its accredited competencies, can express an opinion whether a (legal or standardized) requirement is met. This relation must be accompanied by DocumentedEvidence to formalize this opinion and eventually Restrictions if it is met only partially."
     },
     "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://data.europa.eu/949/hasOrganisationRole",
+    "baseIri" : "http://data.europa.eu/949",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/949/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOrganisationRole",
+      "en" : "has organisation role"
+    },
+    "domain" : "24",
+    "attributes" : [ "external", "functional", "object" ],
     "id" : "28"
   }, {
     "iri" : "https://w3id.org/vpa#section",
@@ -762,7 +762,7 @@
     "comment" : {
       "en" : "section(s) of the requirement to which individual compliance can be registered by the Appropriate Body"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "29"
   }, {
     "iri" : "http://data.europa.eu/949/role",
@@ -781,7 +781,7 @@
       "en" : "role"
     },
     "domain" : "30",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "31"
   }, {
     "iri" : "https://w3id.org/vpa#submittedIn",
@@ -814,7 +814,7 @@
     "comment" : {
       "en" : "the status of the Request as it is being treated by the PermittingBody"
     },
-    "attributes" : [ "object", "functional" ],
+    "attributes" : [ "functional", "object" ],
     "id" : "35"
   }, {
     "range" : "7",
