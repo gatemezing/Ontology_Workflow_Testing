@@ -1,0 +1,7 @@
+Level,Rule Name,Subject,Property,Value
+WARN,missing_definition,http://data.europa.eu/949/Body,IAO:0000115,
+WARN,missing_definition,http://data.europa.eu/949/OrganisationRole,IAO:0000115,
+WARN,missing_definition,http://data.europa.eu/949/hasOrganisationRole,IAO:0000115,
+WARN,missing_definition,http://data.europa.eu/949/role,IAO:0000115,
+INFO,missing_superclass,http://data.europa.eu/949/Body,rdfs:subClassOf,
+INFO,missing_superclass,http://data.europa.eu/949/OrganisationRole,rdfs:subClassOf,
