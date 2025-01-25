@@ -147,7 +147,7 @@
     "id" : "50",
     "type" : "owl:unionOf"
   }, {
-    "id" : "15",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "1",
@@ -351,7 +351,7 @@
     "comment" : {
       "en" : "A clearly separated part of a Request, identified clearly by its Scope(s). Each Case has an individual PermissionType as objective. A Request consists out of minimally one Case."
     },
-    "id" : "15"
+    "id" : "14"
   }, {
     "iri" : "https://w3id.org/vpa#DocumentedEvidence",
     "baseIri" : "https://w3id.org/vpa",
@@ -447,7 +447,7 @@
     "id" : "13",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "14",
+    "id" : "15",
     "type" : "owl:objectProperty"
   }, {
     "id" : "16",
@@ -588,6 +588,20 @@
     "attributes" : [ "object" ],
     "id" : "10"
   }, {
+    "iri" : "https://w3id.org/vpa#permissionType",
+    "baseIri" : "https://w3id.org/vpa",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "permissionType",
+      "en" : "permission type"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "the detailed process which constitutes this Case's permission conditions"
+    },
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
     "iri" : "https://w3id.org/vpa#closes",
     "baseIri" : "https://w3id.org/vpa",
     "range" : "12",
@@ -608,21 +622,7 @@
       "en" : "within the accredited competencies of the issuer of the DocumentedEvidence, confirms that the evidence shows the Requirements to be fulfilled, completely or in presence of a Restriction."
     },
     "attributes" : [ "object" ],
-    "id" : "13"
-  }, {
-    "iri" : "https://w3id.org/vpa#permissionType",
-    "baseIri" : "https://w3id.org/vpa",
-    "range" : "8",
-    "label" : {
-      "IRI-based" : "permissionType",
-      "en" : "permission type"
-    },
-    "domain" : "15",
-    "comment" : {
-      "en" : "the detailed process which constitutes this Case's permission conditions"
-    },
-    "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "15"
   }, {
     "iri" : "https://w3id.org/vpa#checkedSection",
     "baseIri" : "https://w3id.org/vpa",
@@ -786,7 +786,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#submittedIn",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "15",
+    "range" : "14",
     "label" : {
       "IRI-based" : "submittedIn",
       "en" : "submitted in"
@@ -800,7 +800,7 @@
   }, {
     "range" : "7",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "34"
   }, {
     "iri" : "https://w3id.org/vpa#status",
@@ -819,17 +819,17 @@
   }, {
     "range" : "7",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "36"
   }, {
     "range" : "7",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
     "range" : "41",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "40"
   }, {
     "iri" : "https://w3id.org/vpa#grants",
@@ -861,7 +861,7 @@
       "IRI-based" : "concerns",
       "en" : "concerns"
     },
-    "domain" : "15",
+    "domain" : "14",
     "comment" : {
       "en" : "holds as material content, constitutes, embodies the material components of the Scope."
     },
@@ -869,38 +869,38 @@
     "id" : "44"
   }, {
     "range" : "18",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "45"
   }, {
     "range" : "2",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "46"
   }, {
     "range" : "18",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "47"
   }, {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "48"
   }, {
     "range" : "2",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "49"
   }, {
     "range" : "30",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
     "range" : "1",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "52"
   }, {
     "iri" : "https://w3id.org/vpa#supports",
@@ -910,7 +910,7 @@
       "IRI-based" : "supports",
       "en" : "supports"
     },
-    "domain" : "15",
+    "domain" : "14",
     "comment" : {
       "en" : "is part of, inherently constitutes"
     },
@@ -919,7 +919,7 @@
   }, {
     "iri" : "https://w3id.org/vpa#definesCase",
     "baseIri" : "https://w3id.org/vpa",
-    "range" : "15",
+    "range" : "14",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
