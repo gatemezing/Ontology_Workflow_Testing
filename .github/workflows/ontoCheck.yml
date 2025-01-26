@@ -21,10 +21,11 @@ jobs:
          wget -O robot.jar https://github.com/ontodev/robot/releases/download/v1.9.7/robot.jar
          mkdir quality
          java -jar robot.jar convert --input src/ontology.ttl --format owl --output quality/ontology.owl 
-         
+
+         java -jar  robot.jar  export --input quality/ontology.owl --header "ID|LABEL|SYNONYMS|SubClass Of|SubProperty Of|Domain|Range" --include "classes properties" --export quality/onto-classes-properties.csv
          java -jar robot.jar convert --input src/ontology.ttl --format owl --output quality/ontology.owl 
-         java -jar robot.jar report --input quality/ontology.owl  --base-iri "http://data.europa.eu/949/" --output quality/era-onto-report.csv
-         java -jar robot.jar measure --input quality/ontology.owl --format json --metrics extended --output quality/metrics_extended.json
+         java -jar robot.jar report --input quality/ontology.owl  --base-iri "http://data.europa.eu/949/" --output quality/onto-report.csv
+         java -jar robot.jar measure --input quality/ontology.owl --format json --metrics extended --output quality/onto-metrics_extended.json
 
     
     
