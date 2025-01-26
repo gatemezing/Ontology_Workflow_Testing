@@ -1,0 +1,63 @@
+ID,LABEL,SYNONYMS,SubClass Of,SubProperty Of,Domain,Range
+cc:license,,,,,,
+dc:contributor,,,,,,
+dc:created,,,,,,
+dc:creator,,,,,,
+dc:issued,,,,,,
+dc:modified,,,,,,
+dc:publisher,,,,,,
+dc:title,,,,,,
+foaf:Agent,,,,,,
+foaf:Document,,,,,,
+foaf:Person,,,,,,
+foaf:homepage,,,,,,
+foaf:name,,,,,,
+foaf:workInfoHomepage,,,,,,
+http://data.europa.eu/949/Body,Body,,,,,
+http://data.europa.eu/949/OrganisationRole,Organisation Role,,,,,
+http://data.europa.eu/949/hasOrganisationRole,has organisation role,,,,Organisation Role,skos:Concept
+http://data.europa.eu/949/role,role,,,,http://www.w3.org/ns/org#Organization,Organisation Role
+http://purl.org/vocab/vann/preferredNamespacePrefix,,,,,,
+http://purl.org/vocab/vann/preferredNamespaceUri,,,,,,
+http://purl.org/vocommons/voaf#Vocabulary,,,,,,
+http://www.w3.org/2006/time#Interval,Interval,,,,,
+http://www.w3.org/ns/org#Organization,,,,,,
+https://w3id.org/vpa#AppropriateBody,Appropriate Body,,Body,,,
+https://w3id.org/vpa#Case,Case,,,,,
+https://w3id.org/vpa#Compliance,Compliance,,,,,
+https://w3id.org/vpa#DocumentedEvidence,Documented Evidence,,foaf:Document,,,
+https://w3id.org/vpa#Permission,Permission,,,,,
+https://w3id.org/vpa#PermittingBody,Permitting Body,,Body,,,
+https://w3id.org/vpa#Request,Request,,,,,
+https://w3id.org/vpa#RequestingBody,Requesting Body,,Body,,,
+https://w3id.org/vpa#Requirement,Requirement,,,,,
+https://w3id.org/vpa#Restriction,Restriction,,,,,
+https://w3id.org/vpa#Scope,Scope,,,,,
+https://w3id.org/vpa#certifies,certifies,,,,Appropriate Body,Requirement
+https://w3id.org/vpa#checked,checked compliance,,,,Documented Evidence,Compliance
+https://w3id.org/vpa#checkedSection,checked section,,,,Compliance,skos:Concept
+https://w3id.org/vpa#closes,closes,,,,Documented Evidence,Requirement
+https://w3id.org/vpa#concerns,concerns,,,,Case,
+https://w3id.org/vpa#definesCase,defines case,,,,Scope,Case
+https://w3id.org/vpa#delivers,delivers,,,,Appropriate Body,Documented Evidence
+https://w3id.org/vpa#grants,grants,,,,Organisation Role,Permission
+https://w3id.org/vpa#isCompliant,compliant,,,,Compliance,xsd:boolean
+https://w3id.org/vpa#issues,issues,,,,Requesting Body,Request
+https://w3id.org/vpa#permissionType,permission type,,,,Case,skos:Concept
+https://w3id.org/vpa#regarding,regarding,,,,Restriction,Requirement
+https://w3id.org/vpa#requestFor,request for,,,,Request,Permission
+https://w3id.org/vpa#requests,requests,,,,Organisation Role,Permission
+https://w3id.org/vpa#section,sections,,,,Requirement,skos:Concept
+https://w3id.org/vpa#status,status,,,,Request,skos:Concept
+https://w3id.org/vpa#submittedFor,submitted for,,,,Documented Evidence,Request
+https://w3id.org/vpa#submittedIn,submitted in,,,,'Documented Evidence' or Permission,Case
+https://w3id.org/vpa#supports,supports,,,,Case,Request
+https://w3id.org/vpa#valid,valid,,,,'Documented Evidence' or Permission,Interval
+https://w3id.org/vpa#withRestriction,with restriction,,,,Compliance or 'Documented Evidence',Restriction
+owl:versionInfo,,,,,,
+rdfs:comment,,,,,,
+rdfs:isDefinedBy,,,,,,
+rdfs:label,,,,,,
+rdfs:seeAlso,,,,,,
+schema:affiliation,,,,,,
+skos:Concept,,,,,,
