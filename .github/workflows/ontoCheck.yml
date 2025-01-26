@@ -22,7 +22,7 @@ jobs:
          mkdir quality
          java -jar robot.jar convert --input src/ontology.ttl --format owl --output quality/ontology.owl 
 
-         java -jar  robot.jar  export --input quality/ontology.owl --header "ID|LABEL|SYNONYMS|SubClass Of|SubProperty Of|Domain|Range" --include "classes properties" --export quality/onto-classes-properties.csv
+         java -jar  robot.jar  export --input quality/ontology.owl --header "ID|LABEL|rdfs:comment|SubClass Of|SubProperty Of|Domain|Range" --include "classes properties" --export quality/onto-classes-properties.csv
          java -jar robot.jar convert --input src/ontology.ttl --format owl --output quality/ontology.owl 
          java -jar robot.jar report --input quality/ontology.owl  --base-iri "http://data.europa.eu/949/" --output quality/onto-report.csv
          java -jar robot.jar measure --input quality/ontology.owl --format json --metrics extended --output quality/onto-metrics_extended.json
